@@ -1400,7 +1400,7 @@ Show
 #------Section 4.2 - T1 Uniques------#
 Show
 	Rarity Unique
-	BaseType "Prophecy Wand" "Champion Kite Shield" "Steel Kite Shield" "Ornate Quiver" "Gladiator Plate"
+	BaseType "Prophecy Wand" "Champion Kite Shield" "Steel Kite Shield" "Ornate Quiver" "Gladiator Plate" "Papyrus Relic"
 	SetTextColor 209 87 6
 	SetBackgroundColor 255 255 255
 	SetBorderColor 209 87 6
@@ -1607,7 +1607,28 @@ Show # Bigger Stack of Pocket Sand
 
 #------Section 5.13 - Essence------#
 #------Section 5.14 - Essence------#
-#------Section 5.15 - Essence------#
+
+#------Section 5.15 - Talisman------#
+Show # Catch for user-made talismans (based on being annointed)
+	BaseType "Talisman"
+	Class "Amulet"
+	AnyEnchantment "True"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
+Hide #Hide all other non-unique talismans
+	BaseType "Talisman"
+	Class "Amulet"
+	Rarity <= "Rare"
+	SetTextColor 0 238 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 38
+	DisableDropSound
+
 #------Section 5.16 - Ultimatum------#
 # Section 5.16.1 - Catalysts
 Show #T1 Catalysts
@@ -1663,17 +1684,6 @@ Show # T0 Relic Mods
 	HasExplicitMod "of Illumination" "of Clairvoyance" "Plentiful" "Cornucopic"
 	SetTextColor 201 8 192
 	SetBackgroundColor 255 255 255
-	SetBorderColor 201 8 192
-	SetFontSize 45
-	PlayAlertSound 6 75
-	DisableDropSound
-
-Show # Original Scripture
-	BaseType "Papyrus Relic"
-	Class "Relics"
-	Rarity "Unique"
-	SetTextColor 201 8 192
-	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
 	PlayAlertSound 6 75
