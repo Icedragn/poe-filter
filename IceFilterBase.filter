@@ -226,27 +226,7 @@
 ###########################################
 # Section 1 - Custom Highlights + Levelling
 ###########################################
-#--------------colour/sound testing----------------------#
-Show
-	BaseType "Portal Scroll"
-	Class "Currency"
-	StackSize >= 20
-	SetTextColor 201 8 192
-	SetBackgroundColor 255 255 255
-	SetBorderColor 201 8 192
-	SetFontSize 45
-	PlayAlertSound 6 75
-	DisableDropSound
-	
-	
-#	SetTextColor 201 8 192
-#	SetBackgroundColor 255 255 255
-#	SetBorderColor 201 8 192
-#	SetFontSize 45
-#	PlayAlertSound 5 75
-#	DisableDropSound
-
-#------Section 1.2 - Custom Highlights------#
+#------Section 1.1 - Custom Highlights------#
 	
 #------Section 1.2 - Priority Bases------#
 Show
