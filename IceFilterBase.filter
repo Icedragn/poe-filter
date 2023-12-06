@@ -565,9 +565,9 @@ Show
 Show
 	BaseType "Scroll of Wisdom"
 	Class "Currency"
-	SetTextColor 0 209 10
+	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
-	SetBorderColor 0 209 10
+	SetBorderColor 0 238 255
 	SetFontSize 45
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/wisdom.mp3" 300
@@ -1241,18 +1241,18 @@ Show
 Show
 	BaseType "Regal Shard" "Chaos Shard" "Harbinger's Shard" "Alchemy Shard" "Ancient Shard" "Annulment Shard" "Alteration Shard" "Binding Shard"
 	Class "Currency"
-	SetTextColor 0 209 10
+	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
-	SetBorderColor 0 209 10
+	SetBorderColor 0 238 255
 	SetFontSize 45
 	DisableDropSound
 	
 Hide
 	BaseType "Scroll Fragment" "Transmutation Shard" "Engineer's Shard" "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone"
 	Class "Currency"
-	SetTextColor 0 209 10
+	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
-	SetBorderColor 0 209 10
+	SetBorderColor 0 238 255
 	SetFontSize 40
 	DisableDropSound
 
