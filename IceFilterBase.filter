@@ -87,10 +87,14 @@
 	# Section 5.15 - Talisman
 	# Section 5.16 - Ultimatum (Metamorph)
 		# Section 5.16.1 - Catalysts
-	# Section 5.17 - Affliction
-		# Section 5.17.1 - Charms
-		# Section 5.17.2 - Corpses
-		# Section 5.17.3 - Tinctures
+		# Section 5.16.2 - Inscribed Ultimatums
+	# Section 5.17 - Sanctum
+		# Section 5.17.1 - Forbidden Tomes
+		# Section 5.17.2 - Relics
+	# Section 5.18 - Affliction
+		# Section 5.18.1 - Charms
+		# Section 5.18.2 - Corpses
+		# Section 5.18.3 - Tinctures
 # Section 6 - Sockets & Links
 	# Section 6.1 - 6-Sockets
 	# Section 6.2 - 6-Links
@@ -1605,8 +1609,50 @@ Show # Bigger Stack of Pocket Sand
 #------Section 5.14 - Essence------#
 #------Section 5.15 - Essence------#
 #------Section 5.16 - Essence------#
-#------Section 5.17 - Affliction------#
-# Section 5.17.1 - Charms
+
+#------Section 5.17 - Sanctum------#
+# Section 5.17.1 - Forbidden Tomes
+Show
+	Class "Sanctum Research"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
+# Section 5.17.2 - Relics
+Show # T0 Relic Mods
+	Class "Relics"
+	HasExplicitMod "of Illumination" "of Clairvoyance" "Plentiful" "Cornucopic"
+	SetTextColor 201 8 192
+	SetBackgroundColor 255 255 255
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	PlayAlertSound 6 75
+	DisableDropSound
+
+Show # Original Scripture
+	BaseType "Papyrus Relic"
+	Class "Relics"
+	Rarity "Unique"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	PlayAlertSound 6 75
+	DisableDropSound
+
+Show # Relic Catch All (Non-Unique)
+	Class "Relics"
+	Rarity <= "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
+#------Section 5.18 - Affliction------#
+# Section 5.18.1 - Charms
 #Show
 #	BaseType "Ursine Charm" "Lupine Charm" "Corvine Charm"
 #	Class "Charms"
@@ -1617,7 +1663,7 @@ Show # Bigger Stack of Pocket Sand
 #	SetFontSize 45
 #	DisableDropSound
 
-## Section 5.17.1 - Corpses
+## Section 5.18.2 - Corpses
 #Show # Perfect Corpses
 #	BaseType "Perfect"
 #	Class "Corpses"
@@ -1647,7 +1693,7 @@ Show # Bigger Stack of Pocket Sand
 #	SetFontSize 45
 #	DisableDropSound
 
-# Section 5.17.1 - Tincture
+# Section 5.18.3 - Tinctures
 #Show
 #	Class "Tincture"
 #	StackSize >= 45
@@ -3785,31 +3831,31 @@ Show
 	DisableDropSound
 
 #------Section 15.2 - Omens------#
-Show # T1 Omens
-	Class "Omen of Fortune" "Omen of Connections"
-	SetFontSize 45
-	SetTextColor 201 8 192
-	SetBackgroundColor 255 255 255
-	SetBorderColor 201 8 192
-	PlayAlertSound 6 75
-	DisableDropSound
-
-
-Show # T2 Omens
-	Class "Omen of Blanching" "Omen of the Jeweller"
-	SetFontSize 45
-	SetTextColor 201 8 192
-	SetBackgroundColor 0 0 0
-	SetBorderColor 201 8 192
-	DisableDropSound
-
-Show # T3 Omens
-	Class "Omen of Amelioration" "Omen of Return" "Omen of Death-dancing" "Omen of Refreshment" "Omen of the Soul Devourer" "Omen of Adrenaline" "Omen of Death's Door" "Omen of Brilliance"
-	SetFontSize 45
-	SetTextColor 0 209 10
-	SetBackgroundColor 0 0 0
-	SetBorderColor 0 209 10
-	DisableDropSound
+#Show # T1 Omens
+#	Class "Omen of Fortune" "Omen of Connections"
+#	SetFontSize 45
+#	SetTextColor 201 8 192
+#	SetBackgroundColor 255 255 255
+#	SetBorderColor 201 8 192
+#	PlayAlertSound 6 75
+#	DisableDropSound
+#
+#
+#Show # T2 Omens
+#	Class "Omen of Blanching" "Omen of the Jeweller"
+#	SetFontSize 45
+#	SetTextColor 201 8 192
+#	SetBackgroundColor 0 0 0
+#	SetBorderColor 201 8 192
+#	DisableDropSound
+#
+#Show # T3 Omens
+#	Class "Omen of Amelioration" "Omen of Return" "Omen of Death-dancing" "Omen of Refreshment" "Omen of the Soul Devourer" "Omen of Adrenaline" "Omen of Death's Door" "Omen of Brilliance"
+#	SetFontSize 45
+#	SetTextColor 0 209 10
+#	SetBackgroundColor 0 0 0
+#	SetBorderColor 0 209 10
+#	DisableDropSound
 
 #########################
 # Section 16 - Catch Alls
