@@ -85,7 +85,7 @@
 		# Section 5.14.1 - Incubators
 		# Section 5.14.2 - Splinters/Emblems
 	# Section 5.15 - Talisman
-	# Section 5.16 - Ultimatum (Metamorph)
+	# Section 5.16 - Ultimatum
 		# Section 5.16.1 - Catalysts
 		# Section 5.16.2 - Inscribed Ultimatums
 	# Section 5.17 - Sanctum
@@ -1608,7 +1608,44 @@ Show # Bigger Stack of Pocket Sand
 #------Section 5.13 - Essence------#
 #------Section 5.14 - Essence------#
 #------Section 5.15 - Essence------#
-#------Section 5.16 - Essence------#
+#------Section 5.16 - Ultimatum------#
+# Section 5.16.1 - Catalysts
+Show #T1 Catalysts
+	BaseType "Prismatic Catalyst" "Unstable Catalyst" "Fertile Catalyst" "Accelerating Catalyst"
+	Class "Currency"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
+Show #T2 Catalysts
+	BaseType "Tempering Catalyst" "Intrinsic Catalyst" "Noxious Catalyst"
+	Class "Currency"
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
+Show #T3 Catalysts
+	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Abrasive Catalyst"
+	Class "Currency"
+	SetTextColor 0 238 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	DisableDropSound
+
+# Section 5.16.2 - Inscribed Ultimatums
+Show
+	BaseType "Inscribed Ultimatum"
+	Class "Misc Map Items"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
 
 #------Section 5.17 - Sanctum------#
 # Section 5.17.1 - Forbidden Tomes
