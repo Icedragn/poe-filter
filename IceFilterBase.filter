@@ -186,6 +186,8 @@
 # Section 14 - Divination Cards
 # Section 15 - Misc
 	# Section 15.1 - Quest Items
+	# Section 15.2 - Charms
+	# Section 15.3 - Labyrinth Keys
 # Section 16 - Catch Alls
 	# Section 16.1 - Hide Normal/Magic Armour and Weapons
 	# Section 16.X - Show All
@@ -417,7 +419,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	AreaLevel <= 5
+	AreaLevel <= 23
 	DisableDropSound
 	
 Show
@@ -426,7 +428,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	AreaLevel <= 5
+	AreaLevel <= 32
 	DisableDropSound
 	
 Show
@@ -435,7 +437,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	AreaLevel <= 5
+	AreaLevel <= 35
 	DisableDropSound
 	
 Show
@@ -444,7 +446,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	AreaLevel <= 5
+	AreaLevel <= 41
 	DisableDropSound
 	
 Show
@@ -453,7 +455,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	AreaLevel <= 5
+	AreaLevel <= 44
 	DisableDropSound
 	
 Show
@@ -462,16 +464,61 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	AreaLevel <= 5
+	AreaLevel <= 47
 	DisableDropSound
 	
 Show
-	BaseType "Crude Bow"
+	BaseType "Ivory Bow"
 	Class "Bows"
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	AreaLevel <= 5
+	AreaLevel <= 53
+	DisableDropSound
+
+Show
+	BaseType "Highborn Bow"
+	Class "Bows"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 56
+	DisableDropSound
+
+Show
+	BaseType "Thicket Bow"
+	Class "Bows"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 60
+	DisableDropSound
+
+Show
+	BaseType "Ranger Bow"
+	Class "Bows"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 66
+	DisableDropSound
+
+Show
+	BaseType "Spine Bow"
+	Class "Bows"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	Class "Bows"
+	Rarity "Rare"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
 	DisableDropSound
 	
 # Section 1.3.2.3 - Quiver Progression
@@ -483,9 +530,19 @@ Show # Early Quivers
 	AreaLevel <= 13
 	DisableDropSound
 
+Show # Quiver Bases
+	BaseType "Feathered Arrow Quiver" "Penetrating Arrow Quiver"
+	Class "Quivers"
+	Rarity "Normal"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 40
+	AreaLevel <= 67
+	DisableDropSound
+
 Show # Magic Quivers
 	Class "Quivers"
-	Rarity = "Magic"
+	Rarity "Magic"
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
@@ -494,7 +551,7 @@ Show # Magic Quivers
 
 Show # Rare Quivers
 	Class "Quivers"
-	Rarity = "Rare"
+	Rarity "Rare"
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
@@ -949,7 +1006,7 @@ Show
 	SetTextColor 201 8 192
 	SetFontSize 45
 	AreaLevel <= 67
-	CustomAlertSound "./filter_sounds/jade.mp3" 300
+	CustomAlertSound "./filter_sounds/quartz.mp3" 300
 	DisableDropSound
 
 # Section 1.3.4.5 - Early Item Highlights
@@ -1122,6 +1179,15 @@ Show
 	CustomAlertSound "./filter_sounds/fourlinkboots.mp3" 300
 	DisableDropSound
 
+Show
+	Class "Boots" "Body Armour" "Gloves" "Helmets"
+	Rarity "Rare"
+	SetBorderColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
 # Section 1.3.4.6 - Generic Normal/Magic/Rare Items
 Show
 	Class "Helmets" "Body Armours" "Gloves" "Boots" "Ring" "Amulet" "Belt" "Wand" "Bow" "Sword" "Axe" "Staff" "Sceptre" "Shield" "Quiver" "Mace" "Claw" "Dagger"
@@ -1177,6 +1243,7 @@ Show
 	SetBackgroundColor 255 255 255
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 0 Pink Star
 	PlayAlertSound 6 75
 	DisableDropSound
 
@@ -1187,6 +1254,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Circle
 	PlayAlertSound 6 75
 	DisableDropSound
 	
@@ -1197,6 +1265,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Circle
 	PlayAlertSound 6 75
 	DisableDropSound
 	
@@ -1206,6 +1275,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Pink Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1215,6 +1285,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Pink Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1225,6 +1296,18 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	BaseType "Scouting Report"
+	Class "Currency"
+	StackSize >= 1
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1235,6 +1318,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1245,6 +1329,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1255,6 +1340,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1265,6 +1351,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1275,6 +1362,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1285,6 +1373,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1295,6 +1384,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1305,6 +1395,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1315,6 +1406,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1325,6 +1417,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1335,6 +1428,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1345,6 +1439,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1355,6 +1450,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1365,6 +1461,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1375,6 +1472,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1385,6 +1483,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1395,6 +1494,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1405,6 +1505,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1415,6 +1516,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1425,6 +1527,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1435,6 +1538,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1445,6 +1549,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1455,6 +1560,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1465,6 +1571,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1475,6 +1582,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1485,6 +1593,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1495,6 +1604,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1505,6 +1615,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	DisableDropSound
 	
@@ -1518,8 +1629,18 @@ Show
 	DisableDropSound
 	
 Hide
-	BaseType "Scroll Fragment" "Transmutation Shard" "Engineer's Shard" "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone"
+	BaseType "Scroll Fragment" "Transmutation Shard" "Engineer's Shard" "Armourer's Scrap" "Blacksmith's Whetstone"
 	Class "Currency"
+	SetTextColor 0 238 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	DisableDropSound
+
+Hide
+	BaseType "Scroll of Wisdom"
+	Class "Currency"
+	StackSize <= 2
 	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
@@ -1550,10 +1671,10 @@ Show
 Show
 	BaseType "Scroll of Wisdom"
 	Class "Currency"
-	StackSize >= 4
-	SetTextColor 0 209 10
+	StackSize >= 3
+	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
-	SetBorderColor 0 209 10
+	SetBorderColor 0 238 255
 	SetFontSize 45
 	DisableDropSound
 	
@@ -2166,6 +2287,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	PlayAlertSound 3 75
 	DisableDropSound
@@ -2176,6 +2298,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Star
 	SetFontSize 45
 	PlayAlertSound 3 75
 	DisableDropSound
@@ -2186,6 +2309,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	PlayAlertSound 3 75
 	DisableDropSound
@@ -2236,7 +2360,7 @@ Show # T1
 	DisableDropSound
 
 Show # T2
-	BaseType "Coral Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Bone Ring"
+	BaseType "Coral Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Bone Ring" "Diamond Ring"
 	Class "Rings"
 	Rarity "Rare"
 	SetTextColor 0 209 10
@@ -3664,7 +3788,7 @@ Show # T2
 	DisableDropSound
 
 Hide # T3
-	BaseType "Karui Sceptre" "Tyrant's Sekhem" "Blood Sceptre" "Royal Sceptre"
+	BaseType "Karui Sceptre" "Tyrant's Sekhem" "Blood Sceptre" "Royal Sceptre" "Sambar Sceptre"
 	Class "Sceptres"
 	Rarity "Rare"
 	SetTextColor 0 238 255
@@ -4310,6 +4434,15 @@ Show
 #	SetBackgroundColor 0 0 0
 #	SetBorderColor 0 209 10
 #	DisableDropSound
+
+#------Section 15.1 - Labyrinth Keys------#
+Show
+	Class "Labyrinth Key"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	DisableDropSound
 
 #########################
 # Section 16 - Catch Alls
