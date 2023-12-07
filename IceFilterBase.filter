@@ -356,6 +356,33 @@ Show
 	CustomAlertSound "./filter_sounds/helm2g1b.mp3" 300
 	DisableDropSound
 
+Show
+	Class "Body Armours" "Helmets" "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	SocketGroup GGG
+	AreaLevel <= 40
+	DisableDropSound
+
+Show
+	Class "Body Armours" "Helmets" "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	SocketGroup GGR
+	AreaLevel <= 40
+	DisableDropSound
+
+Show
+	Class "Body Armours" "Helmets" "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	SocketGroup GGB
+	AreaLevel <= 40
+	DisableDropSound
+
 # Section 1.3.2.2 - Bow Progression
 Show
 	BaseType "Crude Bow"
@@ -448,6 +475,31 @@ Show
 	DisableDropSound
 	
 # Section 1.3.2.3 - Quiver Progression
+Show # Early Quivers
+	Class "Quivers"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	AreaLevel <= 13
+	DisableDropSound
+
+Show # Magic Quivers
+	Class "Quivers"
+	Rarity = "Magic"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	AreaLevel <= 22
+	DisableDropSound
+
+Show # Rare Quivers
+	Class "Quivers"
+	Rarity = "Rare"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
 
 #------Section 1.3.3 - Melee Levelling------# (TODO)
 # Section 1.3.3.1 - Links
