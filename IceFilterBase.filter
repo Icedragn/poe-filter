@@ -11,7 +11,7 @@
 		# Section 1.3.1 - Caster Levelling
 			# Section 1.3.1.1 - Links
 		# Section 1.3.2 - Bow Levelling
-			# Section 1.3.2.1 - Links
+			# Section 1.3.2.1 - Links/Sockets
 			# Section 1.3.2.2 - Bow Progression
 			# Section 1.3.2.3 - Quiver Progression
 		# Section 1.3.3 - Melee Levelling
@@ -255,7 +255,7 @@ Show
 # Section 1.3.1.1 - Links
 
 #------Section 1.3.2 - Bow Levelling------#
-# Section 1.3.2.1 - Links
+# Section 1.3.2.1 - Links/Sockets
 Show
 	Class "Helmets" "Gloves" "Boots" "Body Armours"
 	SetBackgroundColor 0 0 0
@@ -379,6 +379,33 @@ Show
 	SetBorderColor 0 238 255
 	SetFontSize 45
 	SocketGroup GGB
+	AreaLevel <= 67
+	DisableDropSound
+
+Show # 4 Sockets w/ Colours
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	Sockets >= GGG
+	AreaLevel <= 67
+	DisableDropSound
+
+Show # 4 Sockets w/ Colours
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	Sockets >= GGB
+	AreaLevel <= 67
+	DisableDropSound
+
+Show # 4 sockets w colours
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	Sockets >= GGR
 	AreaLevel <= 67
 	DisableDropSound
 
