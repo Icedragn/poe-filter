@@ -12,10 +12,6 @@
 			# Section 1.3.1.1 - Links
 		# Section 1.3.2 - Bow Levelling
 			# Section 1.3.2.1 - Links
-				# Section 1.3.2.1.1 - Sockets
-				# Section 1.3.2.1.1 - 2 Links
-				# Section 1.3.2.1.1 - 3 Links
-				# Section 1.3.2.1.1 - 4 Links
 			# Section 1.3.2.2 - Bow Progression
 			# Section 1.3.2.3 - Quiver Progression
 		# Section 1.3.3 - Melee Levelling
@@ -32,6 +28,7 @@
 # Section 2 - Currency
 	# Section 2.1 - Single Currency
 	# Section 2.2 - Stacked Currency
+	# Section 2.3 - Map Fragments
 # Section 3 - Maps
 	# Section 3.1 - Guardian/Conqueror Maps
 	# Section 3.2 - Synthesis Maps
@@ -364,7 +361,7 @@ Show
 	SetBorderColor 0 238 255
 	SetFontSize 45
 	SocketGroup GGG
-	AreaLevel <= 40
+	AreaLevel <= 67
 	DisableDropSound
 
 Show
@@ -373,7 +370,7 @@ Show
 	SetBorderColor 0 238 255
 	SetFontSize 45
 	SocketGroup GGR
-	AreaLevel <= 40
+	AreaLevel <= 67
 	DisableDropSound
 
 Show
@@ -382,7 +379,7 @@ Show
 	SetBorderColor 0 238 255
 	SetFontSize 45
 	SocketGroup GGB
-	AreaLevel <= 40
+	AreaLevel <= 67
 	DisableDropSound
 
 # Section 1.3.2.2 - Bow Progression
@@ -571,6 +568,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/vaal.mp3" 300
 	DisableDropSound
@@ -583,6 +581,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/regal.mp3" 300
 	DisableDropSound
@@ -595,6 +594,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/chaos.mp3" 300
 	DisableDropSound
@@ -607,6 +607,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/alch.mp3" 300
 	DisableDropSound
@@ -619,6 +620,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/regret.mp3" 300
 	DisableDropSound
@@ -631,6 +633,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/scouring.mp3" 300
 	DisableDropSound
@@ -643,6 +646,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/chance.mp3" 300
 	DisableDropSound
@@ -655,6 +659,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/binding.mp3" 300
 	DisableDropSound
@@ -667,6 +672,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/fusing.mp3" 300
 	DisableDropSound
@@ -679,6 +685,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/jeweller.mp3" 300
 	DisableDropSound
@@ -691,6 +698,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/gcp.mp3" 300
 	DisableDropSound
@@ -703,6 +711,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/chrome.mp3" 300
 	DisableDropSound
@@ -715,6 +724,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/alt.mp3" 300
 	DisableDropSound
@@ -727,6 +737,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/trans.mp3" 300
 	DisableDropSound
@@ -735,10 +746,11 @@ Show
 	BaseType "Orb of Augmentation"
 	Class "Currency"
 	StackSize >= 1
-	SetTextColor 0 209 10
+	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
-	SetBorderColor 0 209 10
+	SetBorderColor 0 238 255
 	SetFontSize 45
+	MinimapIcon 1 Cyan Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/augment.mp3" 300
 	DisableDropSound
@@ -747,10 +759,11 @@ Show
 	BaseType "Blacksmith's Whetstone"
 	Class "Currency"
 	StackSize >= 1
-	SetTextColor 0 209 10
+	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
-	SetBorderColor 0 209 10
+	SetBorderColor 0 238 255
 	SetFontSize 45
+	MinimapIcon 1 Cyan Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/whetstone.mp3" 300
 	DisableDropSound
@@ -759,10 +772,11 @@ Show
 	BaseType "Armourer's Scrap"
 	Class "Currency"
 	StackSize >= 1
-	SetTextColor 0 209 10
+	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
-	SetBorderColor 0 209 10
+	SetBorderColor 0 238 255
 	SetFontSize 45
+	MinimapIcon 1 Cyan Circle
 	AreaLevel <= 67
 	CustomAlertSound "./filter_sounds/scrap.mp3" 300
 	DisableDropSound
@@ -1243,7 +1257,7 @@ Show
 	SetBackgroundColor 255 255 255
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	MinimapIcon 0 Pink Star
+	MinimapIcon 0 Red Star
 	PlayAlertSound 6 75
 	DisableDropSound
 
@@ -1677,6 +1691,29 @@ Show
 	SetBorderColor 0 238 255
 	SetFontSize 45
 	DisableDropSound
+
+#------Section 2.2 - Map Fragments------#
+Show
+	BaseType "Divine Vessel"
+	Class "Map Fragments"
+	StackSize >= 1
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	BaseType "Divine Vessel"
+	Class "Map Fragments"
+	StackSize >= 1
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
+	SetFontSize 45
+	DisableDropSound
 	
 ##################
 # Section 3 - Maps
@@ -1776,6 +1813,7 @@ Show # Non-Kalandra's Touch Filter
 	SetBackgroundColor 0 0 0
 	SetBorderColor 209 87 6
 	SetFontSize 45
+	MinimapIcon 1 Orange Cross
 	PlayAlertSound 3 75
 	DisableDropSound
 
@@ -1787,6 +1825,7 @@ Show
 	SetBackgroundColor 255 255 255
 	SetBorderColor 209 87 6
 	SetFontSize 45
+	MinimapIcon 0 Red Star
 	PlayAlertSound 6 75
 	DisableDropSound
 
@@ -1798,6 +1837,7 @@ Show
 	SetBackgroundColor 255 255 255
 	SetBorderColor 209 87 6
 	SetFontSize 45
+	MinimapIcon 1 Pink Cross
 	PlayAlertSound 6 75
 	DisableDropSound
 	
@@ -1808,6 +1848,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 209 87 6
 	SetFontSize 45
+	MinimapIcon 1 Pink Cross
 	PlayAlertSound 3 75
 	DisableDropSound
 	
@@ -1819,6 +1860,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 209 87 6
 	SetFontSize 45
+	MinimapIcon 1 Green Cross
 	PlayAlertSound 3 75
 	DisableDropSound
 	
@@ -1831,6 +1873,7 @@ Show # The Squire
 	SetBackgroundColor 255 255 255
 	SetBorderColor 209 87 6
 	SetFontSize 45
+	MinimapIcon 1 Red Star
 	PlayAlertSound 6 75
 	DisableDropSound
 	
@@ -1854,6 +1897,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 209 87 6
 	SetFontSize 45
+	MinimapIcon 1 Orange Cross
 	PlayAlertSound 3 75
 	DisableDropSound
 	
@@ -2204,6 +2248,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Diamond
 	DisableDropSound
 
 # Section 5.17.2 - Relics
@@ -2214,6 +2259,7 @@ Show # T0 Relic Mods
 	SetBackgroundColor 255 255 255
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Diamond
 	PlayAlertSound 6 75
 	DisableDropSound
 
@@ -2224,6 +2270,7 @@ Show # Relic Catch All (Non-Unique)
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Diamond
 	DisableDropSound
 
 #------Section 5.18 - Affliction------#
@@ -2298,7 +2345,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
-	MinimapIcon 1 Green Star
+	MinimapIcon 1 Pink Circle
 	SetFontSize 45
 	PlayAlertSound 3 75
 	DisableDropSound
@@ -2309,7 +2356,7 @@ Show
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
-	MinimapIcon 1 Green Circle
+	MinimapIcon 1 Green Hexagon
 	SetFontSize 45
 	PlayAlertSound 3 75
 	DisableDropSound
@@ -2326,6 +2373,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Kite
 	DisableDropSound
 
 Show # T2
@@ -2336,6 +2384,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Kite
 	DisableDropSound
 
 Hide # T3
@@ -2357,6 +2406,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Kite
 	DisableDropSound
 
 Show # T2
@@ -2367,6 +2417,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Kite
 	DisableDropSound
 
 Show # T3
@@ -2377,6 +2428,7 @@ Show # T3
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
 	SetFontSize 40
+	MinimapIcon 1 Cyan Kite
 	DisableDropSound
 
 Hide # T4
@@ -2398,6 +2450,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Kite
 	DisableDropSound
 
 Show # T2
@@ -2408,6 +2461,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Kite
 	DisableDropSound
 
 Hide # T3
@@ -2433,6 +2487,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2443,6 +2498,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2453,6 +2509,7 @@ Hide # T3
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
 	SetFontSize 45
+	MinimapIcon 1 Cyan Hexagon
 	DisableDropSound
 	
 Hide # T4
@@ -2469,6 +2526,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2479,6 +2537,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2489,6 +2548,7 @@ Hide # T3
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
 	SetFontSize 45
+	MinimapIcon 1 Cyan Hexagon
 	DisableDropSound
 	
 Hide # T4
@@ -2505,6 +2565,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2515,6 +2576,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2525,6 +2587,7 @@ Hide # T3
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
 	SetFontSize 45
+	MinimapIcon 1 Cyan Hexagon
 	DisableDropSound
 	
 Hide # T4
@@ -2541,6 +2604,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2551,6 +2615,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2561,6 +2626,7 @@ Hide # T3
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
 	SetFontSize 45
+	MinimapIcon 1 Cyan Hexagon
 	DisableDropSound
 	
 Hide # T4
@@ -2578,6 +2644,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2588,6 +2655,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2598,6 +2666,7 @@ Hide # T3
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
 	SetFontSize 45
+	MinimapIcon 1 Cyan Hexagon
 	DisableDropSound
 	
 Hide # T4
@@ -2615,6 +2684,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2625,6 +2695,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2635,6 +2706,7 @@ Hide # T3
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
 	SetFontSize 45
+	MinimapIcon 1 Cyan Hexagon
 	DisableDropSound
 	
 Hide # T4
@@ -2651,6 +2723,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2687,6 +2760,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2697,6 +2771,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2723,6 +2798,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2733,6 +2809,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2759,6 +2836,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2769,6 +2847,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2796,6 +2875,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2806,6 +2886,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2832,6 +2913,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2842,6 +2924,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2868,6 +2951,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2878,6 +2962,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2904,6 +2989,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2914,6 +3000,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2940,6 +3027,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2950,6 +3038,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -2977,6 +3066,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -2987,6 +3077,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3013,6 +3104,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3023,6 +3115,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3049,6 +3142,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3059,6 +3153,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3085,6 +3180,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3095,6 +3191,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3121,6 +3218,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3131,6 +3229,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3158,6 +3257,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3168,6 +3268,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3194,6 +3295,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3204,6 +3306,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3230,6 +3333,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3240,6 +3344,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3266,6 +3371,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3276,6 +3382,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3302,6 +3409,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3312,6 +3420,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3339,6 +3448,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3349,6 +3459,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3375,6 +3486,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3385,6 +3497,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3411,6 +3524,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3421,6 +3535,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3447,6 +3562,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3457,6 +3573,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3483,6 +3600,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
 Show # T2
@@ -3493,6 +3611,7 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	SetFontSize 45
+	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
 Hide # T3
@@ -3523,6 +3642,7 @@ Show # T1
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	MinimapIcon 1 Pink Diamond
 	DisableDropSound
 	
 Show # T2
