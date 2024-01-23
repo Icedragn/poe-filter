@@ -51,6 +51,7 @@
 		# Section 5.2.1 - Lures
 	# Section 5.3 - Betrayal
 		# Section 5.3.1 - Scarabs
+		# Section 5.3.2 - Veiled Mods
 	# Section 5.4 - Blight
 		# Section 5.4.1 - Blighted Maps
 		# Section 5.4.2 - Blight-Ravaged Maps
@@ -2001,6 +2002,23 @@ Show # Rusted Scarabs
 	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
+	DisableDropSound
+
+# Section 5.3.2 - Veiled Mods
+Show # Master Specific Veiled Mods
+	HasExplicitMod "'s Veiled"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	DisableDropSound
+
+Show # Generic Veiled Mods
+	HasExplicitMod "of the Veil" "Veiled"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
 	DisableDropSound
 
 #------Section 5.4 - Blight------#
@@ -4368,13 +4386,22 @@ Hide
 	DisableDropSound
 
 #------Section 12.2 - Life Flasks------#
-Show
+Show # High ilvl Life Flasks
+	BaseType "Divine Life Flask"
+	Class "Life Flasks"
+	ItemLevel >= 81
+	SetBorderColor 188 23 5
+	SetBackgroundColor 0 0 0
+	SetFontSize 40
+	DisableDropSound
+
+Show # Early Life Flasks
 	BaseType "Divine Life Flask"
 	Class "Life Flasks"
 	AreaLevel <= 70
 	SetBorderColor 188 23 5
 	SetBackgroundColor 0 0 0
-	SetFontSize 45
+	SetFontSize 40
 	DisableDropSound
 
 Hide
@@ -4389,7 +4416,7 @@ Show
 	AreaLevel <= 70
 	SetBorderColor 15 78 204
 	SetBackgroundColor 0 0 0
-	SetFontSize 45
+	SetFontSize 40
 	DisableDropSound
 
 Hide
@@ -4500,7 +4527,6 @@ Hide
 	SetBorderColor 0 238 255
 	SetFontSize 35
 	DisableDropSound
-
 
 ###############################
 # Section 14 - Divination Cards
