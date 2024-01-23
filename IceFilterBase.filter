@@ -101,6 +101,7 @@
 		# Section 5.18.1 - Charms
 		# Section 5.18.2 - Corpses
 		# Section 5.18.3 - Tinctures
+	# Section 5.19 - Synthesis
 # Section 6 - Sockets & Links
 	# Section 6.1 - 6-Sockets
 	# Section 6.2 - 6-Links
@@ -2322,55 +2323,50 @@ Show # Relic Catch All (Non-Unique)
 
 #------Section 5.18 - Affliction------#
 # Section 5.18.1 - Charms
-#Show
-#	BaseType "Ursine Charm" "Lupine Charm" "Corvine Charm"
-#	Class "Charms"
-#	StackSize >= 45
-#	SetTextColor 201 8 192
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 201 8 192
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	BaseType "Ursine Charm" "Lupine Charm" "Corvine Charm"
+	Class "Charms"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
 
 ## Section 5.18.2 - Corpses
-#Show # Perfect Corpses
-#	BaseType "Perfect"
-#	Class "Corpses"
-#	StackSize >= 45
-#	SetTextColor 201 8 192
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 201 8 192
-#	SetFontSize 45
-#	DisableDropSound
-#
-#Show # Imperfect Corpses
-#	BaseType "Imperfect"
-#	Class "Corpses"
-#	StackSize >= 45
-#	SetTextColor 0 238 255
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 0 238 255
-#	SetFontSize 45
-#	DisableDropSound
-#
-#Show # Regular Corpses
-#	Class "Corpses"
-#	StackSize >= 45
-#	SetTextColor 0 209 10
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 0 209 10
-#	SetFontSize 45
-#	DisableDropSound
+Show # Perfect Corpses
+	BaseType "Perfect"
+	Class "Corpses"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
+Show # Imperfect Corpses
+	BaseType "Imperfect"
+	Class "Corpses"
+	SetTextColor 0 238 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	DisableDropSound
+
+Show # Regular Corpses
+	Class "Corpses"
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
 
 # Section 5.18.3 - Tinctures
-#Show
-#	Class "Tincture"
-#	StackSize >= 45
-#	SetTextColor 201 8 192
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 201 8 192
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	Class "Tincture"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
 	
 #############################
 # Section 6 - Sockets & Links
