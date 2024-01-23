@@ -4505,6 +4505,14 @@ Hide
 ###############################
 # Section 14 - Divination Cards
 ###############################
+Hide # Special Trash Divination Cards
+	BaseType "The Demoness"
+	Class "Divination Cards"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 35
+	DisableDropSound
+
 Show # T0 Divination Cards
 	BaseType "House of Mirrors" "The Apothecary" "Unrequited Love" "The Price of Devotion" "The Insane Cat" "The Demon" "The Doctor" "The Immortal" "The Fiend" "Brother's Gift" "Choking Guilt" "Seven Years Bad Luck"
 	Class "Divination Cards"
@@ -4553,7 +4561,7 @@ Show # T4 Divination Cards
 	DisableDropSound
 	
 Show # T5 Divination Cards
-	BaseType "Imperial Legacy" "The Beast" "Treasure Hunter" "Thunderous Skies" "Three Faces in the Dark" "The Wolf" "The Visionary" "The Tireless Extractor" "The Tinkerer's Table" "The Sun" "The Summoner" "The Stormcaller" "The Skeleton" "The Scholar" "The Scarred Meadow" "The Ruthless Ceinture" "The Rite of Elements" "The Puzzle" "The One With All" "The Oath" "The Master Artisan" "The Lion" "The Fletcher" "The Drunken Aristocrat" "The Dragon" "The Doppelganger" "The Deal" "The Catalyst" "The Cache" "The Body" "The Aesthete" "The Adventuring Spirit" "Mitts" "Lysah's Respite" "Jack in the Box" "Hunter's Resolve" "Her Mask" "Grave Knowledge" "Gift of the Gemling Queen" "Emperor's Luck" "Earth Drinker" "Cartographer's Delight" "Blind Venture" "Atziri's Arsenal" "Astral Protection" "Assassin's Favour" "Alivia's Grace" "A Mother's Parting Gift" "The Return of the Rat" "The Mercenary" "The Jeweller's Boon" "The Cursed King" "The Formless Sea" "The Archmage's Right Hand" "Prejudice" "From Bone to Ashes" "The Brittle Emperor" "Rain Tempter" "Turn the Other Cheek" "Unchained" "The Lich" "The Jester" "The Harvester" "Merciless Armament" "Light and Truth" "Call to the First Ones" "The Siren" "The Celestial Stone" "The Conduit" "The Throne" "Prometheus' Armoury" "The Enthusiasts" "Void of the Elements" "Rebirth" "The Undisputed" "Duality"
+	BaseType "Imperial Legacy" "The Beast" "Treasure Hunter" "Thunderous Skies" "Three Faces in the Dark" "The Wolf" "The Visionary" "The Tireless Extractor" "The Tinkerer's Table" "The Sun" "The Summoner" "The Stormcaller" "The Skeleton" "The Scholar" "The Scarred Meadow" "The Ruthless Ceinture" "The Rite of Elements" "The Puzzle" "The One With All" "The Oath" "The Master Artisan" "The Lion" "The Fletcher" "The Drunken Aristocrat" "The Dragon" "The Doppelganger" "The Deal" "The Catalyst" "The Cache" "The Body" "The Aesthete" "The Adventuring Spirit" "Mitts" "Lysah's Respite" "Jack in the Box" "Hunter's Resolve" "Her Mask" "Grave Knowledge" "Gift of the Gemling Queen" "Emperor's Luck" "Earth Drinker" "Cartographer's Delight" "Blind Venture" "Atziri's Arsenal" "Astral Protection" "Assassin's Favour" "Alivia's Grace" "A Mother's Parting Gift" "The Return of the Rat" "The Mercenary" "The Jeweller's Boon" "The Cursed King" "The Formless Sea" "The Archmage's Right Hand" "Prejudice" "From Bone to Ashes" "The Brittle Emperor" "Rain Tempter" "Turn the Other Cheek" "Unchained" "The Lich" "The Jester" "The Harvester" "Merciless Armament" "Light and Truth" "Call to the First Ones" "The Siren" "The Celestial Stone" "The Conduit" "The Throne" "Prometheus' Armoury" "The Enthusiasts" "Void of the Elements" "Rebirth" "The Undisputed" "Duality" "The Standoff" "The Lover" "The Journalist" "The Fox"
 	Class "Divination Cards"
 	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
@@ -4562,7 +4570,7 @@ Show # T5 Divination Cards
 	DisableDropSound
 	
 Hide # Trash Divination Cards
-	BaseType "Rain of Chaos" "The King's Blade" "The Wolverine" "The Golden Era" "The Bear Woman" "The Forsaken" "Vile Power" "Thirst for Knowledge" "The Wolf's Shadow" "The Witch" "The Web" "The Warden" "The Twins" "The Traitor" "The Tower" "The Sword King's Salute" "The Surgeon" "The Standoff" "The Sigil" "The Road to Power" "The Rabid Rhoa" "The Opulent" "The Mountain" "The Metalsmith's Gift" "The Lunaris Priestess" "The Lover" "The Lord of Celebration" "The Journalist" "The Insatiable" "The Inoculated" "The Incantation" "The Hermit" "The Gladiator" "The Gentleman" "The Fox" "The Flora's Gift" "The Feast" "The Explorer" "The Demoness" "The Carrion Crow" "The Calling" "The Blazing Fire" "The Betrayal" "The Battle Born" "The Army of Blood" "The Arena Champion" "Struck by Lightning" "Rats" "Prosperity" "Might is Right" "Lantador's Lost Love" "Forbidden Power" "Doedre's Madness" "Destined to Crumble" "Death" "Boundless Realms" "The Tyrant" "The Spoiled Prince" "The Brawny Battle Mage" "The Lord in Black"
+	BaseType "Rain of Chaos" "The King's Blade" "The Wolverine" "The Golden Era" "The Bear Woman" "The Forsaken" "Vile Power" "Thirst for Knowledge" "The Wolf's Shadow" "The Witch" "The Web" "The Warden" "The Twins" "The Traitor" "The Tower" "The Sword King's Salute" "The Surgeon" "The Sigil" "The Road to Power" "The Rabid Rhoa" "The Opulent" "The Mountain" "The Metalsmith's Gift" "The Lunaris Priestess" "The Lord of Celebration" "The Insatiable" "The Inoculated" "The Incantation" "The Hermit" "The Gladiator" "The Gentleman" "The Flora's Gift" "The Feast" "The Explorer" "The Demoness" "The Carrion Crow" "The Calling" "The Blazing Fire" "The Betrayal" "The Battle Born" "The Army of Blood" "The Arena Champion" "Struck by Lightning" "Rats" "Prosperity" "Might is Right" "Lantador's Lost Love" "Forbidden Power" "Doedre's Madness" "Destined to Crumble" "Death" "Boundless Realms" "The Tyrant" "The Spoiled Prince" "The Brawny Battle Mage" "The Lord in Black"
 	Class "Divination Cards"
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
