@@ -102,6 +102,8 @@
 		# Section 5.18.2 - Corpses
 		# Section 5.18.3 - Tinctures
 	# Section 5.19 - Synthesis
+		# Section 5.19.1 - Fractured Items
+		# Section 5.19.2 - Synthesized Items
 # Section 6 - Sockets & Links
 	# Section 6.1 - 6-Sockets
 	# Section 6.2 - 6-Links
@@ -2368,6 +2370,13 @@ Show
 	SetFontSize 45
 	DisableDropSound
 	
+#------Section 5.19 - Synthesis------#
+# Section 5.19.1 - Fractured Items
+
+
+# Section 5.19.2 - Synthesized Items
+
+
 #############################
 # Section 6 - Sockets & Links
 #############################
