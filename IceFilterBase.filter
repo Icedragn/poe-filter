@@ -10,6 +10,8 @@
 	# Section 1.3 - Levelling
 		# Section 1.3.1 - Caster Levelling
 			# Section 1.3.1.1 - Links
+			# Section 1.3.1.2 - Wand Progression
+			# Section 1.3.1.3 - Sceptre Progression
 		# Section 1.3.2 - Bow Levelling
 			# Section 1.3.2.1 - Links/Sockets
 			# Section 1.3.2.2 - Bow Progression
@@ -257,8 +259,225 @@ Show
 	DisableDropSound
 
 #------Section 1.3 - Levelling------#
-#------Section 1.3.1 - Caster Levelling------# (TODO)
+#------Section 1.3.1 - Caster Levelling------#
 # Section 1.3.1.1 - Links
+Show
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	Sockets >= BB
+	AreaLevel <= 12
+	DisableDropSound
+
+Show
+	Class "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup BBB
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/chest3b.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup BBR
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/chest2b1r.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup BBG
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/chest2b1g.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup BBB
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/glove3b.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup BBR
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/glove2b1r.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup BBG
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/glove2b1g.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Helmets"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup BBB
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/helm3b.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Helmets"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup BBR
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/helm2b1r.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Helmets"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup BBG
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/helm2b1g.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Body Armours" "Helmets" "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	SocketGroup BBB
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	Class "Body Armours" "Helmets" "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	SocketGroup BBR
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	Class "Body Armours" "Helmets" "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	SocketGroup BBG
+	AreaLevel <= 67
+	DisableDropSound
+
+Show # 4 Sockets w/ Colours
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	Sockets > BBB
+	AreaLevel <= 67
+	DisableDropSound
+
+Show # 4 Sockets w/ Colours
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	Sockets > BBR
+	AreaLevel <= 67
+	DisableDropSound
+
+Show # 4 sockets w Colours
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	Sockets > BBG
+	AreaLevel <= 67
+	DisableDropSound
+
+# Section 1.3.1.2 - Wand Progression
+Show
+	BaseType "Goat's Horn"
+	Class "Wands"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 14
+	DisableDropSound
+	
+Show
+	BaseType "Faun's Horn"
+	Class "Wands"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 47
+	DisableDropSound
+	
+Show # early 3 linked wands
+	Class "Wands"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	LinkedSockets 3
+	AreaLevel <= 25
+	DisableDropSound
+	
+Show # early magic wands
+	Class "Wands"
+	Rarity "Magic"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 35
+	DisableDropSound
+	
+Show
+	Class "Wands"
+	Rarity "Rare"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+	
+# Section 1.3.1.3 - Sceptre Progression
+Show # early magic sceptres
+	Class "Wands"
+	Rarity "Magic"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 35
+	DisableDropSound
+
+Show
+	Class "Sceptres"
+	Rarity "Rare"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
 
 #------Section 1.3.2 - Bow Levelling------#
 # Section 1.3.2.1 - Links/Sockets
