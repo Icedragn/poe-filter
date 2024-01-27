@@ -18,6 +18,8 @@
 			# Section 1.3.2.3 - Quiver Progression
 		# Section 1.3.3 - Melee Levelling
 			# Section 1.3.3.1 - Links
+			# Section 1.3.3.2 - 2h Axe Progression
+			# Section 1.3.3.3 - Misc Melee Levelling
 		# Section 1.3.4 - Generic Levelling
 			# Section 1.3.4.1 - Levelling Currency
 			# Section 1.3.4.2 - Life Flasks
@@ -807,8 +809,306 @@ Show # Rare Quivers
 	AreaLevel <= 67
 	DisableDropSound
 
-#------Section 1.3.3 - Melee Levelling------# (TODO)
-# Section 1.3.3.1 - Links
+#------Section 1.3.3 - Melee Levelling------#
+# Section 1.3.3.1 - Links/Sockets (TODO: FINISH COLOURS)
+Show
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	Sockets >= RB
+	AreaLevel <= 12
+	DisableDropSound
+
+Show
+	Class "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup GGG
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/chest3g.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup GGR
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/chest2g1r.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup GGB
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/chest2g1b.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup GGG
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/glove3g.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup GGR
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/glove2g1r.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup GGB
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/glove2g1b.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Helmets"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup GGG
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/helm3g.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Helmets"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup GGR
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/helm2g1r.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Helmets"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	SocketGroup GGB
+	AreaLevel <= 28
+	CustomAlertSound "./filter_sounds/helm2g1b.mp3" 300
+	DisableDropSound
+
+Show
+	Class "Body Armours" "Helmets" "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	SocketGroup GGG
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	Class "Body Armours" "Helmets" "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	SocketGroup GGR
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	Class "Body Armours" "Helmets" "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	SocketGroup GGB
+	AreaLevel <= 67
+	DisableDropSound
+
+Show # 4 Sockets w/ Colours
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	Sockets >= GGG
+	AreaLevel <= 67
+	DisableDropSound
+
+Show # 4 Sockets w/ Colours
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	Sockets >= GGB
+	AreaLevel <= 67
+	DisableDropSound
+
+Show # 4 sockets w colours
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	Sockets >= GGR
+	AreaLevel <= 67
+	DisableDropSound
+
+# Section 1.3.3.2 - 2h Axe Progression
+Show
+	BaseType "Stone Axe"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 5
+	DisableDropSound
+	
+Show
+	BaseType "Jade Chopper"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 14
+	DisableDropSound
+	
+Show
+	BaseType "Woodsplitter"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 23
+	DisableDropSound
+	
+Show
+	BaseType "Poleaxe"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 28
+	DisableDropSound
+	
+Show
+	BaseType "Double Axe"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 33
+	DisableDropSound
+	
+Show
+	BaseType "Gilded Axe"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 35
+	DisableDropSound
+	
+Show
+	BaseType "Shadow Axe"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 41
+	DisableDropSound
+	
+Show
+	BaseType "Timber Axe"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 49
+	DisableDropSound
+	
+Show
+	BaseType "Headsman Axe"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 52
+	DisableDropSound
+	
+Show
+	BaseType "Labrys"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 52
+	DisableDropSound
+
+Show
+	BaseType "Noble Axe"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 56
+	DisableDropSound
+
+Show
+	BaseType "Sundering Axe"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	BaseType "Ezomyte Axe"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	BaseType "Despot Axe"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	Class "Two Hand Axes"
+	Rarity "Rare"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+# Section 1.3.3.3 - Misc Melee Levelling
+Show # Rustic Recipe Belts
+	BaseType "Rustic Sash"
+	Class "Belts"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 45
+	DisableDropSound
 
 #------Section 1.3.4 - Generic Levelling------#
 # Section 1.3.4.1 - Levelling Currency
@@ -1455,25 +1755,32 @@ Show
 	DisableDropSound
 
 # Section 1.3.4.6 - Generic Normal/Magic/Rare Items
-Show
+Show # Normal Items
 	Class "Helmets" "Body Armours" "Gloves" "Boots" "Ring" "Amulet" "Belt" "Wand" "Bow" "Sword" "Axe" "Staff" "Sceptre" "Shield" "Quiver" "Mace" "Claw" "Dagger"
 	Rarity "Normal"
 	SetFontSize 38
 	AreaLevel < 8
 	DisableDropSound
+
+Show # Magic Jewellery
+	Class "Ring" "Amulet" "Belt"
+	Rarity "Magic"
+	SetFontSize 38
+	AreaLevel <= 48
+	DisableDropSound
 	
-Show
-	Class "Helmets" "Body Armours" "Gloves" "Boots" "Ring" "Amulet" "Belt" "Wand" "Bow" "Sword" "Axe" "Staff" "Sceptre" "Shield" "Quiver" "Mace" "Claw" "Dagger"
+Show # Magic Items
+	Class "Helmets" "Body Armours" "Gloves" "Boots" "Wand" "Bow" "Sword" "Axe" "Staff" "Sceptre" "Shield" "Quiver" "Mace" "Claw" "Dagger"
 	Rarity "Magic"
 	SetFontSize 38
 	AreaLevel <= 22
 	DisableDropSound
 	
-Show
+Show # Rare Items
 	Class "Helmets" "Body Armours" "Gloves" "Boots" "Ring" "Amulet" "Belt" "Wand" "Bow" "Sword" "Axe" "Staff" "Sceptre" "Shield" "Quiver" "Mace" "Claw" "Dagger"
 	Rarity "Rare"
 	SetFontSize 38
-	AreaLevel <= 32
+	AreaLevel <= 40
 	DisableDropSound
 	
 # Section 1.3.4.7 - Essences
