@@ -2591,10 +2591,44 @@ Show
 	
 #------Section 5.19 - Synthesis------#
 # Section 5.19.1 - Fractured Items
+# Hide # Bad bases TODO: organize later
+#	BaseType ""
+#	FracturedItem "True"
+#	SetTextColor 201 8 192
+#	SetBackgroundColor 0 0 0
+#	SetBorderColor 201 8 192
+#	SetFontSize 45
+#	MinimapIcon 1 Pink Hexagon
+#	DisableDropSound
 
+Show 
+	FracturedItem "True"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
 
 # Section 5.19.2 - Synthesized Items
+# Hide # Bad bases TODO: organize later
+#	BaseType ""
+#	SynthesisedItem "True"
+#	SetTextColor 201 8 192
+#	SetBackgroundColor 0 0 0
+#	SetBorderColor 201 8 192
+#	SetFontSize 45
+#	MinimapIcon 1 Pink Hexagon
+#	DisableDropSound
 
+Show 
+	SynthesisedItem "True"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
 
 #############################
 # Section 6 - Sockets & Links
