@@ -2685,7 +2685,17 @@ Hide # Low iLvl Breach Rings
 	DisableDropSound
 
 # Section 5.5.3 - Breach Splinters
-Show
+Show # Breachstones
+	BaseType "'s Breachstone'"
+	Class "Currency"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	MinimapIcon 1 Pink Circle
+	DisableDropSound
+
+Show # Breach Splinters
 	BaseType "Splinter of"
 	Class "Currency"
 	SetFontSize 45
@@ -2696,6 +2706,34 @@ Show
 
 #------Section 5.6 - Delirium------#
 #------Section 5.7 - Delve------#
+# Section 5.7.1 - Fossils
+#Show # High-Tier Fossils (TODO)
+#	BaseType "Fossil"
+#	Class "Currency"
+#	SetFontSize 45
+#	SetTextColor 0 209 10
+#	SetBackgroundColor 0 0 0
+#	SetBorderColor 0 209 10
+#	DisableDropSound
+
+Show
+	BaseType "Fossil"
+	Class "Currency"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	DisableDropSound
+
+# Section 5.7.2 - Resonators
+Show
+	BaseType "Resonator"
+	Class "Currency"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	DisableDropSound
 
 #------Section 5.8 - Essence------#
 Show
