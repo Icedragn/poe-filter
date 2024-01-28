@@ -93,7 +93,7 @@
 		# Section 5.13.2 - Vials
 	# Section 5.14 - Legion
 		# Section 5.14.1 - Incubators
-		# Section 5.14.2 - Splinters/Emblems
+		# Section 5.14.2 - Legion Splinters/Emblems
 	# Section 5.15 - Talisman
 	# Section 5.16 - Ultimatum
 		# Section 5.16.1 - Catalysts
@@ -2687,7 +2687,7 @@ Hide # Low iLvl Breach Rings
 # Section 5.5.3 - Breach Splinters
 Show # Breachstones
 	BaseType "'s Breachstone'"
-	Class "Currency"
+	Class "Breachstone"
 	SetFontSize 45
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -2849,7 +2849,10 @@ Hide # T3 Ward Bases
 	SetBorderColor 0 209 10
 	DisableDropSound
 
-#------Section 5.10 - Harbinger------#
+#------Section 5.10 - Harbinger------# 
+# Section 5.10.1 - Item Pieces (TODO)
+# Section 5.10.2 - Harbinger Maps (TODO)
+
 #------Section 5.11 - Harvest------#
 # Section 5.11.1 - Lifeforce
 Show
@@ -2950,7 +2953,58 @@ Show # Bigger Stack of Pocket Sand
 	DisableDropSound
 
 #------Section 5.13 - Incursion------#
+# Section 5.13.1 - Incursion Mods (TODO)
+# Section 5.13.2 - Vials (TODO)
+
 #------Section 5.14 - Legion------#
+# Section 5.14.1 - Incubators
+Show # T1 Incubators
+	BaseType "Geomancer's Incubator" "Time-Lost Incubator" "Ornate Incubator" "Challenging Incubator" "Thaumaturge's Incubator" "Kalhuuran Incubator"
+	Class "Incubator"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Circle
+	DisableDropSound
+
+Show # T2 Incubators
+	BaseType "Skittering Incubator" "Infused Incubator" "Obscured Incubator" "Celestial Jeweller's Incubator" "Foreboding Incubator" "Blighted Incubator" "Fragmented Incubator" "Otherworldly Incubator" "Maddening Incubator"
+	Class "Incubator"
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
+Hide # T3 Incubators
+	BaseType "Abyssal Incubator" "Primal Incubator" "Mysterious Incubator" "Fossilised Incubator" "Enchanted Incubator" "Celestial Armoursmith's Incubator" "Cartographer's Incubator" "Singular Incubator" 
+	Class "Incubator"
+	SetTextColor 0 238 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 5.14.2 - Legion Splinters/Emblems
+Show # Emblems
+	BaseType "Emblem"
+	Class "Map Fragment"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	MinimapIcon 1 Pink Circle
+	DisableDropSound
+
+Show # Splinters
+	BaseType "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Vaal Splinter"
+	Class "Currency"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	DisableDropSound
 
 #------Section 5.15 - Talisman------#
 Show # Catch for user-made talismans (based on being annointed)
