@@ -2767,6 +2767,35 @@ Hide
 #------Section 5.9 - Expedition------#
 #------Section 5.10 - Harbinger------#
 #------Section 5.11 - Harvest------#
+# Section 5.11.1 - Lifeforce
+Show
+	BaseType "Sacred Crystallised Lifeforce"
+	Class "Currency"
+	SetTextColor 201 8 192
+	SetBackgroundColor 255 255 255
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	BaseType "Crystallised Lifeforce"
+	Class "Currency"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
+# Section 5.11.2 - Sacred Blossom
+Show
+	BaseType "Sacred Blossom"
+	Class "Map Fragments"
+	SetTextColor 201 8 192
+	SetBackgroundColor 255 255 255
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
 #------Section 5.12 - Heist------#
 # Section 5.12.1 - Blueprints
 Show
