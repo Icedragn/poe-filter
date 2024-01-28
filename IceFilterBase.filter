@@ -2803,6 +2803,52 @@ Hide
 	DisableDropSound
 
 #------Section 5.9 - Expedition------#
+# Section 5.9.1 - Logbooks
+Show
+	Class "Expedition Logbook"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	MinimapIcon 1 Pink Circle
+	DisableDropSound
+
+# Section 5.9.2 - Reroll Currency
+Show
+	BaseType "Astragali" "Burial Medalion" "Exotic Coinage" "Scrap Metal"
+	Class "Currency"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	MinimapIcon 1 Pink Circle
+	DisableDropSound
+
+# Section 5.9.3 - Ward Bases
+Show # T1 Ward Bases
+	BaseType "Runic Crown" "Runic Gauntlets" "Runic Sabatons"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	DisableDropSound
+
+Hide # T2 Ward Bases
+	BaseType "Runic Crest" "Runic Gages" "Runic Sollerets"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	DisableDropSound
+
+Hide # T3 Ward Bases
+	BaseType "Runic Helm" "Runic Gloves" "Runic Greaves"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	DisableDropSound
+
 #------Section 5.10 - Harbinger------#
 #------Section 5.11 - Harvest------#
 # Section 5.11.1 - Lifeforce
