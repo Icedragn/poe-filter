@@ -2705,6 +2705,44 @@ Show # Breach Splinters
 	DisableDropSound
 
 #------Section 5.6 - Delirium------#
+# Section 5.6.1 - Delirium Orbs
+#Show  # High Tier Delirium Orbs (TODO)
+#	BaseType "Delirium Orb"
+#	Class "Currency"
+#	SetFontSize 45
+#	SetTextColor 201 8 192
+#	SetBackgroundColor 0 0 0
+#	SetBorderColor 201 8 192
+#	DisableDropSound
+
+Show # Other Delirium Orbs
+	BaseType "Delirium Orb"
+	Class "Currency"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	DisableDropSound
+
+# Section 5.6.2 - Simulacrum Splinters
+Show 
+	BaseType "Simulacrum"
+	Class "Map Fragments"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	DisableDropSound
+
+Show 
+	BaseType "Simulacrum Splinter"
+	Class "Currency"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	DisableDropSound
+
 #------Section 5.7 - Delve------#
 # Section 5.7.1 - Fossils
 #Show # High-Tier Fossils (TODO)
