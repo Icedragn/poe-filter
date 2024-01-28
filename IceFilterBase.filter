@@ -816,7 +816,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
 	SetFontSize 40
-	Sockets >= RB
+	Sockets >= RG
 	AreaLevel <= 12
 	DisableDropSound
 
@@ -825,9 +825,9 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	SocketGroup GGG
+	SocketGroup RRR
 	AreaLevel <= 28
-	CustomAlertSound "./filter_sounds/chest3g.mp3" 300
+	CustomAlertSound "./filter_sounds/chest3r.mp3" 300
 	DisableDropSound
 
 Show
@@ -845,9 +845,9 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	SocketGroup GGB
+	SocketGroup RRG
 	AreaLevel <= 28
-	CustomAlertSound "./filter_sounds/chest2g1b.mp3" 300
+	CustomAlertSound "./filter_sounds/chest2r1g.mp3" 300
 	DisableDropSound
 
 Show
@@ -855,9 +855,9 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	SocketGroup GGG
+	SocketGroup RRR
 	AreaLevel <= 28
-	CustomAlertSound "./filter_sounds/glove3g.mp3" 300
+	CustomAlertSound "./filter_sounds/glove3r.mp3" 300
 	DisableDropSound
 
 Show
@@ -875,9 +875,9 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	SocketGroup GGB
+	SocketGroup RRG
 	AreaLevel <= 28
-	CustomAlertSound "./filter_sounds/glove2g1b.mp3" 300
+	CustomAlertSound "./filter_sounds/glove2r1g.mp3" 300
 	DisableDropSound
 
 Show
@@ -885,9 +885,9 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	SocketGroup GGG
+	SocketGroup RRR
 	AreaLevel <= 28
-	CustomAlertSound "./filter_sounds/helm3g.mp3" 300
+	CustomAlertSound "./filter_sounds/helm3r.mp3" 300
 	DisableDropSound
 
 Show
@@ -905,9 +905,9 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	SocketGroup GGB
+	SocketGroup RRG
 	AreaLevel <= 28
-	CustomAlertSound "./filter_sounds/helm2g1b.mp3" 300
+	CustomAlertSound "./filter_sounds/helm2r1g.mp3" 300
 	DisableDropSound
 
 Show
@@ -915,7 +915,16 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
 	SetFontSize 45
-	SocketGroup GGG
+	SocketGroup RRR
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	Class "Body Armours" "Helmets" "Gloves"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	SocketGroup RRG
 	AreaLevel <= 67
 	DisableDropSound
 
@@ -928,12 +937,13 @@ Show
 	AreaLevel <= 67
 	DisableDropSound
 
-Show
-	Class "Body Armours" "Helmets" "Gloves"
+Show # 4 Sockets w/ Colours
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
-	SetFontSize 45
-	SocketGroup GGB
+	SetFontSize 40
+	Sockets 4
+	SocketGroup > GGG
 	AreaLevel <= 67
 	DisableDropSound
 
@@ -942,16 +952,8 @@ Show # 4 Sockets w/ Colours
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
 	SetFontSize 40
-	Sockets >= GGG
-	AreaLevel <= 67
-	DisableDropSound
-
-Show # 4 Sockets w/ Colours
-	Class "Helmets" "Gloves" "Boots" "Body Armours"
-	SetBackgroundColor 0 0 0
-	SetBorderColor 0 238 255
-	SetFontSize 40
-	Sockets >= GGB
+	Sockets 4
+	SocketGroup > GGR
 	AreaLevel <= 67
 	DisableDropSound
 
@@ -960,7 +962,8 @@ Show # 4 sockets w colours
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
 	SetFontSize 40
-	Sockets >= GGR
+	Sockets 4
+	SocketGroup > RRG
 	AreaLevel <= 67
 	DisableDropSound
 
@@ -2648,9 +2651,9 @@ Show # Oil Extractors
 	SetBorderColor 201 8 192
 	DisableDropSound
 
-#------Section 5.5 - Essence------#
-#------Section 5.6 - Essence------#
-#------Section 5.7 - Essence------#
+#------Section 5.5 - Breach------#
+#------Section 5.6 - Delirium------#
+#------Section 5.7 - Delve------#
 
 #------Section 5.8 - Essence------#
 Show
@@ -2681,9 +2684,9 @@ Hide
 	AreaLevel > 67
 	DisableDropSound
 
-#------Section 5.9 - Essence------#
-#------Section 5.10 - Essence------#
-#------Section 5.11 - Essence------#
+#------Section 5.9 - Expedition------#
+#------Section 5.10 - Harbinger------#
+#------Section 5.11 - Harvest------#
 #------Section 5.12 - Heist------#
 # Section 5.12.1 - Blueprints
 Show
