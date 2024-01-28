@@ -2652,6 +2652,48 @@ Show # Oil Extractors
 	DisableDropSound
 
 #------Section 5.5 - Breach------#
+# Section 5.5.1 - Blessings
+Show
+	BaseType "Blessing of"
+	Class "Currency"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	MinimapIcon 1 Pink Circle
+	DisableDropSound
+
+# Section 5.5.2 - Breach Rings
+Show # i86+ Breach Rings
+	BaseType "Breach Ring"
+	Class "Rings"
+	ItemLevel >= 86
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	DisableDropSound
+
+Hide # Low iLvl Breach Rings
+	BaseType "Breach Ring"
+	Class "Rings"
+	ItemLevel < 86
+	SetFontSize 45
+	SetTextColor 0 238 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	DisableDropSound
+
+# Section 5.5.3 - Breach Splinters
+Show
+	BaseType "Splinter of"
+	Class "Currency"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	DisableDropSound
+
 #------Section 5.6 - Delirium------#
 #------Section 5.7 - Delve------#
 
@@ -2697,7 +2739,7 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-#Section 5.12.2 - Contracts
+# Section 5.12.2 - Contracts
 Show
 	Class "Contracts"
 	SetTextColor 201 8 192
@@ -2706,11 +2748,11 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-#Section 5.12.3 - Rogue's Gear (TODO)
+# Section 5.12.3 - Rogue's Gear (TODO)
 
-#Section 5.12.4 - Trinkets (TODO)
+# Section 5.12.4 - Trinkets (TODO)
 
-#Section 5.12.5 - Experimented Bases
+# Section 5.12.5 - Experimented Bases
 Show # T1 Experimented Bases
 	BaseType "Alternating Sceptre" "Oscillating Sceptre" "Battery Staff" "Pneumatic Dagger" "Micro-Distillery Belt" "Simplex Amulet" "Cogwork Ring" "Geodesic Ring"
 	SetTextColor 201 8 192
@@ -2756,8 +2798,8 @@ Show # Bigger Stack of Pocket Sand
 	SetFontSize 45
 	DisableDropSound
 
-#------Section 5.13 - Essence------#
-#------Section 5.14 - Essence------#
+#------Section 5.13 - Incursion------#
+#------Section 5.14 - Legion------#
 
 #------Section 5.15 - Talisman------#
 Show # Catch for user-made talismans (based on being annointed)
