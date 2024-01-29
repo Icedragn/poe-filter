@@ -2686,7 +2686,6 @@ Hide # Low iLvl Breach Rings
 
 # Section 5.5.3 - Breach Splinters
 Show # Breachstones
-	BaseType "'s Breachstone'"
 	Class "Breachstone"
 	SetFontSize 45
 	SetTextColor 201 8 192
@@ -2815,7 +2814,7 @@ Show
 
 # Section 5.9.2 - Reroll Currency
 Show
-	BaseType "Astragali" "Burial Medalion" "Exotic Coinage" "Scrap Metal"
+	BaseType "Astragali" "Burial Medallion" "Exotic Coinage" "Scrap Metal"
 	Class "Currency"
 	SetFontSize 45
 	SetTextColor 201 8 192
@@ -2959,7 +2958,7 @@ Show # Bigger Stack of Pocket Sand
 #------Section 5.14 - Legion------#
 # Section 5.14.1 - Incubators
 Show # T1 Incubators
-	BaseType "Geomancer's Incubator" "Time-Lost Incubator" "Ornate Incubator" "Challenging Incubator" "Thaumaturge's Incubator" "Kalhuuran Incubator"
+	BaseType "Geomancer's Incubator" "Time-Lost Incubator" "Ornate Incubator" "Challenging Incubator" "Thaumaturge's Incubator" "Kalguuran Incubator"
 	Class "Incubator"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -5259,7 +5258,7 @@ Hide
 ###################
 #------Section 13.1 - Exceptional Gems------#
 Show
-	BasteType "Enlighten" "Empower" "Enhance"
+	BaseType "Enlighten" "Empower" "Enhance"
 	Class "Support Gems"
 	SetTextColor 201 8 192
 	SetBackgroundColor 255 255 255
