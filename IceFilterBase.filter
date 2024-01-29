@@ -1115,6 +1115,27 @@ Show # Rustic Recipe Belts
 
 #------Section 1.3.4 - Generic Levelling------#
 # Section 1.3.4.1 - Levelling Currency
+Show # Early Chromatic Recipe
+	Class "Helmet" "Gloves" "Boots" "One Hand Swords" "One Hand Axes" "Thrusting One Hand Swords" "One Hand Maces" "Wands" "Sceptres" "Daggers" "Claws" "Rune Daggers" "Bows" "Staves" "Body Armours" "Two Hand"
+	SocketGroup RGB
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 40
+	MinimapIcon 1 Green Circle
+	AreaLevel <= 58
+	DisableDropSound
+
+Show # High Level Chromatic Recipe
+	Class "Helmet" "Gloves" "Boots" "One Hand Swords" "One Hand Axes" "Thrusting One Hand Swords" "One Hand Maces" "Wands" "Sceptres" "Daggers" "Claws" "Rune Daggers"
+	SocketGroup RGB
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 40
+	AreaLevel <= 78
+	DisableDropSound
+
 Show
 	BaseType "Vaal Orb"
 	Class "Currency"
