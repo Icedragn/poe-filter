@@ -2540,7 +2540,7 @@ Show
 # Section 5.2.1 - Lures
 Show
 	BaseType "Craicic Lure" "Farric Lure" "Fenumal Lure" "Saqawine Lure"
-	Class "Map Fragment"
+	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -2560,7 +2560,7 @@ Show
 # Section 5.3.1 - Scarabs
 Show # Winged Scarabs
 	BaseType "Winged"
-	Class "Map Fragment"
+	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 201 8 192
 	SetBackgroundColor 255 255 255
@@ -2570,7 +2570,7 @@ Show # Winged Scarabs
 
 Show # Gilded Scarabs
 	BaseType "Gilded"
-	Class "Map Fragment"
+	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -2579,7 +2579,7 @@ Show # Gilded Scarabs
 
 Show # Polished Scarabs
 	BaseType "Polished"
-	Class "Map Fragment"
+	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
@@ -2588,7 +2588,7 @@ Show # Polished Scarabs
 
 Show # Rusted Scarabs
 	BaseType "Rusted"
-	Class "Map Fragment"
+	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
@@ -3125,7 +3125,7 @@ Hide # T3 Incubators
 # Section 5.14.2 - Legion Splinters/Emblems
 Show # Emblems
 	BaseType "Emblem"
-	Class "Map Fragment"
+	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -3325,10 +3325,57 @@ Show
 
 #------Section 5.20 - Ritual------#
 # Section 5.20.1 - Ritual Bases
+Show # T1
+	BaseType "Penitent Mask" "Archdemon Crown" "Blizzard Crown" "Debilitation Gauntlets" "Sinistral Gloves" "Nexus Gloves" "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
 
+Show # T2
+	BaseType "Atonement Mask" "Demon Crown" "Winter Crown" "Grueling Gauntlets" "Southswing Gloves" "Aetherwind Gloves" "Darksteel Treads" "Windbreak Boots" "Nightwind Slippers"
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
+Show # T3
+	BaseType "Sorrow Mask" "Imp Crown" "Gale Crown" "Taxing Gauntlets" "Gauche Gloves" "Leyline Gloves" "Basemetal Treads" "Cloudwhisper Boots" "Duskwalk Slippers"
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
 
 # Section 5.20.2 - Vessels and Splinters
+Show # Blood-Filled Vessels
+	BaseType "Blood-Filled Vessel"
+	Class "Map Fragments"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
 
+Show # Ritual Vessels
+	BaseType "Ritual Vessel"
+	Class "Currency"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
+Show # Ritual Splinters
+	BaseType "Ritual Splinter"
+	Class "Currency"
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
 
 #############################
 # Section 6 - Sockets & Links
