@@ -5566,7 +5566,7 @@ Show
 # Section 13.4.2 - Mid Quality Gems
 Hide
 	Class "Support Gems"
-	Quality >= 10
+	Quality >= 8
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
