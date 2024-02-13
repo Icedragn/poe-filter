@@ -88,6 +88,7 @@
 		# Section 5.12.4 - Trinkets
 		# Section 5.12.5 - Experimented Bases
 		# Section 5.12.6 - Rogue's Markers
+		# Section 5.12.7 - Heist Targets
 	# Section 5.13 - Incursion
 		# Section 5.13.1 - Incursion Mods
 		# Section 5.13.2 - Vials
@@ -2997,9 +2998,31 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-# Section 5.12.3 - Rogue's Gear (TODO)
+# Section 5.12.3 - Rogue's Gear
+Show # Rogue's Gear
+	Class "Heist Gear"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
 
-# Section 5.12.4 - Trinkets (TODO)
+Show # Rogue's Tools
+	Class "Heist Tools"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
+# Section 5.12.4 - Trinkets
+Show
+	Class "Trinkets"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
 
 # Section 5.12.5 - Experimented Bases
 Show # T1 Experimented Bases
@@ -3051,6 +3074,15 @@ Show # Bigger Stack of Pocket Sand
 	BaseType "Rogue's Marker"
 	Class "Currency"
 	StackSize >= 200
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
+# Section 5.12.7 - Heist Targets
+Show
+	Class "Heist Targets"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
