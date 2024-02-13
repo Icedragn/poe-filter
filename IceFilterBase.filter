@@ -1,4 +1,4 @@
-# Icedragn's Endgame Filter Base - Updated 2024/01/28
+# Icedragn's Endgame Filter Base - Updated 2024/02/12
 # @icedragn on Discord for any issues/questions
 
 ##################################
@@ -218,6 +218,11 @@
 # RED 2 (life flasks): 188 23 5
 # YELLOW (rare - NOT IN USE): 212 230 18
 # BLUE (magic - NOT IN USE): 35 53 250
+
+# GENERIC RULE BUILDING UTILITIES
+# WEAPON CLASSES: "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Sceptres"
+# ARMOUR CLASSES: "Gloves" "Body Armours" "Boots" "Helmets" "Shields"
+# JEWELLERY CLASSES: "Amulets" "Rings" "Belts"
 #------------------------#
 
 #------------------------#
@@ -1801,14 +1806,14 @@ Show
 
 # Section 1.3.4.6 - Generic Normal/Magic/Rare Items
 Show # Normal Items
-	Class "Helmets" "Body Armours" "Gloves" "Boots" "Ring" "Amulet" "Belt" "Wand" "Bow" "Sword" "Axe" "Staff" "Sceptre" "Shield" "Quiver" "Mace" "Claw" "Dagger"
+	Class "Helmets" "Body Armours" "Gloves" "Boots" "Rings" "Amulets" "Belts" "Wands" "Bows" "Swords" "Axes" "Staves" "Sceptres" "Shields" "Quivers" "Maces" "Claws" "Daggers"
 	Rarity "Normal"
 	SetFontSize 38
 	AreaLevel < 8
 	DisableDropSound
 
 Show # Magic Jewellery
-	Class "Ring" "Amulet" "Belt"
+	Class "Rings" "Amulets" "Belts"
 	Rarity "Magic"
 	SetBorderColor 0 209 10
 	SetFontSize 40
@@ -1816,14 +1821,14 @@ Show # Magic Jewellery
 	DisableDropSound
 	
 Show # Magic Items
-	Class "Helmets" "Body Armours" "Gloves" "Boots" "Wand" "Bow" "Sword" "Axe" "Staff" "Sceptre" "Shield" "Quiver" "Mace" "Claw" "Dagger"
+	Class "Helmets" "Body Armours" "Gloves" "Boots" "Wands" "Bows" "Swords" "Axes" "Staves" "Sceptres" "Shields" "Quivers" "Maces" "Claws" "Daggers"
 	Rarity "Magic"
 	SetFontSize 38
 	AreaLevel <= 22
 	DisableDropSound
 	
 Show # Rare Jewellery
-	Class "Ring" "Amulet" "Belt"
+	Class "Rings" "Amulets" "Belts"
 	Rarity "Rare"
 	SetBorderColor 201 8 192
 	SetFontSize 40
@@ -1831,7 +1836,7 @@ Show # Rare Jewellery
 	DisableDropSound
 	
 Show # Rare Items
-	Class "Helmets" "Body Armours" "Gloves" "Boots" "Wand" "Bow" "Sword" "Axe" "Staff" "Sceptre" "Shield" "Quiver" "Mace" "Claw" "Dagger"
+	Class "Helmets" "Body Armours" "Gloves" "Boots" "Wands" "Bows" "Swords" "Axes" "Staves" "Sceptres" "Shields" "Quivers" "Maces" "Claws" "Daggers"
 	Rarity "Rare"
 	SetFontSize 38
 	AreaLevel <= 40
@@ -2433,7 +2438,7 @@ Show # Non-Kalandra's Touch Filter
 #------Section 4.1 - T0 Uniques------#
 Show
 	Rarity Unique
-	BaseType "Siege Axe" "Karui Maul" "Slaughter Knife" "Ring" "Fishing Rod"
+	BaseType "Siege Axe" "Karui Maul" "Slaughter Knife" "Rings" "Fishing Rod"
 	SetTextColor 209 87 6
 	SetBackgroundColor 255 255 255
 	SetBorderColor 209 87 6
@@ -2596,7 +2601,26 @@ Show # Master Specific Veiled Mods
 	SetBorderColor 201 8 192
 	DisableDropSound
 
-Show # Generic Veiled Mods
+Show # Generic Veiled Jewellery
+	Class "Amulets" "Rings" "Belts" "Shields"
+	HasExplicitMod "of the Veil" "Veiled"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	DisableDropSound
+
+Show # Generic Veiled Armour
+	Class "Gloves" "Body Armours" "Boots" "Helmets"
+	HasExplicitMod "of the Veil" "Veiled"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	DisableDropSound
+
+Show # Generic Veiled Weapons
+	Class "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Sceptres"
 	HasExplicitMod "of the Veil" "Veiled"
 	SetFontSize 45
 	SetTextColor 0 209 10
@@ -3118,7 +3142,7 @@ Show # Splinters
 #------Section 5.15 - Talisman------#
 Show # Catch for user-made talismans (based on being annointed)
 	BaseType "Talisman"
-	Class "Amulet"
+	Class "Amulets"
 	AnyEnchantment "True"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -3128,7 +3152,7 @@ Show # Catch for user-made talismans (based on being annointed)
 
 Hide #Hide all other non-unique talismans
 	BaseType "Talisman"
-	Class "Amulet"
+	Class "Amulets"
 	Rarity <= "Rare"
 	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
@@ -5581,7 +5605,7 @@ Show
 
 #------Section 16.1 - Hide Normal/Magic Items------#
 Hide
-	Class "Helmets" "Body Armours" "Gloves" "Boots" "Ring" "Amulet" "Belt" "Wand" "Bow" "Sword" "Axe" "Staff" "Sceptre" "Shield" "Quiver" "Mace" "Claw" "Dagger"
+	Class "Helmets" "Body Armours" "Gloves" "Boots" "Rings" "Amulets" "Belts" "Wands" "Bows" "Swords" "Axes" "Staves" "Sceptres" "Shields" "Quivers" "Maces" "Claws" "Daggers"
 	Rarity "Normal" "Magic"
 	DisableDropSound
 
