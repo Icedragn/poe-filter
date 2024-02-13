@@ -109,10 +109,13 @@
 	# Section 5.19 - Synthesis
 		# Section 5.19.1 - Fractured Items
 		# Section 5.19.2 - Synthesised Items
+	# Section 5.20 - Ritual
+		# Section 5.20.1 - Ritual Bases
+		# Section 5.20.2 - Vessels and Splinters
 # Section 6 - Sockets & Links
-	# Section 6.1 - 6-Sockets
-	# Section 6.2 - 6-Links
-	# Section 6.3 - 5-Links
+	# Section 6.1 - 6-Links
+	# Section 6.2 - 5-Links
+	# Section 6.3 - 6-Sockets
 # Section 7 - Rare Jewellery	
 	# Section 7.1 - Amulets
 	# Section 7.2 - Rings
@@ -446,7 +449,7 @@ Show # early 3 linked wands
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	LinkedSockets 3
+	LinkedSockets = 3
 	AreaLevel <= 25
 	DisableDropSound
 	
@@ -3320,27 +3323,23 @@ Show
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
+#------Section 5.20 - Ritual------#
+# Section 5.20.1 - Ritual Bases
+
+
+# Section 5.20.2 - Vessels and Splinters
+
+
 #############################
 # Section 6 - Sockets & Links
 #############################
-#------Section 6.1 - 6-Sockets------#
-Show
-	Sockets 6
-	SetTextColor 0 209 10
-	SetBackgroundColor 0 0 0
-	SetBorderColor 0 209 10
-	MinimapIcon 1 Green Circle
-	SetFontSize 45
-	PlayAlertSound 3 75
-	DisableDropSound
-
 #------Section 6.2 - 6-Links------#
 Show
 	LinkedSockets = 6
-	SetTextColor 0 209 10
+	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
-	SetBorderColor 0 209 10
-	MinimapIcon 1 Pink Circle
+	SetBorderColor 201 8 192
+	MinimapIcon 1 Pink Hexagon
 	SetFontSize 45
 	PlayAlertSound 3 75
 	DisableDropSound
@@ -3352,6 +3351,17 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	MinimapIcon 1 Green Hexagon
+	SetFontSize 45
+	PlayAlertSound 3 75
+	DisableDropSound
+
+#------Section 6.1 - 6-Sockets------#
+Show
+	Sockets = 6
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
 	SetFontSize 45
 	PlayAlertSound 3 75
 	DisableDropSound
