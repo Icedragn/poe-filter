@@ -3480,7 +3480,7 @@ Show # T1
 	DisableDropSound
 
 Show # T2
-	BaseType "Vaal Gauntlets" "Goliath Gauntlets"
+	BaseType "Vaal Gauntlets" "Goliath Gauntlets" "Spiked Gloves"
 	Class "Gloves"
 	Rarity "Rare"
 	SetTextColor 0 209 10
@@ -3675,7 +3675,7 @@ Show # T1
 	DisableDropSound
 
 Show # T2
-	BaseType "Stealth Gloves" "Shagreen Gloves"
+	BaseType "Stealth Gloves" "Shagreen Gloves" "Gripped Gloves"
 	Class "Gloves"
 	Rarity "Rare"
 	SetTextColor 0 209 10
@@ -3866,7 +3866,7 @@ Show # T1
 	DisableDropSound
 
 Show # T2
-	BaseType "Arcanist Gloves" "Conjurer Gloves"
+	BaseType "Arcanist Gloves" "Conjurer Gloves" "Fingerless Silk Gloves"
 	Class "Gloves"
 	Rarity "Rare"
 	SetTextColor 0 209 10
@@ -4084,7 +4084,7 @@ Hide # T4
 	
 # Section 8.4.4 - Str/Dex Boots
 Show # T1
-	BaseType "Dragonscale Boots"
+	BaseType "Dragonscale Boots" "Two-Toned Boots"
 	Class "Boots"
 	Rarity "Rare"
 	SetTextColor 201 8 192
@@ -4172,7 +4172,7 @@ Show # T1
 	DisableDropSound
 
 Show # T2
-	BaseType "Prophet Crown" "Magistrate Crown"
+	BaseType "Prophet Crown" "Magistrate Crown" "Bone Helmet"
 	Class "Helmets"
 	Rarity "Rare"
 	SetTextColor 0 209 10
@@ -4237,7 +4237,7 @@ Hide # T4
 	
 # Section 8.5.3 - Str/Int Gloves
 Show # T1
-	BaseType "Crusader Gloves"
+	BaseType "Crusader Gloves" "Apothecary's Gloves"
 	Class "Gloves"
 	Rarity "Rare"
 	SetTextColor 201 8 192
