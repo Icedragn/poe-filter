@@ -91,6 +91,7 @@
 	# Section 5.13 - Incursion
 		# Section 5.13.1 - Incursion Mods
 		# Section 5.13.2 - Vials
+		# Section 5.13.3 - Itemized Temples
 	# Section 5.14 - Legion
 		# Section 5.14.1 - Incubators
 		# Section 5.14.2 - Legion Splinters/Emblems
@@ -2981,6 +2982,16 @@ Show # T3 Experimented Bases
 	DisableDropSound
 
 # Section 5.12.6 - Rogue's Markers
+Hide # Single Grains of Pocket Sand
+	BaseType "Rogue's Marker"
+	Class "Currency"
+	StackSize < 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
 Show # Pocket Sand
 	BaseType "Rogue's Marker"
 	Class "Currency"
@@ -3002,8 +3013,57 @@ Show # Bigger Stack of Pocket Sand
 	DisableDropSound
 
 #------Section 5.13 - Incursion------#
-# Section 5.13.1 - Incursion Mods (TODO)
-# Section 5.13.2 - Vials (TODO)
+# Section 5.13.1 - Incursion Mods
+Show # Top Tier Incursion Mods
+	HasExplicitMod "Guatelitzi's" "Xopec's" "of Puhuarte"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Circle
+	DisableDropSound
+
+Show # Other Incursion Mods
+	HasExplicitMod "Citaqualotl's" "Matatl's" "Tacati's" "Topotante's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Tacati"
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	MinimapIcon 1 Pink Circle
+	DisableDropSound
+
+# Section 5.13.2 - Vials
+Show # Mega Rare Vials
+	BaseType "Vial of Sacrifice" "Vial of the Ghost"
+	Class "Currency"
+	SetTextColor 201 8 192
+	SetBackgroundColor 255 255 255
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	PlayAlertSound 6 75
+	MinimapIcon 1 Pink Circle
+	DisableDropSound
+
+Show # Other Vials
+	BaseType "Vial of"
+	Class "Currency"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Circle
+	DisableDropSound
+
+# Section 5.13.3 - Itemized Temples
+Show
+	BaseType "Chronicle of Atzoatl"
+	Class "Miscellaneous Map Item"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Circle
+	DisableDropSound
 
 #------Section 5.14 - Legion------#
 # Section 5.14.1 - Incubators
