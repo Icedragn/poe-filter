@@ -3367,45 +3367,45 @@ Show # T3
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-# Section 5.19.2 - Fractured Armour (TODO)
-#Show # T1
-#	BaseType 
-#	FracturedItem "True"
-#	SetTextColor 201 8 192
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 201 8 192
-#	SetFontSize 45
-#	MinimapIcon 1 Pink Hexagon
-#	DisableDropSound
-#
-#Show # T2
-#	BaseType 
-#	FracturedItem "True"
-#	SetTextColor 0 209 10
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 0 209 10
-#	SetFontSize 45
-#	MinimapIcon 1 Pink Hexagon
-#	DisableDropSound
-#
-#Show # T3
-#	BaseType 
-#	FracturedItem "True"
-#	SetTextColor 0 238 255
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 0 238 255
-#	SetFontSize 45
-#	MinimapIcon 1 Pink Hexagon
-#	DisableDropSound
-#
-#Hide # Bad Fractured Armour
-#	BaseType 
-#	FracturedItem "True"
-#	SetTextColor 0 238 255
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 0 238 255
-#	SetFontSize 45
-#	DisableDropSound
+# Section 5.19.2 - Fractured Armour
+Show # T1
+	BaseType "Colossal Tower Shield" "Ezomyte Tower Shield" "Pinnacle Tower Shield" "Crusader Buckler" "Imperial Buckler" "Lacquered Buckler" "Vaal Buckler" "Battle Buckler" "Golden Buckler" "Ironwood Buckler" "War Buckler" "Gilded Buckler" "Oak Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Vaal Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield" "Elegant Round Shield" "Spiny Round Shield" "Archon Kite Shield" "Champion Kite Shield" "Supreme Spiked Shield" "Mirrored Spiked Shield" "Ezomyte Spiked Shield" "Alder Spiked Shield" "Sovereign Spiked Shield" "Polished Spiked Shield" "Ornate Spiked Shield" "Royal Burgonet" "Eternal Buronet" "Lion Pelt" "Sinner Tricorne" "Silken Hood" "Ursine Pelt" "Hubris Circlet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Fluted Bascinet" "Bone Helmet" "Praetor Crown" "Deicide Mask" "Vaal Mask" "Harlequin Mask" "Regicide Mask" "Spiked Gloves" "Titan Gauntlets" "Slink Gloves" "Gripped Gloves" "Stealth Gloves" "Shagreen Gloves" "Fingerless Silk Gloves" "Sorcered Gloves" "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Wyrmscale Gauntlets" "Serpentscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Assassin's Mitts" "Titan Greaves" "Slink Boots" "Stealth Boots" "Sorcerer Shoes" "Two-Toned Boots" "Dragonscale Boots" "Hydrascale Boots" "Wyrmscale Boots" "Crusader Boots" "Assassin's Boots" "Murder Boots" "Fugitive Boots" "Glorious Plate" "Assassin's Garb" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigadine" "Full Dragonscale" "Saintly Chainmail" "Sadist Garb" "Carnal Armour" "Grasping Mail" "Sacrificial Garb"
+	FracturedItem "True"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
+	BaseType "Copper Tower Shield" "Ebony Tower Shield" "Crested Tower Shield" "Girded Tower Shield" "Bronze Tower Shield" "Painted Buckler" "Hammered Buckler" "Enameled Buckler" "Corrugated Buckler" "Lacewood Spirit Shield" "Thorium Spirit Shield" "Chiming Spirit Shield" "Ancient Spirit Shield" "Ivory Spirit Shield" "Walnut Spirit Shield" "Jingling Spirit Shield" "Teak Round Shield" "Baroque Round Shield" "Crimson Round Shield" "Spiked Round Shield" "Maple Round Shield" "Splendid Round Shield" "Branded Kite Shield" "Angelic Kite Shield" "Laminated Kite Shield" "Steel Kite Shield" "Mosaic Kite Shield" "Compound Spiked Shield" "Redwood Spiked Shield" "Burnished Spiked Shield" "Ezomyte Burgonet" "Samnite Helmet" "Noble Tricorne" "Hunter Hood" "Wolf Pelt" "Mind Cage" "Solaris Circlet" "Secutor Helm" "Fencer Helm" "Lacquered Helmet" "Prophet Crown" "Magistrate Crown" "Callous Mask" "Raven Mask" "Golden Mask" "vaal Gauntlets" "Goliath Gauntlets" "Sharskin Gloves" "Eelskin Gloves" "Nubuck Gloves" "Deerskin Gloves" "Arcanist Gloves" "Conjurer Gloves" "Steelscale Gauntlets" "Bronzescale Gauntlets" "Legion Gloves" "Soldier Gloves" "Carnal Mitts" "Ambush Mitts" "Trapper Mitts" "Vaal Greaves" "Goliath Greaves" "Shagreen Boots" "Sharskin Boots" "Eelskin Boots" "Nubuck Boots" "Deerskin Boots" "Arcanist Slippers" "Conjurer Boots" "Serpentscale Boots" "Steelscale Boots" "Bronzescale Boots" "Legion Boots" "Ambush Boots" "Carnal Boots" "Gladiator Plate" "Astral Plate" "Exquisite Leather" "Destiny Leather" "Sharskin Leather" "Widowsilk Regalia" "Occultist's Vestment" "Desert Brigadine" "Dragonscale Doublet" "Battle Lamellar" "Commander's Brigandine" "Full Wyrmscale" "Saint's Hauberk" "Blood Raiment" "Varnished Coat" "Sentinel Jacket" "Crypt Armour" "Lacquered Garb"
+	FracturedItem "True"
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T3
+	BaseType "Reinforced Tower Shield" "Painted Tower Shield" "Buckskin Tower Shield" "Shagreen Tower Shield" "Mahogany Tower Shield" "Brass Spirit Shield" "Tarnished Spirit Shield" "Bone Spirit Shield" "Yew Spirit Shield" "Twig Spirit Shield" "Scarlet Round Shield" "Studded Round Shield" "Fir Round Shield" "Rotted Round Shield" "Etched Kite Shield" "Alloyed Spiked Shield" "Driftwood Spiked Shield" "Spiked Bundle" "Reaver Helmet" "Siege Helmet" "Leather Hood" "Tricorne" "Leather Cap" "Necromancer Circlet" "Steel Circlet" "Battered Helm" "Sallet" "Visored Sallet" "Gilded Sallet" "Great Crown" "Zealot Helmet" "Festival Mask" "Iron Mask" "Anciet Gauntlets" "Antique Gauntlets" "Steel Gauntlets" "Goathide Gloves" "Rawhide Gloves" "Samite Gloves" "Satin Gloves" "Ironscale Gauntlets" "Fishscale Gauntlets" "Zealot Gloves" "Riveted Gloves" "Clasped Mitts" "Strapped Mitts" "Wrapped Mitts" "Ancient Greaves" "Antique Greaves" "Reinforced Greaves" "Goathide Boots" "Rawhide Boots" "Samite Slippers" "Satin Slippers" "Ironscale Boots" "Leatherscale Boots" "Soldier Boots" "Zealot Boots" "Clasped Boots" "Shackled Boots" "Trapper Boots" "Crusader Plate" "Golden Plate" "Majestic Plate" "Colosseum Plate" "Sun Plate" "Cutthroat's Garb" "Coronal Leather" "Glorious Leather" "Frontier Leather" "Eelskin Tunic" "Thief's Garb" "Sun Leather" "Full Leather" "Wild Leather" "Necromancer Silks" "Savant's Robe" "Hussar Brigandine" "Wyrmscale Doublet" "Field Lamellar" "Soldier's Brigandine" "Full Scale Armour" "Infantry Brigandine" "Elegant Ringmail" "Conquest Chainmail" "Loricated Ringmail" "Devout Chainmail" "Crimson Raiment" "Sleek Coat" "Quilted Jacket" "Bone Armour" "Waxed Garb" "Scarlet Raiment"
+	FracturedItem "True"
+	SetTextColor 0 238 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Hide # Bad Fractured Armour
+	BaseType "Splintered Tower Shield" "Corroded Tower Shield" "Rawhide Tower Shield" "Cedar Tower Shield" "Goathide Buckler" "Pine Buckler" "Layered Kite Shield" "Ceremonial Kite Shield" "Reinforced Kite Shield" "Linden Kite Shield" "Plank Kite Shield" "Iron Hat" "Cone Helmet" "Barbute Helmet" "Close Helmet" "Gladiator Helmet" "Vine Circlet" "Iron Circlet" "Torture Cage" "Tribal Circlet" "Bone Circlet" "Lunaris Circlet" "Aventail Helmet" "Crusader Helmet" "Great Helmet" "Soldier Helmet" "Rusted Coif" "Plague Mask" "Scare Mask" "Bronze Gauntlets" "Plated Gauntlets" "Iron Gauntlets" "Embroidered Gloves" "Silk Gloves" "Velvet Gloves" "Wool Gloves" "Mesh Gloves" "Ringmail Gloves" "Chain Gloves" "Plated Greaves" "Steel Greaves" "Iron Greaves" "Scholar Boots" "Silk Slippers" "Velvet Slippers" "Wool Shoes" "Riveted Boots" "Mesh Boots" "Ringmail Boots" "Chain Boots" "Wrapped Boots" "Strapped Boots" "Battle Plate" "Lordly Plate" "Arena Plate" "Full Plate" "War Plate" "Copper Plate" "Chestplate" "Plate Vest" "Buckskin Tunic" "Strapped Leather" "Shabby Jerkin" "Destroyer Regalia" "Spidersilk Robe" "Conjurer's Vestment" "Silken Wrap" "Sage's Robe" "Cabalist Regalia" "Silk Robe" "Mage's Vestment" "Silken Garb" "Scholar's Robe" "Silken Vest" "Simple Robe" "Scale Doublet" "Light Brigandine" "Scale Vest" "Chain Hauberk" "Ornate Ringmail" "Crusader Chainmail" "Latticated Ringmail" "Holy Chainmail" "Full Chainmail" "Full Ringmail" "Chainmail Doublet" "Ringmail Coat" "Chainmail Tunic" "Chainmail Vest" "Oiled Coat" "Padded Jacket" "Olied Vest" "Padded Vest"
+	FracturedItem "True"
+	SetTextColor 0 238 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	DisableDropSound
 
 # Section 5.19.3 - Fractured Weapons
 Show # T1
