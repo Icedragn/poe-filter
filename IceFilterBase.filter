@@ -3336,38 +3336,38 @@ Show
 	DisableDropSound
 	
 #------Section 5.19 - Synthesis------#
-## Section 5.19.1 - Fractured Jewellery (TODO)
-#Show # T1
-#	BaseType 
-#	FracturedItem "True"
-#	SetTextColor 201 8 192
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 201 8 192
-#	SetFontSize 45
-#	MinimapIcon 1 Pink Hexagon
-#	DisableDropSound
-#
-#Show # T2
-#	BaseType 
-#	FracturedItem "True"
-#	SetTextColor 0 209 10
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 0 209 10
-#	SetFontSize 45
-#	MinimapIcon 1 Pink Hexagon
-#	DisableDropSound
-#
-#Show # T3
-#	BaseType 
-#	FracturedItem "True"
-#	SetTextColor 0 238 255
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 0 238 255
-#	SetFontSize 45
-#	MinimapIcon 1 Pink Hexagon
-#	DisableDropSound
-#
-## Section 5.19.2 - Fractured Armour (TODO)
+# Section 5.19.1 - Fractured Jewellery
+Show # T1
+	BaseType "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Amethyst Ring" "Vermillion Ring" "Bone Ring" "Unset Ring" "Cyrstal Belt" "Stygian Vise" "Leather Belt" "Heavy Belt" "Marble Amulet" "Onyx Amulet" "Turquoise Amulet" "Citrine Amulet" "Agate Amulet" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Unset Amulet"
+	FracturedItem "True"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
+	BaseType "Opal Ring" "Steel Ring" "Iolite Ring" "Cerulean Ring" "Moonstone Ring" "Coral Ring" "Vanguard Belt" "Blue Pearl Amulet" "Seaglass Amulet" "Gold Amulet" "Coral Amulet" "Paua Amulet"
+	FracturedItem "True"
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T3
+	BaseType "Iron Ring" "Paua Ring" "Diamond Ring" "Gold Ring" "Chain Belt" "Rustic Sash" "Cloth Belt" "Studded Belt"
+	FracturedItem "True"
+	SetTextColor 0 238 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+# Section 5.19.2 - Fractured Armour (TODO)
 #Show # T1
 #	BaseType 
 #	FracturedItem "True"
