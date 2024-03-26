@@ -1973,7 +1973,7 @@ Show
 	DisableDropSound
 	
 Show
-	BaseType "Veiled Chaos Orb"
+	BaseType "Veiled Orb"
 	Class "Currency"
 	StackSize >= 1
 	SetTextColor 0 209 10
