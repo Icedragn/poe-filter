@@ -2564,18 +2564,8 @@ Show
 
 #------Section 5.3 - Betrayal------#
 # Section 5.3.1 - Scarabs
-Show # Winged Scarabs
-	BaseType "Winged"
-	Class "Map Fragments"
-	SetFontSize 45
-	SetTextColor 201 8 192
-	SetBackgroundColor 255 255 255
-	SetBorderColor 201 8 192
-	PlayAlertSound 6 75
-	DisableDropSound
-
-Show # Gilded Scarabs
-	BaseType "Gilded"
+Show # Special Scarabs
+	BaseType "Scarab of"
 	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 201 8 192
@@ -2583,22 +2573,13 @@ Show # Gilded Scarabs
 	SetBorderColor 201 8 192
 	DisableDropSound
 
-Show # Polished Scarabs
-	BaseType "Polished"
+Show # Base Scarabs
+	BaseType "Scarab"
 	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
-	DisableDropSound
-
-Show # Rusted Scarabs
-	BaseType "Rusted"
-	Class "Map Fragments"
-	SetFontSize 45
-	SetTextColor 0 238 255
-	SetBackgroundColor 0 0 0
-	SetBorderColor 0 238 255
 	DisableDropSound
 
 # Section 5.3.2 - Veiled Mods
