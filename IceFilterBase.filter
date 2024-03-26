@@ -116,6 +116,8 @@
 	# Section 5.20 - Ritual
 		# Section 5.20.1 - Ritual Bases
 		# Section 5.20.2 - Vessels and Splinters
+	# Section 5.21 - Necropolis
+		# Section 5.21.1 - Allflames
 # Section 6 - Sockets & Links
 	# Section 6.1 - 6-Links
 	# Section 6.2 - 5-Links
@@ -3029,7 +3031,7 @@ Show # T1 Experimented Bases
 	DisableDropSound
 
 Show # T2 Experimented Bases
-	BaseType "Stabilising Sceptre" "Reciprocation Staff" "Eventuality Rod" "Potentiality Rod" "Pressurised Dagger" "Accumulator Wand" "Mechalarm Belt" "Astrolabe Amulet"
+	BaseType "Stabilising Sceptre" "Reciprocation Staff" "Eventuality Rod" "Potentiality Rod" "Pressurised Dagger" "Accumulator Wand" "Mechalarm Belt" "Astrolabe Amulet" "Mechanical Belt"
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
@@ -3531,6 +3533,17 @@ Show # Ritual Splinters
 	SetBorderColor 0 209 10
 	SetFontSize 45
 	DisableDropSound
+
+#------Section 5.21 - Necropolis------#
+# Section 5.21.1 - Allflames
+Show # T1
+	Class "Embers of the Allflame"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
 
 #############################
 # Section 6 - Sockets & Links
