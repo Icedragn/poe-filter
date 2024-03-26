@@ -116,8 +116,10 @@
 	# Section 5.20 - Ritual
 		# Section 5.20.1 - Ritual Bases
 		# Section 5.20.2 - Vessels and Splinters
-	# Section 5.21 - Necropolis
-		# Section 5.21.1 - Allflames
+	# Section 5.21 - Trial of the Ancients
+		# Section 5.21.1 - Tattoos
+	# Section 5.22 - Necropolis
+		# Section 5.22.1 - Allflames
 # Section 6 - Sockets & Links
 	# Section 6.1 - 6-Links
 	# Section 6.2 - 5-Links
@@ -3543,8 +3545,28 @@ Show # Ritual Splinters
 	SetFontSize 45
 	DisableDropSound
 
-#------Section 5.21 - Necropolis------#
-# Section 5.21.1 - Allflames
+#------Section 5.21 - Trial of the Ancients------#
+# Section 5.21.1 - Tattoos
+Show # T1
+	BaseType "Journey Tattoo of the Body" "Journey Tattoo of the Mind" "Journey Tattoo of the Soul"
+	Class "Currency"
+	SetTextColor 201 8 192
+	SetBackgroundColor 255 255 255
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
+Show # T2
+	BaseType "Tattoo"
+	Class "Currency"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
+#------Section 5.22 - Necropolis------#
+# Section 5.22.1 - Allflames
 Show # Flaring
 	BaseType "Flaring"
 	Class "Embers of the Allflame"
