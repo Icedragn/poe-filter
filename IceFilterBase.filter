@@ -2305,6 +2305,15 @@ Show # Maven Invitations
 	SetFontSize 45
 	DisableDropSound
 
+Show # Uber Boss Fragments
+	BaseType "Cosmic Fragment" "Decaying Fragment" "Awakening Fragment" "Synthesising Fragment" "Reality Fragment" "Devouring Fragment" "Blazing Fragment"
+	Class "Misc Map Items"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+
 Show # Boss Fragments
 	BaseType "Mortal Grief" "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Fragment of the Hydra" "Fragment of the Chimera" "Fragment of the Minotaur" "Fragment of the Phoenix" "Fragment of Purification" "Fragment of Constriction" "Fragment of Eradication" "Fragment of Enslavement" "Fragment of Knowledge" "Fragment of Shape" "Fragment of Emptiness" "Fragment of Terror" "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest" "The Maven's Writ"
 	Class "Map Fragments"
@@ -2563,7 +2572,7 @@ Show
 	DisableDropSound
 
 #------Section 5.3 - Betrayal------#
-# Section 5.3.1 - Scarabs
+# Section 5.3.1 - Scarabs # TODO: Scarab tiering? (post patch)
 Show # Special Scarabs
 	BaseType "Scarab of"
 	Class "Map Fragments"
