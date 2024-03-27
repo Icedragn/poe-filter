@@ -118,6 +118,7 @@
 		# Section 5.20.2 - Vessels and Splinters
 	# Section 5.21 - Trial of the Ancients
 		# Section 5.21.1 - Tattoos
+		# Section 5.21.2 - Omens
 	# Section 5.22 - Necropolis
 		# Section 5.22.1 - Allflames
 # Section 6 - Sockets & Links
@@ -2358,6 +2359,8 @@ Show
 ##################
 # Section 3 - Maps
 ##################
+#TODO: TIER 17 MAPS
+
 #------Section 3.1 - Guardian/Conqueror Maps------#
 Show
 	Class "Maps"
@@ -2576,9 +2579,28 @@ Show
 	DisableDropSound
 
 #------Section 5.3 - Betrayal------#
-# Section 5.3.1 - Scarabs # TODO: Scarab tiering? (post patch)
-Show # Special Scarabs
-	BaseType "Scarab of"
+# Section 5.3.1 - Scarabs
+
+#Show # T0
+#	BaseType 
+#	Class "Map Fragments"
+#	SetFontSize 45
+#	SetTextColor 201 8 192
+#	SetBackgroundColor 0 0 0
+#	SetBorderColor 201 8 192
+#	DisableDropSound
+
+Show # Horned Scarabs
+	BaseType "Horned Scarab of Bloodlines" "Horned Scarab of Nemeses" "Horned Scarab of Preservation" "Horned Scarab of Awakening" "Horned Scarab of Tradition" "Horned Scarab of Glittering" "Horned Scarab of Pandemonium"
+	Class "Map Fragments"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 255 255 255
+	SetBorderColor 201 8 192
+	DisableDropSound
+
+Show # T1
+	BaseType "Breach Scarab of Snares" "Cartography Scarab of Duplication" "Reliquary Scarab of Vision" "Bestiary Scarab of the Shadowed Crow" "Influencing Scarab of Conversion" "Divination Scarab of Curation" "Divination Scarab of Completion" "Harbinger Scarab of Warhoards" "Expedition Scarab of Archaeology" "Legion Scarab of Eternal Conflict" "Essence Scarab of Calcification" "Domination Scarab of Terrors" "Harvest Scarab of Cornucopia" "Incursion Scarab of Timelines" "Betrayal Scarab of Perpetuation" "Beyond Scarab of the Invasion" "Ultimatum Scarab of Dueling" "Ultimatum Scarab of Catalysing" "Ultimatum Scarab of Inscription" "Blight Scarab of Oils" "Blight Scarab of Blooming" "Scarab of Stability"
 	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 201 8 192
@@ -2586,13 +2608,22 @@ Show # Special Scarabs
 	SetBorderColor 201 8 192
 	DisableDropSound
 
-Show # Base Scarabs
-	BaseType "Scarab"
+Show # T2
+	BaseType "Breach Scarab of the Dreamer" "Breach Scarab of Lordship" "Breach Scarab of Splintering" "Cartography Scarab of Ascension" "Cartography Scarab of Singularity" "Cartography Scarab of Corruption" "Reliquary Scarab of Overlords" "Bestiary Scarab of the Herd" "Bestiary Scarab of Duplicating" "Influencing Scarab of Hordes" "Sulphite Scarab of Fumes" "Divination Scarab" "Torment Scarab of Peculiarity" "Torment Scarab of Release" "Ambush Scarab of Containment" "Ambush Scarab of Discernment" "Harbinger Scarab of Discernment" "Harbinger Scarab of Regency" "Expedition Scarab of Runefinding" "Expedition Scarab of Verisium Powder" "Expedition Scarab of the Skald" "Legion Scarab of Officers" "Legion Scarab of Command" "Legion Scarab of The Sekhema" "Abyss Scarab of Multitudes" "Abyss Scarab of Edifice" "Abyss Scarab of Emptiness" "Anarchy Scarab of Gigantification" "Anarchy Scarab of Partnership" "Essence Scarab of Ascent" "Essence Scarab of Stability" "Domination Scarab of Abnormality" "Domination Scarab of Teachings" "Ritual Scarab of Selectiveness" "Ritual Scarab of Recognition" "Ritual Scarab of Abundance" "Harvest Scarab of Doubling" "Incursion Scarab of Invasion" "Incursion Scarab of Champions" "Betrayal Scarab of Intelligence" "Betrayal Scarab of Reinforcements" "Beyond Scarab of Corruption" "Beyond Scarab of Haemophilia" "Beyond Scarab of Resurgence" "Ultimatum Scarab of Bribing" "Delirium Scarab of Mania" "Delirium Scarab of Paranoia" "Delirium Scarab of Neuroses" "Delirium Scarab of Delusions" "Blight Scarab of Bounty" "Scarab of Monstrous Lineage" "Scarab of Adversaries" "Mysterious Scarab"
 	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	DisableDropSound
+
+Show # T3
+	BaseType "Breach Scarab" "Cartography Scarab" "Reliquary Scarab" "Bestiary Scarab" "Influencing Scarab of the Shaper" "Influencing Scarab of the Elder" "Sulphite Scarab" "Sulphite Scarab of Greed" "Torment Scarab" "Ambush Scarab" "Ambush Scarab of Hidden Compartments" "Ambush Scarab of Potency" "Harbinger Scarab" "Expedition Scarab" "Legion Scarab" "Abyss Scarab" "Anarchy Scarab" "Essence Scarab" "Domination Scarab" "Harvest Scarab" "Incursion Scarab" "Betrayal Scarab" "Beyond Scarab" "Ultimatum Scarab" "Delirium Scarab" "Blight Scarab" "Scarab of Hunted Traitors"
+	Class "Map Fragments"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
 	DisableDropSound
 
 Show # Veiled Scarabs
@@ -3563,6 +3594,32 @@ Show # T2
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
+	DisableDropSound
+
+#------Section 5.21.2 - Omens------#
+Show # T1 Omens
+	Class "Omen of Fortune" "Omen of Connections"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 255 255 255
+	SetBorderColor 201 8 192
+	PlayAlertSound 6 75
+	DisableDropSound
+
+Show # T2 Omens
+	Class "Omen of Blanching" "Omen of the Jeweller"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	DisableDropSound
+
+Show # T3 Omens
+	Class "Omen of Amelioration" "Omen of Return" "Omen of Death-dancing" "Omen of Refreshment" "Omen of the Soul Devourer" "Omen of Adrenaline" "Omen of Death's Door" "Omen of Brilliance"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
 	DisableDropSound
 
 #------Section 5.22 - Necropolis------#
@@ -5827,33 +5884,6 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
 	DisableDropSound
-
-#------Section 15.2 - Omens------#
-#Show # T1 Omens
-#	Class "Omen of Fortune" "Omen of Connections"
-#	SetFontSize 45
-#	SetTextColor 201 8 192
-#	SetBackgroundColor 255 255 255
-#	SetBorderColor 201 8 192
-#	PlayAlertSound 6 75
-#	DisableDropSound
-#
-#
-#Show # T2 Omens
-#	Class "Omen of Blanching" "Omen of the Jeweller"
-#	SetFontSize 45
-#	SetTextColor 201 8 192
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 201 8 192
-#	DisableDropSound
-#
-#Show # T3 Omens
-#	Class "Omen of Amelioration" "Omen of Return" "Omen of Death-dancing" "Omen of Refreshment" "Omen of the Soul Devourer" "Omen of Adrenaline" "Omen of Death's Door" "Omen of Brilliance"
-#	SetFontSize 45
-#	SetTextColor 0 209 10
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 0 209 10
-#	DisableDropSound
 
 #------Section 15.1 - Labyrinth Keys------#
 Show
