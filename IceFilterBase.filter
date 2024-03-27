@@ -2586,8 +2586,9 @@ Show
 #	Class "Map Fragments"
 #	SetFontSize 45
 #	SetTextColor 201 8 192
-#	SetBackgroundColor 0 0 0
+#	SetBackgroundColor 255 255 255
 #	SetBorderColor 201 8 192
+#	PlayAlertSound 6 75
 #	DisableDropSound
 
 Show # Horned Scarabs
@@ -2597,6 +2598,7 @@ Show # Horned Scarabs
 	SetTextColor 201 8 192
 	SetBackgroundColor 255 255 255
 	SetBorderColor 201 8 192
+	PlayAlertSound 6 75
 	DisableDropSound
 
 Show # T1
@@ -2621,9 +2623,9 @@ Show # T3
 	BaseType "Breach Scarab" "Cartography Scarab" "Reliquary Scarab" "Bestiary Scarab" "Influencing Scarab of the Shaper" "Influencing Scarab of the Elder" "Sulphite Scarab" "Sulphite Scarab of Greed" "Torment Scarab" "Ambush Scarab" "Ambush Scarab of Hidden Compartments" "Ambush Scarab of Potency" "Harbinger Scarab" "Expedition Scarab" "Legion Scarab" "Abyss Scarab" "Anarchy Scarab" "Essence Scarab" "Domination Scarab" "Harvest Scarab" "Incursion Scarab" "Betrayal Scarab" "Beyond Scarab" "Ultimatum Scarab" "Delirium Scarab" "Blight Scarab" "Scarab of Hunted Traitors"
 	Class "Map Fragments"
 	SetFontSize 45
-	SetTextColor 201 8 192
+	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
-	SetBorderColor 201 8 192
+	SetBorderColor 0 238 255
 	DisableDropSound
 
 Show # Veiled Scarabs
