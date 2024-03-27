@@ -34,7 +34,7 @@
 	# Section 2.2 - Stacked Currency
 	# Section 2.3 - Map Fragments
 # Section 3 - Maps
-	# Section 3.1 - Guardian/Conqueror Maps
+	# Section 3.1 - Guardian/Conqueror Maps & T17s
 	# Section 3.2 - Synthesis Maps
 	# Section 3.3 - Unique Maps
 	# Section 3.4 - T14+ Maps
@@ -2359,9 +2359,18 @@ Show
 ##################
 # Section 3 - Maps
 ##################
-#TODO: TIER 17 MAPS
+#------Section 3.1 - Guardian/Conqueror Maps & T17s------#
+Show
+	Class "Maps"
+	MapTier = 17
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	PlayAlertSound 4 75
+	MinimapIcon 1 Purple Square
+	DisableDropSound
 
-#------Section 3.1 - Guardian/Conqueror Maps------#
 Show
 	Class "Maps"
 	MapTier >= 14
