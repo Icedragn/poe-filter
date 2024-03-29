@@ -1,4 +1,4 @@
-# Icedragn's Filter Base - Updated 2024/02/15
+# Icedragn's Filter Base - Updated 2024/03/28
 # @icedragn on Discord for any issues/questions
 
 ##################################
@@ -3609,7 +3609,7 @@ Show # T2
 
 #------Section 5.21.2 - Omens------#
 Show # T1 Omens
-	Class "Omen of Fortune" "Omen of Connections"
+	BaseType "Omen of Fortune" "Omen of Connections"
 	SetFontSize 45
 	SetTextColor 201 8 192
 	SetBackgroundColor 255 255 255
@@ -3618,7 +3618,7 @@ Show # T1 Omens
 	DisableDropSound
 
 Show # T2 Omens
-	Class "Omen of Blanching" "Omen of the Jeweller"
+	BaseType "Omen of Blanching" "Omen of the Jeweller"
 	SetFontSize 45
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -3626,7 +3626,7 @@ Show # T2 Omens
 	DisableDropSound
 
 Show # T3 Omens
-	Class "Omen of Amelioration" "Omen of Return" "Omen of Death-dancing" "Omen of Refreshment" "Omen of the Soul Devourer" "Omen of Adrenaline" "Omen of Death's Door" "Omen of Brilliance"
+	BaseType "Omen of Amelioration" "Omen of Return" "Omen of Death-dancing" "Omen of Refreshment" "Omen of the Soul Devourer" "Omen of Adrenaline" "Omen of Death's Door" "Omen of Brilliance"
 	SetFontSize 45
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
