@@ -2460,7 +2460,7 @@ Show
 #####################
 Show # Non-Kalandra's Touch Filter
 	Rarity Unique
-	BaseType "Breach Ring" "Coral Ring" "Iron Ring" "Paua Ring" "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Diamond Ring" "Gold Ring" "Moonstone Ring" "Two-Stone Ring" "Cogwork Ring" "Geodesic Ring" "Bone Ring" "Amethyst Ring" "Prismatic Ring" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
+	BaseType "Breach Ring" "Coral Ring" "Iron Ring" "Paua Ring" "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Diamond Ring" "Gold Ring" "Moonstone Ring" "Two-Stone Ring" "Cogwork Ring" "Geodesic Ring" "Bone Ring" "Amethyst Ring" "Prismatic Ring" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Ringmail"
 	SetTextColor 209 87 6
 	SetBackgroundColor 0 0 0
 	SetBorderColor 209 87 6
@@ -4961,7 +4961,6 @@ Hide # T4
 # Section 9 - Rare Weapons
 ##########################
 #------Section 9.1 - Bows------#
-
 Show # T1
 	BaseType "Spine Bow" "Thicket Bow"
 	Class "Bows"
