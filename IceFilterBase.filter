@@ -1914,7 +1914,7 @@ Show
 	DisableDropSound
 	
 Show
-	BaseType "Grand Eldritch Ember" "Grand Eldritch Ichor" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Orb of Conflict"
+	BaseType "Grand Eldritch Ember" "Grand Eldritch Ichor" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Orb of Conflict" "Ancient Orb" "Harbinger's Orb"
 	StackSize >= 1
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
@@ -2232,6 +2232,17 @@ Show
 	
 Show
 	BaseType "Armourer's Scrap"
+	Class "Currency"
+	StackSize >= 1
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	MinimapIcon 1 Green Circle
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	BaseType "Engineer's Orb"
 	Class "Currency"
 	StackSize >= 1
 	SetTextColor 0 209 10
@@ -2902,6 +2913,15 @@ Show
 	DisableDropSound
 
 #------Section 5.8 - Essence------#
+Show
+	BaseType "Remnant of Corruption"
+	Class "Currency"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	DisableDropSound
+
 Show
 	BaseType "Deafening Essence of" "Shrieking Essence of"
 	Class "Currency"
