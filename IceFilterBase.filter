@@ -1,4 +1,4 @@
-# Icedragn's Filter Base - Updated 2024/03/28
+# Icedragn's Filter Base - Updated 2024/04/02
 # @icedragn on Discord for any issues/questions
 
 ##################################
@@ -3655,8 +3655,9 @@ Show # T3 Omens
 
 #------Section 5.22 - Necropolis------#
 # Section 5.22.1 - Allflames
+# Section 5.22.1 - Allflames
 Show # Flaring
-	BaseType "Flaring"
+	BaseType "Flaring Allflame Ember of Scientists" "Flaring Allflame Ember of Wildwood Cultists" "Flaring Allflame Ember of Kalguurans" "Flaring Allflame Ember of Abyss" "Flaring Allflame Ember of The First Ones"
 	Class "Embers of the Allflame"
 	SetTextColor 201 8 192
 	SetBackgroundColor 255 255 255
@@ -3664,11 +3665,30 @@ Show # Flaring
 	SetFontSize 45
 	DisableDropSound
 
-Show
+Show # T1
+	BaseType "Allflame Ember of Frogs" "Allflame Ember of Rats" "Allflame Ember of Abyss" "Allflame Ember of Meatsacks" "Allflame Ember of Untainted Beasts" "Allflame Ember of Untainted Apes" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Spitters" "Allflame Ember of Untainted Maws" "Allflame Ember of Untainted Chimerals" "Allflame Ember of Untainted Devourers"
 	Class "Embers of the Allflame"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
+	
+Show # T2
+	BaseType "Allflame Ember of Uul-Netol" "Allflame Ember of Chayula" "Allflame Ember of Valako" "Allflame Ember of Tukohama" "Allflame Ember of Tawhoa" "Allflame Ember of Tasalio" "Allflame Ember of Rongokurai" "Allflame Ember of Ramako" "Allflame Ember of Ngamahu" "Allflame Ember of Kitava" "Allflame Ember of Hinekora" "Allflame Ember of Arohongui" "Allflame Ember of Wildwood Cultists" "Allflame Ember of Wildwood Treants" "Allflame Ember of Wildwood Beasts" "Allflame Ember of The Maraketh Legion" "Allflame Ember of The Templar Legion" "Allflame Ember of The Vaal Legion" "Allflame Ember of The Shaper" "Allflame Ember of The Elder" "Allflame Ember of The Warlord" "Allflame Ember of The Redeemer" "Allflame Ember of The Crusader" "Allflame Ember of The Hunter"
+	Class "Embers of the Allflame"
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+	
+Hide # T3
+	BaseType "Allflame Ember of Xoph" "Allflame Ember of Tul" "Allflame Ember of Esh" "Allflame Ember of Sulphite" "Allflame Ember of Beidat" "Allflame Ember of Ghorr" "Allflame Ember of K'tash" "Allflame Ember of Brawling Gemlings" "Allflame Ember of Berserking Gemlings" "Allflame Ember of Frostmage Gemlings" "Allflame Ember of Artillery Gemlings" "Allflame Ember of Corpsemage Gemlings" "Allflame Ember of The Broken Circle" "Allflame Ember of The Order of the Chalice" "Allflame Ember of The Black Scythe" "Allflame Ember of The Knights of the Sun" "Allflame Ember of The Karui Legion" "Allflame Ember of The Eternal Legion"
+	Class "Embers of the Allflame"
+	SetTextColor 0 238 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
 	SetFontSize 45
 	DisableDropSound
 
