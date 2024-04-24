@@ -1,4 +1,4 @@
-# Icedragn's Filter Base - Updated 2024/04/02
+# Icedragn's Filter Base - Updated 2024/04/23
 # @icedragn on Discord for any issues/questions
 
 ##################################
@@ -70,6 +70,7 @@
 	# Section 5.7 - Delve
 		# Section 5.7.1 - Fossils
 		# Section 5.7.2 - Resonators
+		# Section 5.7.3 - Delve Specific Mods
 	# Section 5.8 - Essence
 	# Section 5.9 - Expedition
 		# Section 5.9.1 - Logbooks
@@ -93,6 +94,7 @@
 		# Section 5.13.1 - Incursion Mods
 		# Section 5.13.2 - Vials
 		# Section 5.13.3 - Itemized Temples
+		# Section 5.14.3 - Stone of Passage
 	# Section 5.14 - Legion
 		# Section 5.14.1 - Incubators
 		# Section 5.14.2 - Legion Splinters/Emblems
@@ -268,15 +270,15 @@
 #------Section 1.1 - Custom Highlights------#
 	
 #------Section 1.2 - Priority Bases------#
-Show
-	BaseType "Vermillion Ring" "Amethyst Ring"
-	ItemLevel >= 68
-	Rarity <= "Rare"
-	SetTextColor 255 255 255
-	SetBackgroundColor 0 0 0
-	SetBorderColor 255 255 255
-	SetFontSize 40
-	DisableDropSound
+#Show
+#	BaseType "Vermillion Ring" "Amethyst Ring"
+#	ItemLevel >= 68
+#	Rarity <= "Rare"
+#	SetTextColor 255 255 255
+#	SetBackgroundColor 0 0 0
+#	SetBorderColor 255 255 255
+#	SetFontSize 40
+#	DisableDropSound
 
 #------Section 1.3 - Levelling------#
 #------Section 1.3.1 - Caster Levelling------#
@@ -1881,7 +1883,7 @@ Show
 ######################
 #------Section 2.1 - Single Currency------#
 Show
-	BaseType "Mirror of Kalandra" "Divine Orb" "Mirror Shard" "Fracturing Orb"
+	BaseType "Mirror of Kalandra" "Divine Orb" "Mirror Shard" "Fracturing Orb" "Veiled Orb"
 	Class "Currency"
 	SetTextColor 201 8 192
 	SetBackgroundColor 255 255 255
@@ -1899,7 +1901,7 @@ Show
 	SetBorderColor 201 8 192
 	SetFontSize 45
 	MinimapIcon 1 Pink Circle
-	PlayAlertSound 6 75
+	PlayAlertSound 1 75
 	DisableDropSound
 	
 Show
@@ -1968,17 +1970,6 @@ Show
 	
 Show
 	BaseType "Vaal Orb"
-	Class "Currency"
-	StackSize >= 1
-	SetTextColor 0 209 10
-	SetBackgroundColor 0 0 0
-	SetBorderColor 0 209 10
-	MinimapIcon 1 Green Circle
-	SetFontSize 45
-	DisableDropSound
-	
-Show
-	BaseType "Veiled Orb"
 	Class "Currency"
 	StackSize >= 1
 	SetTextColor 0 209 10
@@ -2253,7 +2244,7 @@ Show
 	DisableDropSound
 	
 Show
-	BaseType "Regal Shard" "Chaos Shard" "Harbinger's Shard" "Alchemy Shard" "Ancient Shard" "Annulment Shard" "Alteration Shard" "Binding Shard"
+	BaseType "Regal Shard" "Chaos Shard" "Harbinger's Shard" "Alchemy Shard" "Ancient Shard" "Annulment Shard" "Alteration Shard" "Binding Shard" "Horizon Shard"
 	Class "Currency"
 	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
@@ -2294,7 +2285,6 @@ Hide
 Show
 	BaseType "Portal Scroll"
 	Class "Currency"
-	StackSize >= 3
 	SetTextColor 30 200 200
 	SetBackgroundColor 0 0 0
 	SetBorderColor 30 200 200
@@ -2304,7 +2294,6 @@ Show
 Show
 	BaseType "Scroll of Wisdom"
 	Class "Currency"
-	StackSize >= 3
 	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
@@ -2912,6 +2901,16 @@ Show
 	SetBorderColor 0 209 10
 	DisableDropSound
 
+# Section 5.7.3 - Delve Specific Mods
+Show
+	HasExplicitMod "of the Underground"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	DisableDropSound
+
+
 #------Section 5.8 - Essence------#
 Show
 	BaseType "Remnant of Corruption"
@@ -3120,13 +3119,13 @@ Show # T3 Experimented Bases
 	DisableDropSound
 
 # Section 5.12.6 - Rogue's Markers
-Hide # Single Grains of Pocket Sand
+Show # Bigger Stack of Pocket Sand
 	BaseType "Rogue's Marker"
 	Class "Currency"
-	StackSize < 45
-	SetTextColor 0 209 10
+	StackSize >= 200
+	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
-	SetBorderColor 0 209 10
+	SetBorderColor 201 8 192
 	SetFontSize 45
 	DisableDropSound
 
@@ -3140,13 +3139,13 @@ Show # Pocket Sand
 	SetFontSize 45
 	DisableDropSound
 
-Show # Bigger Stack of Pocket Sand
+Hide # Single Grains of Pocket Sand
 	BaseType "Rogue's Marker"
 	Class "Currency"
-	StackSize >= 200
-	SetTextColor 201 8 192
+	StackSize < 45
+	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
-	SetBorderColor 201 8 192
+	SetBorderColor 0 209 10
 	SetFontSize 45
 	DisableDropSound
 
@@ -3211,6 +3210,17 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Pink Circle
 	DisableDropSound
+	
+# Section 5.13.4 - Stone of Passage
+Show 
+	BaseType "Stone of Passage"
+	Class "Incursion Item"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Circle
+	DisableDropSound
 
 #------Section 5.14 - Legion------#
 # Section 5.14.1 - Incubators
@@ -3234,7 +3244,7 @@ Show # T2 Incubators
 	DisableDropSound
 
 Hide # T3 Incubators
-	BaseType "Abyssal Incubator" "Primal Incubator" "Mysterious Incubator" "Fossilised Incubator" "Enchanted Incubator" "Celestial Armoursmith's Incubator" "Cartographer's Incubator" "Singular Incubator" 
+	BaseType "Abyssal Incubator" "Primal Incubator" "Mysterious Incubator" "Fossilised Incubator" "Enchanted Incubator" "Celestial Armoursmith's Incubator" "Cartographer's Incubator" "Singular Incubator" "Diviner's Incubator"
 	Class "Incubator"
 	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
@@ -3273,7 +3283,7 @@ Show # Splinters
 	DisableDropSound
 
 #------Section 5.15 - Talisman------#
-Show # Catch for user-made talismans (based on being annointed)
+Hide # Catch for user-made talismans (based on being annointed) TODO: consider this later?
 	BaseType "Talisman"
 	Class "Amulets"
 	AnyEnchantment "True"
@@ -3655,7 +3665,6 @@ Show # T3 Omens
 
 #------Section 5.22 - Necropolis------#
 # Section 5.22.1 - Allflames
-# Section 5.22.1 - Allflames
 Show # Flaring
 	BaseType "Flaring Allflame Ember of Scientists" "Flaring Allflame Ember of Wildwood Cultists" "Flaring Allflame Ember of Kalguurans" "Flaring Allflame Ember of Abyss" "Flaring Allflame Ember of The First Ones"
 	Class "Embers of the Allflame"
@@ -3666,7 +3675,7 @@ Show # Flaring
 	DisableDropSound
 
 Show # T1
-	BaseType "Allflame Ember of Frogs" "Allflame Ember of Rats" "Allflame Ember of Abyss" "Allflame Ember of Meatsacks" "Allflame Ember of Untainted Beasts" "Allflame Ember of Untainted Apes" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Spitters" "Allflame Ember of Untainted Maws" "Allflame Ember of Untainted Chimerals" "Allflame Ember of Untainted Devourers"
+	BaseType "Allflame Ember of Frogs" "Allflame Ember of Rats" "Allflame Ember of Abyss" "Allflame Ember of Meatsacks" "Allflame Ember of Untainted Beasts" "Allflame Ember of Untainted Apes" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Spitters" "Allflame Ember of Untainted Maws" "Allflame Ember of Untainted Chimerals" "Allflame Ember of Untainted Devourers" "Allflame Ember of Syndicate Researchers" "Allflame Ember of Anarchy"
 	Class "Embers of the Allflame"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -3675,7 +3684,7 @@ Show # T1
 	DisableDropSound
 	
 Show # T2
-	BaseType "Allflame Ember of Uul-Netol" "Allflame Ember of Chayula" "Allflame Ember of Valako" "Allflame Ember of Tukohama" "Allflame Ember of Tawhoa" "Allflame Ember of Tasalio" "Allflame Ember of Rongokurai" "Allflame Ember of Ramako" "Allflame Ember of Ngamahu" "Allflame Ember of Kitava" "Allflame Ember of Hinekora" "Allflame Ember of Arohongui" "Allflame Ember of Wildwood Cultists" "Allflame Ember of Wildwood Treants" "Allflame Ember of Wildwood Beasts" "Allflame Ember of The Maraketh Legion" "Allflame Ember of The Templar Legion" "Allflame Ember of The Vaal Legion" "Allflame Ember of The Shaper" "Allflame Ember of The Elder" "Allflame Ember of The Warlord" "Allflame Ember of The Redeemer" "Allflame Ember of The Crusader" "Allflame Ember of The Hunter"
+	BaseType "Allflame Ember of Uul-Netol" "Allflame Ember of Chayula" "Allflame Ember of Valako" "Allflame Ember of Tukohama" "Allflame Ember of Tawhoa" "Allflame Ember of Tasalio" "Allflame Ember of Rongokurai" "Allflame Ember of Ramako" "Allflame Ember of Ngamahu" "Allflame Ember of Kitava" "Allflame Ember of Hinekora" "Allflame Ember of Arohongui" "Allflame Ember of Wildwood Cultists" "Allflame Ember of Wildwood Treants" "Allflame Ember of Wildwood Beasts" "Allflame Ember of The Maraketh Legion" "Allflame Ember of The Templar Legion" "Allflame Ember of The Vaal Legion" "Allflame Ember of The Shaper" "Allflame Ember of The Elder" "Allflame Ember of The Warlord" "Allflame Ember of The Redeemer" "Allflame Ember of The Crusader" "Allflame Ember of The Hunter" "Allflame Ember of Trial Cores" "Allflame Ember of Manifested Wealth"
 	Class "Embers of the Allflame"
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
@@ -3689,6 +3698,15 @@ Hide # T3
 	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 5.22.2 - Corpses
+Show # Coffins
+	BaseType "Filled Coffin"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
 	SetFontSize 45
 	DisableDropSound
 
@@ -5275,7 +5293,7 @@ Show # T2
 	DisableDropSound
 
 Hide # T3
-	BaseType "Karui Sceptre" "Tyrant's Sekhem" "Blood Sceptre" "Royal Sceptre" "Sambar Sceptre"
+	BaseType "Karui Sceptre" "Tyrant's Sekhem" "Blood Sceptre" "Royal Sceptre" "Sambar Sceptre" "Stag Sceptre"
 	Class "Sceptres"
 	Rarity "Rare"
 	SetTextColor 0 238 255
@@ -5285,7 +5303,7 @@ Hide # T3
 	DisableDropSound
 	
 Hide # T4
-	BaseType "Shadow Sceptre" "Lead Sceptre" "Quartz Sceptre" "Grinning Fetish" "Sekhem" "Ochre Sceptre" "Ritual Sceptre" "Iron Sceptre" "Darkwood Sceptre" "Bronze Sceptre" "Driftwood Sceptre"
+	BaseType "Shadow Sceptre" "Lead Sceptre" "Quartz Sceptre" "Grinning Fetish" "Sekhem" "Ochre Sceptre" "Ritual Sceptre" "Iron Sceptre" "Darkwood Sceptre" "Bronze Sceptre" "Driftwood Sceptre" "Horned Sceptre"
 	Class "Sceptres"
 	DisableDropSound
 
@@ -5372,28 +5390,28 @@ Hide # T1
 	SetFontSize 45
 	DisableDropSound
 
-#Show # T2
-#	BaseType
-#	Class "Thrusting One Hand Swords"
-#	Rarity "Rare"
-#	SetTextColor 212 230 18
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 0 209 10
-#	SetFontSize 45
-#	DisableDropSound
-#
-#Hide # T3
-#	BaseType 
-#	Class "Thrusting One Hand Swords"
-#	Rarity "Rare"
-#	SetTextColor 212 230 18
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 0 238 255
-#	SetFontSize 45
-#	DisableDropSound
+Hide # T2
+	BaseType "Battered Foil"
+	Class "Thrusting One Hand Swords"
+	Rarity "Rare"
+	SetTextColor 212 230 18
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
+Hide # T3
+	BaseType "Burnished Foil" "Tempered Foil"
+	Class "Thrusting One Hand Swords"
+	Rarity "Rare"
+	SetTextColor 212 230 18
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	DisableDropSound
 	
 Hide # T4
-	BaseType "Dragoon Sword" "Harpy Rapier" "Vaal Rapier" "Spiraled Foil" "Pecoraro" "Tempered Foil" "Dragonbone Rapier" "Courtesan Sword" "Apex Rapier" "Fancy Foil" "Primeval Rapier" "Serrated Foil" "Estoc" "Burnished Foil" "Wyrmbone Rapier" "Smallsword" "Thorn Rapier" "Elegant Foil" "Antique Rapier" "Jagged Foil" "Basket Rapier" "Battered Foil" "Whalebone Rapier" "Rusted Spike"
+	BaseType "Dragoon Sword" "Harpy Rapier" "Vaal Rapier" "Spiraled Foil" "Pecoraro" "Dragonbone Rapier" "Courtesan Sword" "Apex Rapier" "Fancy Foil" "Primeval Rapier" "Serrated Foil" "Estoc" "Wyrmbone Rapier" "Smallsword" "Thorn Rapier" "Elegant Foil" "Antique Rapier" "Jagged Foil" "Basket Rapier" "Whalebone Rapier" "Rusted Spike"
 	Class "Thrusting One Hand Swords"
 	DisableDropSound
 
@@ -5880,7 +5898,7 @@ Show #T1 Divination Cards
 	DisableDropSound
 	
 Show #T2 Divination Cards
-	BaseType "Matryoshka" "Luminous Trove" "Imperfect Memories" "Brother's Stash" "Broken Promises" "The Samurai's Eye" "The Gulf" "Deadly Joy" "The Enforcer" "Magnum Opus" "The Artist" "The Last One Standing" "Darker Half" "A Fate Worse Than Death" "The Chosen" "The Destination" "The Fishmonger" "Eternal Bonds"
+	BaseType "Matryoshka" "Luminous Trove" "Imperfect Memories" "Brother's Stash" "Broken Promises" "The Samurai's Eye" "The Gulf" "Deadly Joy" "The Enforcer" "Magnum Opus" "The Artist" "The Last One Standing" "Darker Half" "A Fate Worse Than Death" "The Chosen" "The Destination" "The Fishmonger" "Eternal Bonds" "The Fortunate"
 	Class "Divination Cards"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
