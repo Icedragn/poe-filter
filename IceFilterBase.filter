@@ -208,8 +208,8 @@
 # Section 14 - Divination Cards
 # Section 15 - Misc
 	# Section 15.1 - Quest Items
-	# Section 15.2 - Charms
-	# Section 15.3 - Labyrinth Keys
+	# Section 15.2 - Labyrinth Keys
+	# Section 15.3 - Voidstones
 # Section 16 - Catch Alls
 	# Section 16.1 - Hide Normal/Magic Armour and Weapons
 	# Section 16.X - Show All
@@ -2589,17 +2589,6 @@ Show
 
 #------Section 5.3 - Betrayal------#
 # Section 5.3.1 - Scarabs
-
-#Show # T0
-#	BaseType 
-#	Class "Map Fragments"
-#	SetFontSize 45
-#	SetTextColor 201 8 192
-#	SetBackgroundColor 255 255 255
-#	SetBorderColor 201 8 192
-#	PlayAlertSound 6 75
-#	DisableDropSound
-
 Show # Horned Scarabs
 	BaseType "Horned Scarab of Bloodlines" "Horned Scarab of Nemeses" "Horned Scarab of Preservation" "Horned Scarab of Awakening" "Horned Scarab of Tradition" "Horned Scarab of Glittering" "Horned Scarab of Pandemonium"
 	Class "Map Fragments"
@@ -2620,7 +2609,7 @@ Show # T1
 	DisableDropSound
 
 Show # T2
-	BaseType "Breach Scarab of the Dreamer" "Breach Scarab of Lordship" "Breach Scarab of Splintering" "Cartography Scarab of Ascension" "Cartography Scarab of Singularity" "Cartography Scarab of Corruption" "Reliquary Scarab of Overlords" "Bestiary Scarab of the Herd" "Bestiary Scarab of Duplicating" "Influencing Scarab of Hordes" "Sulphite Scarab of Fumes" "Divination Scarab" "Torment Scarab of Peculiarity" "Torment Scarab of Release" "Ambush Scarab of Containment" "Ambush Scarab of Discernment" "Harbinger Scarab of Discernment" "Harbinger Scarab of Regency" "Expedition Scarab of Runefinding" "Expedition Scarab of Verisium Powder" "Expedition Scarab of the Skald" "Legion Scarab of Officers" "Legion Scarab of Command" "Legion Scarab of The Sekhema" "Abyss Scarab of Multitudes" "Abyss Scarab of Edifice" "Abyss Scarab of Emptiness" "Anarchy Scarab of Gigantification" "Anarchy Scarab of Partnership" "Essence Scarab of Ascent" "Essence Scarab of Stability" "Domination Scarab of Abnormality" "Domination Scarab of Teachings" "Ritual Scarab of Selectiveness" "Ritual Scarab of Recognition" "Ritual Scarab of Abundance" "Harvest Scarab of Doubling" "Incursion Scarab of Invasion" "Incursion Scarab of Champions" "Betrayal Scarab of Intelligence" "Betrayal Scarab of Reinforcements" "Beyond Scarab of Corruption" "Beyond Scarab of Haemophilia" "Beyond Scarab of Resurgence" "Ultimatum Scarab of Bribing" "Delirium Scarab of Mania" "Delirium Scarab of Paranoia" "Delirium Scarab of Neuroses" "Delirium Scarab of Delusions" "Blight Scarab of Bounty" "Scarab of Monstrous Lineage" "Scarab of Adversaries" "Mysterious Scarab"
+	BaseType "Breach Scarab of the Dreamer" "Breach Scarab of Lordship" "Breach Scarab of Splintering" "Cartography Scarab of Ascension" "Cartography Scarab of Singularity" "Cartography Scarab of Corruption" "Reliquary Scarab of Overlords" "Bestiary Scarab of the Herd" "Bestiary Scarab of Duplicating" "Influencing Scarab of Hordes" "Sulphite Scarab of Fumes" "Divination Scarab" "Torment Scarab of Peculiarity" "Torment Scarab of Release" "Ambush Scarab of Containment" "Ambush Scarab of Discernment" "Harbinger Scarab of Discernment" "Harbinger Scarab of Regency" "Expedition Scarab of Runefinding" "Expedition Scarab of Verisium Powder" "Expedition Scarab of the Skald" "Legion Scarab of Officers" "Legion Scarab of Command" "Legion Scarab of The Sekhema" "Abyss Scarab of Multitudes" "Abyss Scarab of Edifice" "Abyss Scarab of Emptiness" "Anarchy Scarab of Gigantification" "Anarchy Scarab of Partnership" "Essence Scarab of Ascent" "Essence Scarab of Stability" "Domination Scarab of Abnormality" "Domination Scarab of Teachings" "Ritual Scarab of Selectiveness" "Ritual Scarab of Recognition" "Ritual Scarab of Abundance" "Harvest Scarab of Doubling" "Incursion Scarab of Invasion" "Incursion Scarab of Champions" "Betrayal Scarab of Intelligence" "Betrayal Scarab of Reinforcements" "Beyond Scarab of Corruption" "Beyond Scarab of Haemophilia" "Beyond Scarab of Resurgence" "Ultimatum Scarab of Bribing" "Delirium Scarab of Mania" "Delirium Scarab of Paranoia" "Delirium Scarab of Neuroses" "Delirium Scarab of Delusions" "Blight Scarab of Bounty" "Scarab of Monstrous Lineage" "Scarab of Adversaries" "Mysterious Scarab" "Scarab of Wisps"
 	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 0 209 10
@@ -3305,7 +3294,7 @@ Hide #Hide all other non-unique talismans
 
 #------Section 5.16 - Ultimatum------#
 # Section 5.16.1 - Catalysts
-Show #T1 Catalysts
+Show # T1 Catalysts
 	BaseType "Prismatic Catalyst" "Unstable Catalyst" "Fertile Catalyst" "Accelerating Catalyst"
 	Class "Currency"
 	SetTextColor 201 8 192
@@ -3314,7 +3303,7 @@ Show #T1 Catalysts
 	SetFontSize 45
 	DisableDropSound
 
-Show #T2 Catalysts
+Show # T2 Catalysts
 	BaseType "Tempering Catalyst" "Intrinsic Catalyst" "Noxious Catalyst"
 	Class "Currency"
 	SetTextColor 0 209 10
@@ -3323,7 +3312,7 @@ Show #T2 Catalysts
 	SetFontSize 45
 	DisableDropSound
 
-Show #T3 Catalysts
+Show # T3 Catalysts
 	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Abrasive Catalyst"
 	Class "Currency"
 	SetTextColor 0 238 255
@@ -3675,7 +3664,7 @@ Show # Flaring
 	DisableDropSound
 
 Show # T1
-	BaseType "Allflame Ember of Frogs" "Allflame Ember of Rats" "Allflame Ember of Abyss" "Allflame Ember of Meatsacks" "Allflame Ember of Untainted Beasts" "Allflame Ember of Untainted Apes" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Spitters" "Allflame Ember of Untainted Maws" "Allflame Ember of Untainted Chimerals" "Allflame Ember of Untainted Devourers" "Allflame Ember of Syndicate Researchers" "Allflame Ember of Anarchy"
+	BaseType "Allflame Ember of Frogs" "Allflame Ember of Rats" "Allflame Ember of Abyss" "Allflame Ember of Meatsacks" "Allflame Ember of Untainted Beasts" "Allflame Ember of Untainted Apes" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Spitters" "Allflame Ember of Untainted Maws" "Allflame Ember of Untainted Chimerals" "Allflame Ember of Untainted Devourers" "Allflame Ember of Syndicate Researchers" "Allflame Ember of Anarchy" "Allflame Ember of Synthetic Fury"
 	Class "Embers of the Allflame"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -3796,7 +3785,7 @@ Show # T1
 	DisableDropSound
 
 Show # T2
-	BaseType "Coral Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Bone Ring" "Diamond Ring"
+	BaseType "Coral Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring"
 	Class "Rings"
 	Rarity "Rare"
 	SetTextColor 0 209 10
@@ -3807,7 +3796,7 @@ Show # T2
 	DisableDropSound
 
 Show # T3
-	BaseType "Opal Ring" "Steel Ring" "Iolite Ring" "Moonstone Ring" "Gold Ring"
+	BaseType "Opal Ring" "Steel Ring" "Iolite Ring" "Moonstone Ring" "Gold Ring" "Bone Ring" "Diamond Ring"
 	Class "Rings"
 	Rarity "Rare"
 	SetTextColor 0 238 255
@@ -5887,7 +5876,7 @@ Show # T0 Divination Cards
 	PlayAlertSound 6 75
 	DisableDropSound
 	
-Show #T1 Divination Cards
+Show # T1 Divination Cards
 	BaseType "Love Through Ice" "The Cheater" "The Shieldbearer" "Fire of Unknown Origin" "The Nurse" "The Vast" "The Sephirot" "The Price of Loyalty" "The Endless Darkness" "Wealth and Power" "Desecrated Virtue" "The Soul" "Divine Beauty"
 	Class "Divination Cards"
 	SetTextColor 15 78 204
@@ -5897,7 +5886,7 @@ Show #T1 Divination Cards
 	PlayAlertSound 6 75
 	DisableDropSound
 	
-Show #T2 Divination Cards
+Show # T2 Divination Cards
 	BaseType "Matryoshka" "Luminous Trove" "Imperfect Memories" "Brother's Stash" "Broken Promises" "The Samurai's Eye" "The Gulf" "Deadly Joy" "The Enforcer" "Magnum Opus" "The Artist" "The Last One Standing" "Darker Half" "A Fate Worse Than Death" "The Chosen" "The Destination" "The Fishmonger" "Eternal Bonds" "The Fortunate"
 	Class "Divination Cards"
 	SetTextColor 201 8 192
@@ -5953,13 +5942,22 @@ Show
 	SetBorderColor 0 209 10
 	DisableDropSound
 
-#------Section 15.1 - Labyrinth Keys------#
+#------Section 15.2 - Labyrinth Keys------#
 Show
 	Class "Labyrinth Key"
 	SetFontSize 45
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
+	DisableDropSound
+
+#------Section 15.3 - Voidstones------#
+Show
+	BaseType "Voidstone"
+	SetFontSize 45
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
 	DisableDropSound
 
 #########################
