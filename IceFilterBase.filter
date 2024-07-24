@@ -2601,7 +2601,7 @@ Show # Horned Scarabs
 	DisableDropSound
 
 Show # T1
-	BaseType "Breach Scarab of Snares" "Cartography Scarab of Duplication" "Reliquary Scarab of Vision" "Bestiary Scarab of the Shadowed Crow" "Influencing Scarab of Conversion" "Divination Scarab of Curation" "Divination Scarab of Completion" "Harbinger Scarab of Warhoards" "Expedition Scarab of Archaeology" "Legion Scarab of Eternal Conflict" "Essence Scarab of Calcification" "Domination Scarab of Terrors" "Harvest Scarab of Cornucopia" "Incursion Scarab of Timelines" "Betrayal Scarab of Perpetuation" "Beyond Scarab of the Invasion" "Ultimatum Scarab of Dueling" "Ultimatum Scarab of Catalysing" "Ultimatum Scarab of Inscription" "Blight Scarab of Oils" "Blight Scarab of Blooming" "Scarab of Stability"
+	BaseType "Breach Scarab of Snares" "Cartography Scarab of Multitude" "Titanic Scarab of Legend" "Bestiary Scarab of the Shadowed Crow" "Influencing Scarab of Conversion" "Divination Scarab of Plenty" "Divination Scarab of Pilfering" "Harbinger Scarab of Warhoards" "Expedition Scarab of Archaeology" "Legion Scarab of Eternal Conflict" "Essence Scarab of Calcification" "Domination Scarab of Terrors" "Harvest Scarab of Cornucopia" "Incursion Scarab of Timelines" "Betrayal Scarab of Perpetuation" "Beyond Scarab of the Invasion" "Ultimatum Scarab of Dueling" "Ultimatum Scarab of Catalysing" "Ultimatum Scarab of Inscription" "Blight Scarab of the Blightheart" "Blight Scarab of Blooming" "Scarab of Stability"
 	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 201 8 192
@@ -2610,7 +2610,7 @@ Show # T1
 	DisableDropSound
 
 Show # T2
-	BaseType "Breach Scarab of the Dreamer" "Breach Scarab of Lordship" "Breach Scarab of Splintering" "Cartography Scarab of Ascension" "Cartography Scarab of Singularity" "Cartography Scarab of Corruption" "Reliquary Scarab of Overlords" "Bestiary Scarab of the Herd" "Bestiary Scarab of Duplicating" "Influencing Scarab of Hordes" "Sulphite Scarab of Fumes" "Divination Scarab" "Torment Scarab of Peculiarity" "Torment Scarab of Release" "Ambush Scarab of Containment" "Ambush Scarab of Discernment" "Harbinger Scarab of Discernment" "Harbinger Scarab of Regency" "Expedition Scarab of Runefinding" "Expedition Scarab of Verisium Powder" "Expedition Scarab of the Skald" "Legion Scarab of Officers" "Legion Scarab of Command" "Legion Scarab of The Sekhema" "Abyss Scarab of Multitudes" "Abyss Scarab of Edifice" "Abyss Scarab of Emptiness" "Anarchy Scarab of Gigantification" "Anarchy Scarab of Partnership" "Essence Scarab of Ascent" "Essence Scarab of Stability" "Domination Scarab of Abnormality" "Domination Scarab of Teachings" "Ritual Scarab of Selectiveness" "Ritual Scarab of Recognition" "Ritual Scarab of Abundance" "Harvest Scarab of Doubling" "Incursion Scarab of Invasion" "Incursion Scarab of Champions" "Betrayal Scarab of Intelligence" "Betrayal Scarab of Reinforcements" "Beyond Scarab of Corruption" "Beyond Scarab of Haemophilia" "Beyond Scarab of Resurgence" "Ultimatum Scarab of Bribing" "Delirium Scarab of Mania" "Delirium Scarab of Paranoia" "Delirium Scarab of Neuroses" "Delirium Scarab of Delusions" "Blight Scarab of Bounty" "Scarab of Monstrous Lineage" "Scarab of Adversaries" "Mysterious Scarab" "Scarab of Wisps"
+	BaseType "Breach Scarab of the Dreamer" "Breach Scarab of Lordship" "Breach Scarab of Splintering" "Cartography Scarab of Risk" "Cartography Scarab of Singularity" "Cartography Scarab of Corruption" "Titanic Scarab of Treasures" "Bestiary Scarab of the Herd" "Bestiary Scarab of Duplicating" "Influencing Scarab of Hordes" "Sulphite Scarab of Fumes" "Divination Scarab of The Cloister" "Torment Scarab of Peculiarity" "Torment Scarab of Release" "Ambush Scarab of Containment" "Ambush Scarab of Discernment" "Harbinger Scarab of Obelisks" "Harbinger Scarab of Regency" "Expedition Scarab of Runefinding" "Expedition Scarab of Verisium Powder" "Expedition Scarab of the Skald" "Legion Scarab of Officers" "Legion Scarab of Command" "Legion Scarab of The Sekhema" "Abyss Scarab of Multitudes" "Abyss Scarab of Edifice" "Abyss Scarab of Emptiness" "Anarchy Scarab of Gigantification" "Anarchy Scarab of Partnership" "Essence Scarab of Ascent" "Essence Scarab of Stability" "Domination Scarab of Apparitions" "Domination Scarab of Evolution" "Ritual Scarab of Selectiveness" "Ritual Scarab of Wisps" "Ritual Scarab of Abundance" "Harvest Scarab of Doubling" "Incursion Scarab of Invasion" "Incursion Scarab of Champions" "Betrayal Scarab of Intelligence" "Betrayal Scarab of Reinforcements" "Beyond Scarab of Corruption" "Beyond Scarab of Haemophilia" "Beyond Scarab of Resurgence" "Ultimatum Scarab of Bribing" "Delirium Scarab of Mania" "Delirium Scarab of Paranoia" "Delirium Scarab of Neuroses" "Delirium Scarab of Delusions" "Blight Scarab of Bounty" "Scarab of Monstrous Lineage" "Scarab of Adversaries" "Scarab of Divinity" "Scarab of Wisps"
 	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 0 209 10
@@ -2619,7 +2619,7 @@ Show # T2
 	DisableDropSound
 
 Show # T3
-	BaseType "Breach Scarab" "Cartography Scarab" "Reliquary Scarab" "Bestiary Scarab" "Influencing Scarab of the Shaper" "Influencing Scarab of the Elder" "Sulphite Scarab" "Sulphite Scarab of Greed" "Torment Scarab" "Ambush Scarab" "Ambush Scarab of Hidden Compartments" "Ambush Scarab of Potency" "Harbinger Scarab" "Expedition Scarab" "Legion Scarab" "Abyss Scarab" "Anarchy Scarab" "Essence Scarab" "Domination Scarab" "Harvest Scarab" "Incursion Scarab" "Betrayal Scarab" "Beyond Scarab" "Ultimatum Scarab" "Delirium Scarab" "Blight Scarab" "Scarab of Hunted Traitors"
+	BaseType "Breach Scarab" "Cartography Scarab of Escalation" "Titanic Scarab" "Bestiary Scarab" "Influencing Scarab of the Shaper" "Influencing Scarab of the Elder" "Sulphite Scarab" "Sulphite Scarab of Greed" "Torment Scarab" "Ambush Scarab" "Ambush Scarab of Hidden Compartments" "Ambush Scarab of Potency" "Harbinger Scarab" "Expedition Scarab" "Legion Scarab" "Abyss Scarab" "Anarchy Scarab" "Essence Scarab" "Domination Scarab" "Harvest Scarab" "Incursion Scarab" "Betrayal Scarab" "Beyond Scarab" "Ultimatum Scarab" "Delirium Scarab" "Blight Scarab" "Scarab of Hunted Traitors"
 	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 0 238 255
@@ -3556,7 +3556,7 @@ Show
 #------Section 5.20 - Ritual------#
 # Section 5.20.1 - Ritual Bases
 Show # T1
-	BaseType "Penitent Mask" "Archdemon Crown" "Blizzard Crown" "Debilitation Gauntlets" "Sinistral Gloves" "Nexus Gloves" "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers"
+	BaseType "Penitent Mask" "Archdemon Crown" "Blizzard Crown" "Thwarting Gauntlets" "Trapsetter Gloves" "Nexus Gloves" "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
@@ -3564,7 +3564,7 @@ Show # T1
 	DisableDropSound
 
 Show # T2
-	BaseType "Atonement Mask" "Demon Crown" "Winter Crown" "Gruelling Gauntlets" "Southswing Gloves" "Aetherwind Gloves" "Darksteel Treads" "Windbreak Boots" "Nightwind Slippers"
+	BaseType "Atonement Mask" "Demon Crown" "Winter Crown" "Guarding Gauntlets" "Apprentice Gloves" "Aetherwind Gloves" "Darksteel Treads" "Windbreak Boots" "Nightwind Slippers"
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
@@ -3572,7 +3572,7 @@ Show # T2
 	DisableDropSound
 
 Show # T3
-	BaseType "Sorrow Mask" "Imp Crown" "Gale Crown" "Taxing Gauntlets" "Gauche Gloves" "Leyline Gloves" "Basemetal Treads" "Cloudwhisper Boots" "Duskwalk Slippers"
+	BaseType "Sorrow Mask" "Imp Crown" "Gale Crown" "Preserving Gauntlets" "Tinker Gloves" "Leyline Gloves" "Basemetal Treads" "Cloudwhisper Boots" "Duskwalk Slippers"
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 209 10
