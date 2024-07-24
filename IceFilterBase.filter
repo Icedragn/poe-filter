@@ -46,8 +46,9 @@
 	# Section 4.2 - T1 Uniques
 	# Section 4.3 - T2 Uniques
 	# Section 4.4 - Special Uniques
-	# Section 4.5 - Hidden Uniques
-	# Section 4.6 - Unique Catch-All
+	# Section 4.5 - High Quality Uniques
+	# Section 4.6 - Hidden Uniques
+	# Section 4.7 - Unique Catch-All
 # Section 5 - League Specific Items
 	# Section 5.1 - Abyss
 		# Section 5.1.1 - Abyss Jewels
@@ -127,10 +128,13 @@
 	# Section 5.23 - Settlers of Kalguur
 		# Section 5.23.1 - Runes
 		# Section 5.23.2 - Gold
-# Section 6 - Sockets & Links
+# Section 6 - Sockets, Links & Quality
 	# Section 6.1 - 6-Links
 	# Section 6.2 - 5-Links
 	# Section 6.3 - 6-Sockets
+	# Section 6.4 - Quality
+		# Section 6.4.1 - Quality Armour
+		# Section 6.4.2 - Quality Weapons
 # Section 7 - Rare Jewellery	
 	# Section 7.1 - Amulets
 	# Section 7.2 - Rings
@@ -2561,9 +2565,21 @@ Show # The Squire
 #	PlayAlertSound 3 75
 #	DisableDropSound
 
-#------Section 4.5 - Hidden Uniques------#
+#------Section 4.5 - High Quality Uniques------#
+Show
+	Rarity Unique
+	Quality > 20
+	SetTextColor 209 87 6
+	SetBackgroundColor 255 255 255
+	SetBorderColor 209 87 6
+	SetFontSize 45
+	MinimapIcon 1 Pink Cross
+	PlayAlertSound 6 75
+	DisableDropSound
 
-#------Section 4.6 - Unique Catch-All ------#
+#------Section 4.6 - Hidden Uniques------#
+
+#------Section 4.7 - Unique Catch-All ------#
 Show
 	Rarity Unique
 	SetTextColor 209 87 6
@@ -3732,10 +3748,10 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-#############################
-# Section 6 - Sockets & Links
-#############################
-#------Section 6.2 - 6-Links------#
+######################################
+# Section 6 - Sockets, Links & Quality
+######################################
+#------Section 6.1 - 6-Links------#
 Show
 	LinkedSockets = 6
 	SetTextColor 201 8 192
@@ -3746,7 +3762,7 @@ Show
 	PlayAlertSound 3 75
 	DisableDropSound
 
-#------Section 6.3 - 5-Links------#
+#------Section 6.2 - 5-Links------#
 Show
 	LinkedSockets = 5
 	SetTextColor 0 209 10
@@ -3757,7 +3773,7 @@ Show
 	PlayAlertSound 3 75
 	DisableDropSound
 
-#------Section 6.1 - 6-Sockets------#
+#------Section 6.3 - 6-Sockets------#
 Show
 	Sockets = 6
 	SetTextColor 0 209 10
@@ -3767,6 +3783,10 @@ Show
 	SetFontSize 45
 	PlayAlertSound 3 75
 	DisableDropSound
+
+#------Section 6.4 - Quality------#
+# Section 6.4.1 - Quality Armour
+# Section 6.4.2 - Quality Weapons
 
 ############################
 # Section 7 - Rare Jewellery
@@ -3887,6 +3907,17 @@ Hide # T3
 #------Section 8.1 - Str------#
 # Section 8.1.1 - Str Helmets
 Show # T1
+	BaseType "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet"
+	Class "Helmets"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Royal Burgonet" "Eternal Burgonet"
 	Class "Helmets"
 	Rarity "Rare"
@@ -3897,7 +3928,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Ezomyte Burgonet" "Samnite Helmet" "Siege Helmet"
 	Class "Helmets"
 	Rarity "Rare"
@@ -3908,7 +3939,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Reaver Helmet" "Gladiator Helmet" "Close Helmet"
 	Class "Helmets"
 	Rarity "Rare"
@@ -3919,13 +3950,24 @@ Hide # T3
 	MinimapIcon 1 Cyan Hexagon
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Barbute Helmet" "Cone Helmet" "Iron Hat"
 	Class "Helmets"
 	DisableDropSound
 
 # Section 8.1.2 - Str Body Armours
 Show # T1
+	BaseType "Titan Plate" "Legion Plate" "Royal Plate"
+	Class "Body Armours"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Glorious Plate"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -3936,7 +3978,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Gladiator Plate" "Astral Plate"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -3947,7 +3989,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Crusader Plate" "Golden Plate" "Majestic Plate" "Colosseum Plate"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -3958,13 +4000,24 @@ Hide # T3
 	MinimapIcon 1 Cyan Hexagon
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Sun Plate" "Battle Plate" "Bronze Plate" "Lordly Plate" "Arena Plate" "Full Plate" "War Plate" "Copper Plate" "Chestplate" "Plate Vest"
 	Class "Body Armours"
 	DisableDropSound
 
 # Section 8.1.3 - Str Gloves
 Show # T1
+	BaseType "Precursor Gauntlets" "Leviathan Gauntlets"
+	Class "Gloves"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Titan Gauntlets"
 	Class "Gloves"
 	Rarity "Rare"
@@ -3975,7 +4028,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Vaal Gauntlets" "Goliath Gauntlets" "Spiked Gloves"
 	Class "Gloves"
 	Rarity "Rare"
@@ -3986,7 +4039,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Ancient Gauntlets" "Antique Gauntlets"
 	Class "Gloves"
 	Rarity "Rare"
@@ -3997,14 +4050,14 @@ Hide # T3
 	MinimapIcon 1 Cyan Hexagon
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Steel Gauntlets" "Bronze Gauntlets" "Plated Gauntlets" "Iron Gauntlets"
 	Class "Gloves"
 	DisableDropSound
 
 # Section 8.1.4 - Str Boots
 Show # T1
-	BaseType "Titan Greaves"
+	BaseType "Precursor Greaves" "Leviathan Greaves"
 	Class "Boots"
 	Rarity "Rare"
 	SetTextColor 201 8 192
@@ -4015,6 +4068,17 @@ Show # T1
 	DisableDropSound
 
 Show # T2
+	BaseType "Titan Greaves"
+	Class "Boots"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T3
 	BaseType "Vaal Greaves" "Goliath Greaves"
 	Class "Boots"
 	Rarity "Rare"
@@ -4025,7 +4089,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Ancient Greaves" "Antique Greaves" "Reinforced Greaves"
 	Class "Boots"
 	Rarity "Rare"
@@ -4036,7 +4100,7 @@ Hide # T3
 	MinimapIcon 1 Cyan Hexagon
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Plated Greaves" "Steel Greaves" "Iron Greaves"
 	Class "Boots"
 	DisableDropSound
@@ -4084,6 +4148,17 @@ Hide # T4
 #------Section 8.2 - Dex------#
 # Section 8.2.1 - Dex Helmets
 Show # T1
+	BaseType "Dire Pelt" "Grizzly Pelt" "Majestic Pelt"
+	Class "Helmets"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Lion Pelt" "Sinner Tricorne"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4094,7 +4169,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Silken Hood" "Ursine Pelt"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4105,7 +4180,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Noble Tricorne" "Hunter Hood" "Wolf Pelt"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4116,13 +4191,24 @@ Hide # T3
 	MinimapIcon 1 Cyan Hexagon
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Leather Hood" "Tricorne" "Leather Cap"
 	Class "Helmets"
 	DisableDropSound
 	
 # Section 8.2.2 - Dex Body Armours
 Show # T1
+	BaseType "Supreme Leather" "Astral Leather" "Syndicate's Garb"
+	Class "Body Armours"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Assassin's Garb" "Zodiac Leather"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4133,7 +4219,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Exquisite Leather" "Destiny Leather"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4143,7 +4229,7 @@ Show # T2
 	SetFontSize 45
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Sharkskin Tunic" "Cutthroat's Garb" "Coronal Leather"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4153,13 +4239,24 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Glorious Leather" "Frontier Leather" "Eelskin Tunic" "Thief's Garb" "Sun Leather" "Full Leather" "Wild Leather" "Buckskin Tunic" "Strapped Leather" "Shabby Jerkin"
 	Class "Body Armours"
 	DisableDropSound
 	
 # Section 8.2.3 - Dex Gloves
 Show # T1
+	BaseType "Harpyskin Gloves" "Velour Gloves"
+	Class "Gloves"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Slink Gloves"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4170,7 +4267,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Stealth Gloves" "Shagreen Gloves" "Gripped Gloves"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4181,7 +4278,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Sharkskin Gloves" "Eelskin Gloves" "Nubuck Gloves"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4191,14 +4288,14 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Deerskin Gloves" "Goathide Gloves" "Rawhide Gloves"
 	Class "Gloves"
 	DisableDropSound
 	
 # Section 8.2.4 - Dex Boots
 Show # T1
-	BaseType "Slink Boots"
+	BaseType "Harpyskin Boots" "Velour Boots"
 	Class "Boots"
 	Rarity "Rare"
 	SetTextColor 201 8 192
@@ -4209,6 +4306,17 @@ Show # T1
 	DisableDropSound
 
 Show # T2
+	BaseType "Slink Boots"
+	Class "Boots"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T3
 	BaseType "Stealth Boots" "Shagreen Boots"
 	Class "Boots"
 	Rarity "Rare"
@@ -4219,7 +4327,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Sharkskin Boots" "Eelskin Boots" "Nubuck Boots"
 	Class "Boots"
 	Rarity "Rare"
@@ -4229,7 +4337,7 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Deerskin Boots" "Goathide Boots" "Rawhide Boots"
 	Class "Boots"
 	DisableDropSound
@@ -4275,6 +4383,17 @@ Hide # T4
 #------Section 8.3 - Int------#
 # Section 8.3.1 - Int Helmets
 Show # T1
+	BaseType "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet"
+	Class "Helmets"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Hubris Circlet"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4285,7 +4404,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Mind Cage" "Solaris Circlet"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4296,7 +4415,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Necromancer Circlet" "Steel Circlet" "Lunaris Circlet"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4306,13 +4425,24 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Bone circlet" "Tribal Circlet" "Torture Cage" "Iron Circlet" "Vine Circlet"
 	Class "Helmets"
 	DisableDropSound
 	
 # Section 8.3.2 - Int Body Armours
 Show # T1
+	BaseType "Arcane Vestment" "Nightweave Robe" "Twilight Regalia"
+	Class "Body Armours"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Vaal Regalia"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4323,7 +4453,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Widowsilk Robe" "Occultist's Vestment"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4334,7 +4464,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Necromancer Silks" "Savant's Robe" "Destroyer Regalia"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4344,13 +4474,24 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Spidersilk Robe" "Conjurer's Vestment" "Silken Wrap" "Sage's Robe" "Cabalist Regalia" "Silk Robe" "Mage's Vestment" "Silken Garb" "Scholar's Robe" "Silken Vest" "Simple Robe"
 	Class "Body Armours"
 	DisableDropSound
 	
 # Section 8.3.3 - Int Gloves
 Show # T1
+	BaseType "Sage Gloves" "Warlock Gloves"
+	Class "Gloves"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Sorcerer Gloves"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4361,7 +4502,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Arcanist Gloves" "Conjurer Gloves" "Fingerless Silk Gloves"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4372,7 +4513,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Samite Gloves" "Satin Gloves" "Embroidered Gloves"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4382,14 +4523,14 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Silk Gloves" "Velvet Gloves" "Wool Gloves"
 	Class "Gloves"
 	DisableDropSound
 	
 # Section 8.3.4 - Int Boots
 Show # T1
-	BaseType "Sorcerer Boots"
+	BaseType "Sage Slippers" "Warlock Boots"
 	Class "Boots"
 	Rarity "Rare"
 	SetTextColor 201 8 192
@@ -4400,6 +4541,17 @@ Show # T1
 	DisableDropSound
 
 Show # T2
+	BaseType "Sorcerer Boots"
+	Class "Boots"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T3
 	BaseType "Arcanist Slippers" "Conjurer Boots"
 	Class "Boots"
 	Rarity "Rare"
@@ -4410,7 +4562,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Samite Slippers" "Satin Slippers" "Scholar Boots"
 	Class "Boots"
 	Rarity "Rare"
@@ -4420,7 +4572,7 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Silk Slippers" "Velvet Slippers" "Wool Shoes"
 	Class "Boots"
 	DisableDropSound
@@ -4466,6 +4618,17 @@ Hide # T4
 #------Section 8.4 - Str/Dex------#
 # Section 8.4.1 - Str/Dex Helmets
 Show # T1
+	BaseType "Knight Helm" "Conquest Helmet" "Haunted Bascinet" 
+	Class "Helmets"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Pig-Faced Bascinet"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4476,7 +4639,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Nightmare Bascinet" "Fluted Bascinet"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4487,7 +4650,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Lacquered Helmet" "Fencer Helm" "Secutor Helm"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4497,13 +4660,24 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Gilded Sallet" "Visored Sallet" "Sallet" "Battered Helm" 
 	Class "Helmets"
 	DisableDropSound
 	
 # Section 8.4.2 - Str/Dex Body Armours
 Show # T1
+	BaseType "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar"
+	Class "Body Armours"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Full Dragonscale"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4514,7 +4688,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Triumphant Lamellar" "General's Brigandine"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4525,7 +4699,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Desert Brigandine" "Dragonscale Doublet" "Commander's Brigandine"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4535,13 +4709,24 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Battle Lamellar" "Full Wyrmscale" "Hussar Brigandine" "Wyrmscale Doublet" "Field Lamellar" "Soldier's Brigandine" "Full Scale Armour" "Infantry Brigandine" "Scale Doublet" "Light Brigandine" "Scale Vest"
 	Class "Body Armours"
 	DisableDropSound
 	
 # Section 8.4.3 - Str/Dex Gloves
 Show # T1
+	BaseType "Chimerascale Gauntlets" "Wyvernscale Gauntlets"
+	Class "Gloves"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Dragonscale Gauntlets"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4552,7 +4737,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Hydrascale Gauntlets" "Wyrmscale Gauntlets" 
 	Class "Gloves"
 	Rarity "Rare"
@@ -4563,7 +4748,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Serpentscale Gauntlets"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4573,14 +4758,14 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Steelscale Gauntlets" "Bronzescale Gauntlets" "Ironscale Gauntlets" "Fishscale Gauntlets"
 	Class "Gloves"
 	DisableDropSound
 	
 # Section 8.4.4 - Str/Dex Boots
 Show # T1
-	BaseType "Dragonscale Boots" "Two-Toned Boots"
+	BaseType "Chimerascale Boots" "Wyvernscale Boots"
 	Class "Boots"
 	Rarity "Rare"
 	SetTextColor 201 8 192
@@ -4591,6 +4776,17 @@ Show # T1
 	DisableDropSound
 
 Show # T2
+	BaseType "Dragonscale Boots" "Two-Toned Boots"
+	Class "Boots"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T3
 	BaseType "Hydrascale Boots" "Wyrmscale Boots"
 	Class "Boots"
 	Rarity "Rare"
@@ -4601,7 +4797,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Serpentscale Boots" "Steelscale Boots" 
 	Class "Boots"
 	Rarity "Rare"
@@ -4611,7 +4807,7 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Bronzescale Boots" "Ironscale Boots" "Leatherscale Boots"
 	Class "Boots"
 	DisableDropSound
@@ -4657,6 +4853,17 @@ Hide # T4
 #------Section 8.5 - Str/Int------#
 # Section 8.5.1 - Str/Int Helmets
 Show # T1
+	BaseType "Faithful Helmet" "Paladin Crown" "Divine Crown"
+	Class "Helmets"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Praetor Crown"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4667,7 +4874,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Prophet Crown" "Magistrate Crown" "Bone Helmet"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4678,7 +4885,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Great Crown" "Zealot Helmet" "Aventail Helmet"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4688,13 +4895,24 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Crusader Helmet" "Great Helmet" "Soldier Helmet" "Rusted Coif"
 	Class "Helmets"
 	DisableDropSound
 	
 # Section 8.5.2 - Str/Int Body Armours
 Show # T1
+	BaseType "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail"
+	Class "Body Armours"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Saintly Chainmail"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4705,7 +4923,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Saint's Hauberk" "Elegant Ringmail"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4716,7 +4934,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Conquest Chainmail" "Loricated Ringmail" "Devout Chainmail" "Chain Hauberk"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4726,13 +4944,24 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Ornate Ringmail" "Crusader Chainmail" "Latticed Ringmail" "Holy Chainmail" "Full Chainmail" "Full Ringmail" "Chainmail Doublet" "Ringmail Coat" "Chainmail Tunic" "Chainmail Vest"
 	Class "Body Armours"
 	DisableDropSound
 	
 # Section 8.5.3 - Str/Int Gloves
 Show # T1
+	BaseType "Martyr Gloves" "Paladin Gloves"
+	Class "Gloves"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Crusader Gloves" "Apothecary's Gloves"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4743,7 +4972,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Legion Gloves" "Soldier Gloves"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4754,7 +4983,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Zealot Gloves" "Riveted Gloves"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4764,14 +4993,14 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Mesh Gloves" "Ringmail Gloves" "Chain Gloves"
 	Class "Gloves"
 	DisableDropSound
 	
 # Section 8.5.4 - Str/Int Boots
 Show # T1
-	BaseType "Crusader Boots"
+	BaseType "Martyr Boots" "Paladin Boots"
 	Class "Boots"
 	Rarity "Rare"
 	SetTextColor 201 8 192
@@ -4782,6 +5011,17 @@ Show # T1
 	DisableDropSound
 
 Show # T2
+	BaseType "Crusader Boots"
+	Class "Boots"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T3
 	BaseType "Legion Boots" "Soldier Boots"
 	Class "Boots"
 	Rarity "Rare"
@@ -4792,7 +5032,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Zealot Boots" "Riveted Boots"
 	Class "Boots"
 	Rarity "Rare"
@@ -4802,7 +5042,7 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Mesh Boots" "Ringmail Boots" "Chain Boots"
 	Class "Boots"
 	DisableDropSound
@@ -4848,6 +5088,17 @@ Hide # T4
 #------Section 8.6 - Dex/Int------#
 # Section 8.6.1 - Dex/Int Helmets
 Show # T1
+	BaseType "Jester Mask" "Ancient Mask" "Torturer's Mask"
+	Class "Helmets"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Deicide Mask"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4858,7 +5109,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Vaal Mask" "Harlequin Mask"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4869,7 +5120,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Regicide Mask" "Callous Mask" "Raven Mask"
 	Class "Helmets"
 	Rarity "Rare"
@@ -4879,13 +5130,24 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Golden Mask" "Festival Mask" "Iron Mask" "Plague Mask" "Scare Mask"
 	Class "Helmets"
 	DisableDropSound
 	
 # Section 8.6.2 - Dex/Int Body Armours
 Show # T1
+	BaseType "Sanguine Raiment" "Torturer Garb" "Necrotic Armour"
+	Class "Body Armours"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Carnal Armour" "Sadist Garb"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4896,7 +5158,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Blood Raiment" "Varnished Coat"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4907,7 +5169,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Sentinel Jacket" "Crypt Armour" "Lacquered Garb"
 	Class "Body Armours"
 	Rarity "Rare"
@@ -4917,13 +5179,24 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Crimson Raiment" "Sleek Coat" "Quilted Jacket" "Bone Armour" "Waxed Garb" "Scarlet Raiment" "Oiled Coat" "Padded Jacket" "Oiled Vest" "Padded Vest"
 	Class "Body Armours"
 	DisableDropSound
 	
 # Section 8.6.3 - Dex/Int Gloves
 Show # T1
+	BaseType "Infiltrator Mitts" "Phantom Mitts"
+	Class "Gloves"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T2
 	BaseType "Murder Mitts"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4934,7 +5207,7 @@ Show # T1
 	MinimapIcon 1 Pink Hexagon
 	DisableDropSound
 
-Show # T2
+Show # T3
 	BaseType "Assassin's Mitts" "Carnal Mitts"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4945,7 +5218,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Ambush Mitts" "Trapper Mitts"
 	Class "Gloves"
 	Rarity "Rare"
@@ -4955,14 +5228,14 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Clasped Mitts" "Strapped Mitts" "Wrapped Mitts"
 	Class "Gloves"
 	DisableDropSound
 	
 # Section 8.6.4 - Dex/Int Boots
 Show # T1
-	BaseType "Fugitive Boots" "Murder Boots"
+	BaseType "Infiltrator Boots" "Phantom Boots"
 	Class "Boots"
 	Rarity "Rare"
 	SetTextColor 201 8 192
@@ -4973,6 +5246,17 @@ Show # T1
 	DisableDropSound
 
 Show # T2
+	BaseType "Fugitive Boots" "Murder Boots"
+	Class "Boots"
+	Rarity "Rare"
+	SetTextColor 201 8 192
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	MinimapIcon 1 Pink Hexagon
+	DisableDropSound
+
+Show # T3
 	BaseType "Assassin's Boots" "Carnal Boots"
 	Class "Boots"
 	Rarity "Rare"
@@ -4983,7 +5267,7 @@ Show # T2
 	MinimapIcon 1 Green Hexagon
 	DisableDropSound
 
-Hide # T3
+Hide # T4
 	BaseType "Ambush Boots" "Trapper Boots" "Shackled Boots"
 	Class "Boots"
 	Rarity "Rare"
@@ -4993,7 +5277,7 @@ Hide # T3
 	SetFontSize 45
 	DisableDropSound
 	
-Hide # T4
+Hide # T5
 	BaseType "Clasped Boots" "Strapped Boots" "Wrapped Boots"
 	Class "Boots"
 	DisableDropSound
