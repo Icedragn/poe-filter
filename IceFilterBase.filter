@@ -5878,7 +5878,7 @@ Show # T0 Divination Cards
 	DisableDropSound
 	
 Show # T1 Divination Cards
-	BaseType "Love Through Ice" "The Cheater" "The Shieldbearer" "Fire of Unknown Origin" "The Nurse" "The Vast" "The Sephirot" "The Price of Loyalty" "The Endless Darkness" "Wealth and Power" "Desecrated Virtue" "The Soul" "Divine Beauty"
+	BaseType "Love Through Ice" "The Cheater" "The Shieldbearer" "Fire of Unknown Origin" "The Nurse" "The Vast" "The Sephirot" "The Price of Loyalty" "The Endless Darkness" "Wealth and Power" "Desecrated Virtue" "The Soul" "Divine Beauty" "Friendship"
 	Class "Divination Cards"
 	SetTextColor 15 78 204
 	SetBackgroundColor 255 255 255
@@ -5888,7 +5888,7 @@ Show # T1 Divination Cards
 	DisableDropSound
 	
 Show # T2 Divination Cards
-	BaseType "Matryoshka" "Luminous Trove" "Imperfect Memories" "Brother's Stash" "Broken Promises" "The Samurai's Eye" "The Gulf" "Deadly Joy" "The Enforcer" "Magnum Opus" "The Artist" "The Last One Standing" "Darker Half" "A Fate Worse Than Death" "The Chosen" "The Destination" "The Fishmonger" "Eternal Bonds" "The Fortunate"
+	BaseType "Matryoshka" "Luminous Trove" "Imperfect Memories" "Brother's Stash" "Broken Promises" "The Samurai's Eye" "The Gulf" "Deadly Joy" "The Enforcer" "Magnum Opus" "The Artist" "The Last One Standing" "Darker Half" "A Fate Worse Than Death" "The Chosen" "The Destination" "The Fishmonger" "Eternal Bonds" "The Fortunate" "Rebirth and Renewal" "The Fourth Vow"
 	Class "Divination Cards"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -5915,7 +5915,7 @@ Show # T4 Divination Cards
 	DisableDropSound
 	
 Show # T5 Divination Cards
-	BaseType "Imperial Legacy" "The Beast" "Treasure Hunter" "Thunderous Skies" "Three Faces in the Dark" "The Wolf" "The Visionary" "The Tireless Extractor" "The Tinkerer's Table" "The Sun" "The Summoner" "The Stormcaller" "The Skeleton" "The Scholar" "The Scarred Meadow" "The Ruthless Ceinture" "The Rite of Elements" "The Puzzle" "The One With All" "The Oath" "The Master Artisan" "The Lion" "The Fletcher" "The Drunken Aristocrat" "The Dragon" "The Doppelganger" "The Deal" "The Catalyst" "The Cache" "The Body" "The Aesthete" "The Adventuring Spirit" "Mitts" "Lysah's Respite" "Jack in the Box" "Hunter's Resolve" "Her Mask" "Grave Knowledge" "Gift of the Gemling Queen" "Emperor's Luck" "Earth Drinker" "Cartographer's Delight" "Blind Venture" "Atziri's Arsenal" "Astral Protection" "Assassin's Favour" "Alivia's Grace" "A Mother's Parting Gift" "The Return of the Rat" "The Mercenary" "The Jeweller's Boon" "The Cursed King" "The Formless Sea" "The Archmage's Right Hand" "Prejudice" "From Bone to Ashes" "The Brittle Emperor" "Rain Tempter" "Turn the Other Cheek" "Unchained" "The Lich" "The Jester" "The Harvester" "Merciless Armament" "Light and Truth" "Call to the First Ones" "The Siren" "The Celestial Stone" "The Conduit" "The Throne" "Prometheus' Armoury" "The Enthusiasts" "Void of the Elements" "Rebirth" "The Undisputed" "Duality" "The Standoff" "The Lover" "The Journalist" "The Fox"
+	BaseType "Imperial Legacy" "The Beast" "Treasure Hunter" "Thunderous Skies" "Three Faces in the Dark" "The Wolf" "The Visionary" "The Tireless Extractor" "The Tinkerer's Table" "The Sun" "The Summoner" "The Stormcaller" "The Skeleton" "The Scholar" "The Scarred Meadow" "The Ruthless Ceinture" "The Rite of Elements" "The Puzzle" "The One With All" "The Oath" "The Master Artisan" "The Lion" "The Fletcher" "The Drunken Aristocrat" "The Dragon" "The Doppelganger" "The Deal" "The Catalyst" "The Cache" "The Body" "The Aesthete" "The Adventuring Spirit" "Mitts" "Lysah's Respite" "Jack in the Box" "Hunter's Resolve" "Her Mask" "Grave Knowledge" "Gift of the Gemling Queen" "Emperor's Luck" "Earth Drinker" "Cartographer's Delight" "Blind Venture" "Atziri's Arsenal" "Astral Protection" "Assassin's Favour" "Alivia's Grace" "A Mother's Parting Gift" "The Return of the Rat" "The Mercenary" "The Jeweller's Boon" "The Cursed King" "The Formless Sea" "The Archmage's Right Hand" "Prejudice" "From Bone to Ashes" "The Brittle Emperor" "Rain Tempter" "Turn the Other Cheek" "Unchained" "The Lich" "The Jester" "The Harvester" "Merciless Armament" "Light and Truth" "Call to the First Ones" "The Siren" "The Celestial Stone" "The Conduit" "The Throne" "Prometheus' Armoury" "The Enthusiasts" "Void of the Elements" "Rebirth" "The Undisputed" "Duality" "The Standoff" "The Lover" "The Journalist" "The Fox" "More is Never Enough"
 	Class "Divination Cards"
 	SetTextColor 0 238 255
 	SetBackgroundColor 0 0 0
