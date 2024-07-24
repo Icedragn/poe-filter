@@ -124,6 +124,9 @@
 	# Section 5.22 - Necropolis
 		# Section 5.22.1 - Allflames (DISABLED)
 		# Section 5.22.2 - Filled Coffins (DISABLED)
+	# Section 5.23 - Settlers of Kalguur
+		# Section 5.23.1 - Runes
+		# Section 5.23.2 - Gold
 # Section 6 - Sockets & Links
 	# Section 6.1 - 6-Links
 	# Section 6.2 - 5-Links
@@ -1882,9 +1885,16 @@ Show
 ######################
 # Section 2 - Currency
 ######################
+Show
+	BaseType "Gold"
+	Class "Gold"
+	SetTextColor 255 204 0
+	SetBorderColor 255 204 0
+	DisableDropSound
+
 #------Section 2.1 - Single Currency------#
 Show
-	BaseType "Mirror of Kalandra" "Divine Orb" "Mirror Shard" "Fracturing Orb" "Veiled Orb"
+	BaseType "Mirror of Kalandra" "Divine Orb" "Mirror Shard" "Fracturing Orb" "Veiled Orb" "Reflecting Mist"
 	Class "Currency"
 	SetTextColor 201 8 192
 	SetBackgroundColor 255 255 255
@@ -1928,6 +1938,16 @@ Show
 	
 Show
 	BaseType "Crescent Splinter"
+	StackSize >= 1
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	MinimapIcon 1 Pink Circle
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	BaseType "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Divination" "Maven's Chisel of Scarabs" "Maven's Chisel of Avarice"
 	StackSize >= 1
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
@@ -2321,7 +2341,7 @@ Show # Uber Boss Fragments
 	DisableDropSound
 
 Show # Boss Fragments
-	BaseType "Mortal Grief" "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Fragment of the Hydra" "Fragment of the Chimera" "Fragment of the Minotaur" "Fragment of the Phoenix" "Fragment of Purification" "Fragment of Constriction" "Fragment of Eradication" "Fragment of Enslavement" "Fragment of Knowledge" "Fragment of Shape" "Fragment of Emptiness" "Fragment of Terror" "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest" "The Maven's Writ"
+	BaseType "Mortal Grief" "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Fragment of the Hydra" "Fragment of the Chimera" "Fragment of the Minotaur" "Fragment of the Phoenix" "Fragment of Purification" "Fragment of Constriction" "Fragment of Eradication" "Fragment of Enslavement" "Fragment of Knowledge" "Fragment of Shape" "Fragment of Emptiness" "Fragment of Terror" "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest" "The Maven's Writ" "An Audience With The King"
 	Class "Map Fragments"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -2461,7 +2481,7 @@ Show
 #####################
 Show # Non-Kalandra's Touch Filter
 	Rarity Unique
-	BaseType "Breach Ring" "Coral Ring" "Iron Ring" "Paua Ring" "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Diamond Ring" "Gold Ring" "Moonstone Ring" "Two-Stone Ring" "Cogwork Ring" "Geodesic Ring" "Bone Ring" "Amethyst Ring" "Prismatic Ring" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Ringmail"
+	BaseType "Breach Ring" "Coral Ring" "Iron Ring" "Paua Ring" "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Diamond Ring" "Gold Ring" "Moonstone Ring" "Two-Stone Ring" "Cogwork Ring" "Geodesic Ring" "Bone Ring" "Amethyst Ring" "Prismatic Ring" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Ringmail" "Nameless Ring"
 	SetTextColor 209 87 6
 	SetBackgroundColor 0 0 0
 	SetBorderColor 209 87 6
@@ -2726,7 +2746,7 @@ Show # T13+ Blighted Maps
 
 # Section 5.4.3 - Oils
 Show # T1 Oils
-	BaseType "Tainted Oil" "Golden Oil"
+	BaseType "Tainted Oil" "Golden Oil" "Prismatic Oil"
 	Class "Currency"
 	SetFontSize 45
 	SetTextColor 201 8 192
@@ -3415,7 +3435,7 @@ Show
 #------Section 5.19 - Synthesis------#
 # Section 5.19.1 - Fractured Jewellery
 Show # T1
-	BaseType "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Amethyst Ring" "Vermillion Ring" "Bone Ring" "Unset Ring" "Crystal Belt" "Stygian Vise" "Leather Belt" "Heavy Belt" "Marble Amulet" "Onyx Amulet" "Turquoise Amulet" "Citrine Amulet" "Agate Amulet" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Unset Amulet"
+	BaseType "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Two-Stone Ring" "Amethyst Ring" "Vermillion Ring" "Bone Ring" "Unset Ring" "Crystal Belt" "Stygian Vise" "Leather Belt" "Heavy Belt" "Marble Amulet" "Onyx Amulet" "Turquoise Amulet" "Citrine Amulet" "Agate Amulet" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Unset Amulet" "Nameless Ring"
 	FracturedItem "True"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -3700,6 +3720,17 @@ Show # T3 Omens
 #	SetFontSize 45
 #	DisableDropSound
 
+#------Section 5.23 - Settlers of Kalguur------#
+# Section 5.23.1 - Runes
+Show
+	BaseType "Life Rune" "Sun Rune" "Bound Rune" "War Rune" "River Rune" "Bounty Rune" "Journey Rune" "Mountain Rune" "Time Rune" "Power Rune"
+	StackSize >= 1
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	MinimapIcon 1 Pink Circle
+	SetFontSize 45
+	DisableDropSound
 
 #############################
 # Section 6 - Sockets & Links
@@ -3775,7 +3806,7 @@ Hide # T3
 
 #------Section 7.2 - Rings------#
 Show # T1
-	BaseType "Amethyst Ring" "Two-Stone Ring" "Vermillion Ring" "Unset Ring"
+	BaseType "Amethyst Ring" "Two-Stone Ring" "Vermillion Ring" "Unset Ring" "Nameless Ring"
 	Class "Rings"
 	Rarity "Rare"
 	SetTextColor 201 8 192
