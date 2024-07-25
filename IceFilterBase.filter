@@ -3816,23 +3816,200 @@ Show
 
 #------Section 6.4 - Quality------#
 #------Section 6.4.1 - Quality Armour------#
-# Section 6.4.1.1 - Str
-# Section 6.4.1.2 - Dex
-# Section 6.4.1.3 - Int
-# Section 6.4.1.4 - Str/Dex
-# Section 6.4.1.5 - Str/Int
-# Section 6.4.1.6 - Dex/Int
-Show # 30 Quality
-	BaseType
+Show # 30 Quality 100 Percentile (Catch-All)
 	Quality >= 30
-	BaseDefencePercentile
+	BaseDefencePercentile >= 100
 	SetTextColor 255 255 255
 	SetBackgroundColor 0 0 0
 	SetBorderColor 255 255 255
 	SetFontSize 45
 	DisableDropSound
 
-Show # 25+ Quality
+# Section 6.4.1.1 - Str
+Show # 30 Quality Any Percentile
+	BaseType "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Titan Plate" "Legion Plate" "Royal Plate" "Precursor Gauntlets" "Leviathan Gauntlets" "Precursor Greaves" "Leviathan Greaves"
+	Quality >= 30
+	BaseDefencePercentile >= 0
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+Show # 25+ Quality 80+ Percentile
+	BaseType "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Titan Plate" "Legion Plate" "Royal Plate" "Precursor Gauntlets" "Leviathan Gauntlets" "Precursor Greaves" "Leviathan Greaves"
+	Quality >= 30
+	BaseDefencePercentile >= 80
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
+Show # 20+ Quality 90+ Percentile
+	BaseType "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Titan Plate" "Legion Plate" "Royal Plate" "Precursor Gauntlets" "Leviathan Gauntlets" "Precursor Greaves" "Leviathan Greaves"
+	Quality >= 30
+	BaseDefencePercentile >= 90
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.1.2 - Dex
+Show # 30 Quality Any Percentile
+	BaseType "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Harpyskin Gloves" "Velour Gloves" "Harpyskin Boots" "Velour Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 0
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+Show # 25+ Quality 80+ Percentile
+	BaseType "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Harpyskin Gloves" "Velour Gloves" "Harpyskin Boots" "Velour Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 80
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
+Show # 20+ Quality 90+ Percentile
+	BaseType "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Harpyskin Gloves" "Velour Gloves" "Harpyskin Boots" "Velour Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 90
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.1.3 - Int
+Show # 30 Quality Any Percentile
+	BaseType "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Sage Gloves" "Warlock Gloves" "Sage Slippers" "Warlock Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 0
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+Show # 25+ Quality 80+ Percentile
+	BaseType "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Sage Gloves" "Warlock Gloves" "Sage Slippers" "Warlock Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 80
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
+Show # 20+ Quality 90+ Percentile
+	BaseType "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Sage Gloves" "Warlock Gloves" "Sage Slippers" "Warlock Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 90
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.1.4 - Str/Dex
+Show # 30 Quality Any Percentile
+	BaseType "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Chimerascale Boots" "Wyvernscale Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 0
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+Show # 25+ Quality 80+ Percentile
+	BaseType "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Chimerascale Boots" "Wyvernscale Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 80
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
+Show # 20+ Quality 90+ Percentile
+	BaseType "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Chimerascale Boots" "Wyvernscale Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 90
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.1.5 - Str/Int
+Show # 30 Quality Any Percentile
+	BaseType "Faithful Helmet" "Paladin Crown" "Divine Crown" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Martyr Gloves" "Paladin Gloves" "Martyr Boots" "Paladin Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 0
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+Show # 25+ Quality 80+ Percentile
+	BaseType "Faithful Helmet" "Paladin Crown" "Divine Crown" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Martyr Gloves" "Paladin Gloves" "Martyr Boots" "Paladin Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 80
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
+Show # 20+ Quality 90+ Percentile
+	BaseType "Faithful Helmet" "Paladin Crown" "Divine Crown" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Martyr Gloves" "Paladin Gloves" "Martyr Boots" "Paladin Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 90
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.1.6 - Dex/Int
+Show # 30 Quality Any Percentile
+	BaseType "Jester Mask" "Ancient Mask" "Torturer's Mask" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour" "Infiltrator Mitts" "Phantom Mitts" "Infiltrator Boots" "Phantom Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 0
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+Show # 25+ Quality 80+ Percentile
+	BaseType "Jester Mask" "Ancient Mask" "Torturer's Mask" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour" "Infiltrator Mitts" "Phantom Mitts" "Infiltrator Boots" "Phantom Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 80
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
+Show # 20+ Quality 90+ Percentile
+	BaseType "Jester Mask" "Ancient Mask" "Torturer's Mask" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour" "Infiltrator Mitts" "Phantom Mitts" "Infiltrator Boots" "Phantom Boots"
+	Quality >= 30
+	BaseDefencePercentile >= 90
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	DisableDropSound
 
 #------Section 6.4.2 - Quality Weapons------#
 # Section 6.4.2.1 - Bows
