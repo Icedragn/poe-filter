@@ -4207,7 +4207,7 @@ Show
 
 # Section 6.4.2.14 - Wands
 Show
-	BaseType "Profane Wand" "Imbued Wand" "Prophecy Wand" "Convoking Wand"
+	BaseType "Profane Wand" "Imbued Wand" "Prophecy Wand" "Convoking Wand" "Tornado Wand"
 	Quality > 20
 	SetTextColor 255 255 255
 	SetBackgroundColor 0 0 0
