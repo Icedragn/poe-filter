@@ -134,7 +134,28 @@
 	# Section 6.3 - 6-Sockets
 	# Section 6.4 - Quality
 		# Section 6.4.1 - Quality Armour
+			# Section 6.4.1.1 - Str
+			# Section 6.4.1.2 - Dex
+			# Section 6.4.1.3 - Int
+			# Section 6.4.1.4 - Str/Dex
+			# Section 6.4.1.5 - Str/Int
+			# Section 6.4.1.6 - Dex/Int
 		# Section 6.4.2 - Quality Weapons
+			# Section 6.4.2.1 - Bows
+			# Section 6.4.2.2 - Claws
+			# Section 6.4.2.3 - Daggers
+			# Section 6.4.2.4 - One-Handed Axes
+			# Section 6.4.2.5 - One-Handed Maces
+			# Section 6.4.2.6 - Rune Daggers
+			# Section 6.4.2.7 - Sceptres
+			# Section 6.4.2.8 - Staves
+			# Section 6.4.2.9 - Swords
+			# Section 6.4.2.10 - Thrusting One Hand Swords
+			# Section 6.4.2.11 - Two-Handed Axes
+			# Section 6.4.2.12 - Two-Handed Maces
+			# Section 6.4.2.13 - Two-Handed Swords
+			# Section 6.4.2.14 - Wands
+			# Section 6.4.2.15 - Warstaves
 # Section 7 - Rare Jewellery	
 	# Section 7.1 - Amulets
 	# Section 7.2 - Rings
@@ -232,7 +253,7 @@
 # NEON GREEN (mid tier, pretty much always pick up): 0 209 10
 # NEON BLUE (low tier, usually pick up if showing): 0 238 255
 # ORANGE (unique): 209 87 6
-# WHITE (normal/bases): 255 255 255
+# WHITE (normal/bases/quality bases): 255 255 255
 # RED (red maps): 209 8 8
 # PURPLE (guardians/special drops): 119 3 161
 # CYAN (portal scrolls): 30 200 200
@@ -1147,7 +1168,7 @@ Show # Whetstone Recipe Weapons
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 40
-	AreaLevel <= 40
+	AreaLevel <= 45
 	DisableDropSound
 
 #------Section 1.3.4 - Generic Levelling------#
@@ -3794,8 +3815,175 @@ Show
 	DisableDropSound
 
 #------Section 6.4 - Quality------#
-# Section 6.4.1 - Quality Armour
-# Section 6.4.2 - Quality Weapons
+#------Section 6.4.1 - Quality Armour------#
+# Section 6.4.1.1 - Str
+# Section 6.4.1.2 - Dex
+# Section 6.4.1.3 - Int
+# Section 6.4.1.4 - Str/Dex
+# Section 6.4.1.5 - Str/Int
+# Section 6.4.1.6 - Dex/Int
+Show # 30 Quality
+	BaseType
+	Quality >= 30
+	BaseDefencePercentile
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+Show # 25+ Quality
+
+#------Section 6.4.2 - Quality Weapons------#
+# Section 6.4.2.1 - Bows
+Show
+	BaseType "Spine Bow" "Thicket Bow"
+	Quality > 20
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.2.2 - Claws
+Show
+	BaseType "Imperial Claw" "Noble Claw" "Gemini Claw"
+	Quality > 20
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.2.3 - Daggers
+Show
+	BaseType "Ambusher"
+	Quality > 20
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.2.4 - One-Handed Axes
+Show
+	BaseType "Siege Axe" "Royal Axe"
+	Quality > 20
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.2.5 - One-Handed Maces
+#Show
+#	BaseType 
+#	Quality > 20
+#	SetTextColor 255 255 255
+#	SetBackgroundColor 0 0 0
+#	SetBorderColor 255 255 255
+#	SetFontSize 45
+#	DisableDropSound
+
+# Section 6.4.2.6 - Rune Daggers
+Show
+	BaseType "Imperial Skean" "Skean" "Royal Skean" "Copper Kris" "Golden Kris" "Platinum Kris"
+	Quality > 20
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.2.7 - Sceptres
+Show
+	BaseType "Opal Sceptre" "Void Sceptre"
+	Quality > 20
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.2.8 - Staves
+Show
+	BaseType "Eclipse Staff"
+	Quality > 20
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.2.9 - Swords
+#Show
+#	BaseType 
+#	Quality > 20
+#	SetTextColor 255 255 255
+#	SetBackgroundColor 0 0 0
+#	SetBorderColor 255 255 255
+#	SetFontSize 45
+#	DisableDropSound
+
+# Section 6.4.2.10 - Thrusting One Hand Swords
+Show
+	BaseType "Jewelled Foil"
+	Quality > 20
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.2.11 - Two-Handed Axes
+Show
+	BaseType "Despot Axe" "Ezomyte Axe" "Sundering Axe" "Karui Chopper" "Fleshripper"
+	Quality > 20
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.2.12 - Two-Handed Maces
+Show
+	BaseType "Piledriver"
+	Quality > 20
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.2.13 - Two-Handed Swords
+Show
+	BaseType "Reaver Sword"
+	Quality > 20
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.2.14 - Wands
+Show
+	BaseType "Profane Wand" "Imbued Wand" "Prophecy Wand" "Convoking Wand"
+	Quality > 20
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
+
+# Section 6.4.2.15 - Warstaves
+Show
+	BaseType "Judgement Staff"
+	Quality > 20
+	SetTextColor 255 255 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	DisableDropSound
 
 ############################
 # Section 7 - Rare Jewellery
@@ -5802,15 +5990,15 @@ Hide # T4
 	DisableDropSound
 
 #------Section 9.14 - Two-Handed Swords------#
-#Show # T1
-#	BaseType
-#	Class "Two Hand Swords"
-#	Rarity "Rare"
-#	SetTextColor 212 230 18
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 201 8 192
-#	SetFontSize 45
-#	DisableDropSound
+Show # T1
+	BaseType "Reaver Sword"
+	Class "Two Hand Swords"
+	Rarity "Rare"
+	SetTextColor 212 230 18
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	DisableDropSound
 #
 #Show # T2
 #	BaseType 
@@ -5833,7 +6021,7 @@ Hide # T4
 #	DisableDropSound
 	
 Hide # T4
-	BaseType "Corroded Blade" "Longsword" "Bastard Sword" "Two-Handed Sword" "Etched Greatsword" "Ornate Sword" "Spectral Sword" "Curved Blade" "Butcher Sword" "Footman Sword" "Highland Blade" "Engraved Greatsword" "Tiger Sword" "Wraith Sword" "Lithe Blade" "Headman's Sword" "Reaver Sword" "Ezomyte Blade" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade"
+	BaseType "Corroded Blade" "Longsword" "Bastard Sword" "Two-Handed Sword" "Etched Greatsword" "Ornate Sword" "Spectral Sword" "Curved Blade" "Butcher Sword" "Footman Sword" "Highland Blade" "Engraved Greatsword" "Tiger Sword" "Wraith Sword" "Lithe Blade" "Headman's Sword" "Ezomyte Blade" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade"
 	Class "Two Hand Swords"
 	DisableDropSound
 
