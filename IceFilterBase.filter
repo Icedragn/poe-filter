@@ -483,6 +483,69 @@ Show
 	SetFontSize 45
 	AreaLevel <= 47
 	DisableDropSound
+
+Show
+	BaseType "Spiraled Wand"
+	Class "Wands"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 47
+	DisableDropSound
+
+Show
+	BaseType "Sage Wand"
+	Class "Wands"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 47
+	DisableDropSound
+
+Show
+	BaseType "Coiled Wand"
+	Class "Wands"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 58
+	DisableDropSound
+
+Show
+	BaseType "Omen Wand"
+	Class "Wands"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	BaseType "Demon's Horn"
+	Class "Wands"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	BaseType "Tornado Wand"
+	Class "Wands"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	BaseType "Prophecy Wand"
+	Class "Wands"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
 	
 Show # early 3 linked wands
 	Class "Wands"
