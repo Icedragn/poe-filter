@@ -1141,6 +1141,15 @@ Show # Rustic Recipe Belts
 	AreaLevel <= 45
 	DisableDropSound
 
+Show # Whetstone Recipe Weapons
+	Class "One Hand Swords" "One Hand Axes" "Thrusting One Hand Swords" "One Hand Maces" "Wands" "Sceptres" "Daggers" "Claws" "Rune Daggers" "Bows" "Two Hand" "Staves"
+	Quality = 20
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 40
+	AreaLevel <= 40
+	DisableDropSound
+
 #------Section 1.3.4 - Generic Levelling------#
 # Section 1.3.4.1 - Levelling Currency
 Show # Early Chromatic Recipe
