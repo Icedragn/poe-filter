@@ -19,7 +19,8 @@
 		# Section 1.3.3 - Melee Levelling
 			# Section 1.3.3.1 - Links
 			# Section 1.3.3.2 - 2h Axe Progression
-			# Section 1.3.3.3 - Misc Melee Levelling
+			# Section 1.3.3.3 - 2h Sword Progression
+			# Section 1.3.3.4 - Misc Melee Levelling
 		# Section 1.3.4 - Generic Levelling
 			# Section 1.3.4.1 - Levelling Currency
 			# Section 1.3.4.2 - Life Flasks
@@ -1215,7 +1216,134 @@ Show
 	AreaLevel <= 67
 	DisableDropSound
 
-# Section 1.3.3.3 - Misc Melee Levelling
+# Section 1.3.3.3 - 2h Sword Progression
+Show
+	BaseType "Corroded Blade"
+	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 5
+	DisableDropSound
+	
+Show
+	BaseType "Longsword"
+	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 14
+	DisableDropSound
+	
+Show
+	BaseType "Bastard Sword"
+	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 23
+	DisableDropSound
+	
+Show
+	BaseType "Two-Handed Sword"
+	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 28
+	DisableDropSound
+	
+Show
+	BaseType "Etched Greatsword"
+	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 33
+	DisableDropSound
+	
+Show
+	BaseType "Ornate Sword"
+	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 35
+	DisableDropSound
+	
+Show
+	BaseType "Spectral Sword"
+	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 41
+	DisableDropSound
+	
+Show
+	BaseType "Footman Sword"
+	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 52
+	DisableDropSound
+	
+Show
+	BaseType "Highland Blade"
+	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 52
+	DisableDropSound
+
+Show
+	BaseType "Engraved Greatsword"
+	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 56
+	DisableDropSound
+
+Show
+	BaseType "Tiger Sword"
+	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	BaseType "Ezomyte Blade"
+	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	Class "Lion Sword"
+	Rarity "Rare"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	BaseType "Reaver Sword"
+	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+# Section 1.3.3.4 - Misc Melee Levelling
 Show # Rustic Recipe Belts
 	BaseType "Rustic Sash"
 	Class "Belts"
@@ -2730,7 +2858,7 @@ Show # Horned Scarabs
 	DisableDropSound
 
 Show # T1
-	BaseType "Breach Scarab of Snares" "Cartography Scarab of Multitude" "Titanic Scarab of Legend" "Bestiary Scarab of the Shadowed Crow" "Influencing Scarab of Conversion" "Divination Scarab of Plenty" "Divination Scarab of Pilfering" "Harbinger Scarab of Warhoards" "Expedition Scarab of Archaeology" "Legion Scarab of Eternal Conflict" "Essence Scarab of Calcification" "Domination Scarab of Terrors" "Harvest Scarab of Cornucopia" "Incursion Scarab of Timelines" "Betrayal Scarab of Perpetuation" "Beyond Scarab of the Invasion" "Ultimatum Scarab of Dueling" "Ultimatum Scarab of Catalysing" "Ultimatum Scarab of Inscription" "Blight Scarab of the Blightheart" "Blight Scarab of Blooming" "Scarab of Stability"
+	BaseType "Breach Scarab of Snares" "Titanic Scarab of Legend" "Bestiary Scarab of the Shadowed Crow" "Influencing Scarab of Conversion" "Divination Scarab of Plenty" "Divination Scarab of Pilfering" "Harbinger Scarab of Warhoards" "Expedition Scarab of Archaeology" "Legion Scarab of Eternal Conflict" "Essence Scarab of Calcification" "Domination Scarab of Terrors" "Harvest Scarab of Cornucopia" "Incursion Scarab of Timelines" "Betrayal Scarab of Perpetuation" "Beyond Scarab of the Invasion" "Ultimatum Scarab of Dueling" "Ultimatum Scarab of Catalysing" "Ultimatum Scarab of Inscription" "Blight Scarab of the Blightheart" "Blight Scarab of Blooming" "Scarab of Stability"
 	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 201 8 192
@@ -2993,7 +3121,7 @@ Show # Special Fossils
 	DisableDropSound
 
 Show # High-Tier Fossils
-	BaseType "Perfect Fossil" "Gilded Fossil" "Fundamental Fossil" "Prismatic Fossil" "Pristine Fossil" "Corroded Fossil" "Shuddering Fossil" "Sanctified Fossil"
+	BaseType "Gilded Fossil" "Fundamental Fossil" "Prismatic Fossil" "Pristine Fossil" "Corroded Fossil" "Shuddering Fossil" "Sanctified Fossil"
 	Class "Currency"
 	SetFontSize 45
 	SetTextColor 201 8 192
@@ -6640,7 +6768,7 @@ Show # T1 Divination Cards
 	DisableDropSound
 	
 Show # T2 Divination Cards
-	BaseType "Matryoshka" "Luminous Trove" "Imperfect Memories" "Brother's Stash" "Broken Promises" "The Samurai's Eye" "The Gulf" "Deadly Joy" "The Enforcer" "Magnum Opus" "The Artist" "The Last One Standing" "Darker Half" "A Fate Worse Than Death" "The Chosen" "The Destination" "The Fishmonger" "Eternal Bonds" "The Fortunate" "Rebirth and Renewal" "The Fourth Vow"
+	BaseType "Matryoshka" "Luminous Trove" "Imperfect Memories" "Brother's Stash" "Broken Promises" "The Samurai's Eye" "The Gulf" "Deadly Joy" "The Enforcer" "Magnum Opus" "The Artist" "The Last One Standing" "Darker Half" "A Fate Worse Than Death" "The Chosen" "The Destination" "The Fishmonger" "Eternal Bonds" "The Fortunate" "Rebirth and Renewal"
 	Class "Divination Cards"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
