@@ -1326,8 +1326,8 @@ Show
 	DisableDropSound
 
 Show
-	Class "Lion Sword"
-	Rarity "Rare"
+	BaseType "Lion Sword"
+	Class "Two Hand Swords"
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
@@ -1337,6 +1337,15 @@ Show
 Show
 	BaseType "Reaver Sword"
 	Class "Two Hand Swords"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+	
+Show
+	Class "Two Hand Swords"
+	Rarity "Rare"
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
