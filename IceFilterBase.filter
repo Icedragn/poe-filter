@@ -6367,29 +6367,29 @@ Show # T1
 	SetBorderColor 201 8 192
 	SetFontSize 45
 	DisableDropSound
-#
-#Show # T2
-#	BaseType 
-#	Class "Two Hand Swords"
-#	Rarity "Rare"
-#	SetTextColor 212 230 18
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 0 209 10
-#	SetFontSize 45
-#	DisableDropSound
-#
-#Hide # T3
-#	BaseType 
-#	Class "Two Hand Swords"
-#	Rarity "Rare"
-#	SetTextColor 212 230 18
-#	SetBackgroundColor 0 0 0
-#	SetBorderColor 0 238 255
-#	SetFontSize 45
-#	DisableDropSound
+
+Show # T2
+	BaseType "Tiger Sword" "Footman Sword"
+	Class "Two Hand Swords"
+	Rarity "Rare"
+	SetTextColor 212 230 18
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
+Show # T3
+	BaseType "Lion Sword"
+	Class "Two Hand Swords"
+	Rarity "Rare"
+	SetTextColor 212 230 18
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 45
+	DisableDropSound
 	
 Hide # T4
-	BaseType "Corroded Blade" "Longsword" "Bastard Sword" "Two-Handed Sword" "Etched Greatsword" "Ornate Sword" "Spectral Sword" "Curved Blade" "Butcher Sword" "Footman Sword" "Highland Blade" "Engraved Greatsword" "Tiger Sword" "Wraith Sword" "Lithe Blade" "Headman's Sword" "Ezomyte Blade" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade"
+	BaseType "Corroded Blade" "Longsword" "Bastard Sword" "Two-Handed Sword" "Etched Greatsword" "Ornate Sword" "Spectral Sword" "Curved Blade" "Butcher Sword" "Highland Blade" "Engraved Greatsword" "Wraith Sword" "Lithe Blade" "Headman's Sword" "Ezomyte Blade" "Vaal Greatsword" "Infernal Sword" "Exquisite Blade"
 	Class "Two Hand Swords"
 	DisableDropSound
 
