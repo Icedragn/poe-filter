@@ -2938,6 +2938,14 @@ Show # Generic Veiled Weapons
 	SetBorderColor 0 209 10
 	DisableDropSound
 
+Show # Generic Veiled Item Catch-All
+	HasExplicitMod "of the Veil" "Veiled"
+	SetFontSize 45
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	DisableDropSound
+
 #------Section 5.4 - Blight------#
 # Section 5.4.1 - Blighted Maps
 Show # T13+ Blighted Maps
