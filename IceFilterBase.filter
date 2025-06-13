@@ -20,7 +20,8 @@
 			# Section 1.3.3.1 - Links
 			# Section 1.3.3.2 - 2h Axe Progression
 			# Section 1.3.3.3 - 2h Sword Progression
-			# Section 1.3.3.4 - Misc Melee Levelling
+			# Section 1.3.3.4 - 2h Mace Progression
+			# Section 1.3.3.5 - Misc Melee Levelling
 		# Section 1.3.4 - Generic Levelling
 			# Section 1.3.4.1 - Levelling Currency
 			# Section 1.3.4.2 - Life Flasks
@@ -127,7 +128,7 @@
 		# Section 5.22.1 - Allflames (DISABLED)
 		# Section 5.22.2 - Filled Coffins (DISABLED)
 	# Section 5.23 - Settlers of Kalguur
-		# Section 5.23.1 - Runes
+		# Section 5.23.1 - Runegrafts
 		# Section 5.23.2 - Gold
 # Section 6 - Sockets, Links & Quality
 	# Section 6.1 - 6-Links
@@ -227,14 +228,15 @@
 # Section 13 - Gems
 	# Section 13.1 - Exceptional Gems
 	# Section 13.2 - Awakened Gems
-	# Section 13.3 - Quality Skill Gems
-		# Section 13.3.1 - High Quality Gems
-		# Section 13.3.2 - Mid Quality Gems
-		# Section 13.3.3 - Low Quality Gems
-	# Section 13.4 - Quality Support Gems
+	# Section 13.3 - Trarthus Gems
+	# Section 13.4 - Quality Skill Gems
 		# Section 13.4.1 - High Quality Gems
 		# Section 13.4.2 - Mid Quality Gems
 		# Section 13.4.3 - Low Quality Gems
+	# Section 13.5 - Quality Support Gems
+		# Section 13.5.1 - High Quality Gems
+		# Section 13.5.2 - Mid Quality Gems
+		# Section 13.5.3 - Low Quality Gems
 # Section 14 - Divination Cards
 # Section 15 - Misc
 	# Section 15.1 - Quest Items
@@ -1070,13 +1072,23 @@ Show # 4 Sockets w/ Colours
 	AreaLevel <= 67
 	DisableDropSound
 
-Show # 4 sockets w colours
+Show # 4 Sockets w/ Colours
 	Class "Helmets" "Gloves" "Boots" "Body Armours"
 	SetBackgroundColor 0 0 0
 	SetBorderColor 0 238 255
 	SetFontSize 40
 	Sockets 4
 	SocketGroup > RRG
+	AreaLevel <= 67
+	DisableDropSound
+	
+Show # 4 Sockets w/ Colours
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	Sockets 4
+	SocketGroup > RRR
 	AreaLevel <= 67
 	DisableDropSound
 
@@ -1123,7 +1135,7 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
 	SetFontSize 45
-	AreaLevel <= 33
+	AreaLevel <= 35
 	DisableDropSound
 	
 Show
@@ -1191,6 +1203,15 @@ Show
 
 Show
 	BaseType "Ezomyte Axe"
+	Class "Two Hand Axes"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+	
+Show
+	BaseType "Karui Chopper"
 	Class "Two Hand Axes"
 	SetBackgroundColor 0 0 0
 	SetBorderColor 201 8 192
@@ -1351,8 +1372,153 @@ Show
 	SetFontSize 45
 	AreaLevel <= 67
 	DisableDropSound
+	
+# Section 1.3.3.4 - 2h Mace Progression
+Show
+	BaseType "Driftwood Maul"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 5
+	DisableDropSound
+	
+Show
+	BaseType "Tribal Maul"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 14
+	DisableDropSound
+	
+Show
+	BaseType "Mallet"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 23
+	DisableDropSound
+	
+Show
+	BaseType "Sledgehammer"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 28
+	DisableDropSound
+	
+Show
+	BaseType "Jagged Maul"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 33
+	DisableDropSound
+	
+Show
+	BaseType "Brass Maul"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 35
+	DisableDropSound
+	
+Show
+	BaseType "Fright Maul"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 41
+	DisableDropSound
+	
+Show
+	BaseType "Great Mallet"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 52
+	DisableDropSound
+	
+Show
+	BaseType "Steelhead"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 52
+	DisableDropSound
 
-# Section 1.3.3.4 - Misc Melee Levelling
+Show
+	BaseType "Spiny Maul"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 56
+	DisableDropSound
+
+Show
+	BaseType "Tiger Sword"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	BaseType "Plated Maul"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	BaseType "Dread Maul"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+Show
+	BaseType "Colossus Mallet"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+	
+Show
+	BaseType "Piledriver"
+	Class "Two Hand Maces"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+	
+Show
+	Class "Two Hand Maces"
+	Rarity "Rare"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 67
+	DisableDropSound
+
+# Section 1.3.3.5 - Misc Melee Levelling
 Show # Rustic Recipe Belts
 	BaseType "Rustic Sash"
 	Class "Belts"
@@ -2128,7 +2294,7 @@ Show
 
 #------Section 2.1 - Single Currency------#
 Show
-	BaseType "Mirror of Kalandra" "Divine Orb" "Mirror Shard" "Fracturing Orb" "Veiled Orb" "Reflecting Mist"
+	BaseType "Mirror of Kalandra" "Divine Orb" "Mirror Shard" "Fracturing Orb" "Veiled Exalted Orb" "Reflecting Mist"
 	Class "Currency"
 	SetTextColor 201 8 192
 	SetBackgroundColor 255 255 255
@@ -2139,7 +2305,7 @@ Show
 	DisableDropSound
 
 Show
-	BaseType "Exalted Orb" "Orb of Annulment" "Sacred Orb" "Exalted Shard" "Fracturing Shard"
+	BaseType "Exalted Orb" "Orb of Annulment" "Sacred Orb" "Exalted Shard" "Fracturing Shard" "Veiled Chaos Orb" "Orb of Remembrance" "Orb of Unravelling" "Orb of Intention"
 	Class "Currency"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -2150,7 +2316,7 @@ Show
 	DisableDropSound
 	
 Show
-	BaseType "Awakener's Orb" "Crusader's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Orb of Dominance"
+	BaseType "Awakener's Orb" "Crusader's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Orb of Dominance" "Elder's Exalted Orb" "Shaper's Exalted Orb"
 	Class "Currency"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -2557,7 +2723,7 @@ Show
 
 #------Section 2.3 - Map Fragments------#
 Show # Maven Invitations
-	BaseType "Incandescent Invitation" "Screaming Invitation" "Writhing Invitation" "Polaric Invitation"
+	BaseType "Incandescent Invitation" "Screaming Invitation" "Writhing Invitation" "Polaric Invitation" "Echo of Trauma" "Echo of Reverence" "Echo of Loneliness"
 	Class "Misc Map Items"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -2575,7 +2741,7 @@ Show # Uber Boss Fragments
 	DisableDropSound
 
 Show # Boss Fragments
-	BaseType "Mortal Grief" "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Fragment of the Hydra" "Fragment of the Chimera" "Fragment of the Minotaur" "Fragment of the Phoenix" "Fragment of Purification" "Fragment of Constriction" "Fragment of Eradication" "Fragment of Enslavement" "Fragment of Knowledge" "Fragment of Shape" "Fragment of Emptiness" "Fragment of Terror" "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest" "The Maven's Writ" "An Audience With The King"
+	BaseType "Mortal Grief" "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Fragment of the Hydra" "Fragment of the Chimera" "Fragment of the Minotaur" "Fragment of the Phoenix" "Fragment of Purification" "Fragment of Constriction" "Fragment of Eradication" "Fragment of Enslavement" "Fragment of Knowledge" "Fragment of Shape" "Fragment of Emptiness" "Fragment of Terror" "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest" "The Maven's Writ" "An Audience With The King" "Syndicate Medallion"
 	Class "Map Fragments"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -2876,7 +3042,7 @@ Show # T1
 	DisableDropSound
 
 Show # T2
-	BaseType "Breach Scarab of the Dreamer" "Breach Scarab of Lordship" "Breach Scarab of Splintering" "Cartography Scarab of Risk" "Cartography Scarab of Singularity" "Cartography Scarab of Corruption" "Titanic Scarab of Treasures" "Bestiary Scarab of the Herd" "Bestiary Scarab of Duplicating" "Influencing Scarab of Hordes" "Sulphite Scarab of Fumes" "Divination Scarab of The Cloister" "Torment Scarab of Peculiarity" "Torment Scarab of Release" "Ambush Scarab of Containment" "Ambush Scarab of Discernment" "Harbinger Scarab of Obelisks" "Harbinger Scarab of Regency" "Expedition Scarab of Runefinding" "Expedition Scarab of Verisium Powder" "Expedition Scarab of the Skald" "Legion Scarab of Officers" "Legion Scarab of Command" "Legion Scarab of The Sekhema" "Abyss Scarab of Multitudes" "Abyss Scarab of Edifice" "Abyss Scarab of Emptiness" "Anarchy Scarab of Gigantification" "Anarchy Scarab of Partnership" "Essence Scarab of Ascent" "Essence Scarab of Stability" "Domination Scarab of Apparitions" "Domination Scarab of Evolution" "Ritual Scarab of Selectiveness" "Ritual Scarab of Wisps" "Ritual Scarab of Abundance" "Harvest Scarab of Doubling" "Incursion Scarab of Invasion" "Incursion Scarab of Champions" "Betrayal Scarab of Intelligence" "Betrayal Scarab of Reinforcements" "Beyond Scarab of Corruption" "Beyond Scarab of Haemophilia" "Beyond Scarab of Resurgence" "Ultimatum Scarab of Bribing" "Delirium Scarab of Mania" "Delirium Scarab of Paranoia" "Delirium Scarab of Neuroses" "Delirium Scarab of Delusions" "Blight Scarab of Bounty" "Scarab of Monstrous Lineage" "Scarab of Adversaries" "Scarab of Divinity" "Scarab of Wisps"
+	BaseType "Breach Scarab of the Dreamer" "Breach Scarab of Lordship" "Breach Scarab of Splintering" "Cartography Scarab of Risk" "Cartography Scarab of Singularity" "Cartography Scarab of Corruption" "Titanic Scarab of Treasures" "Bestiary Scarab of the Herd" "Bestiary Scarab of Duplicating" "Influencing Scarab of Hordes" "Sulphite Scarab of Fumes" "Divination Scarab of The Cloister" "Torment Scarab of Peculiarity" "Torment Scarab of Release" "Ambush Scarab of Containment" "Ambush Scarab of Discernment" "Harbinger Scarab of Obelisks" "Harbinger Scarab of Regency" "Expedition Scarab of Runefinding" "Expedition Scarab of Verisium Powder" "Expedition Scarab of the Skald" "Legion Scarab of Officers" "Legion Scarab of Command" "Legion Scarab of The Sekhema" "Abyss Scarab of Multitudes" "Abyss Scarab of Edifice" "Abyss Scarab of Emptiness" "Anarchy Scarab of Gigantification" "Anarchy Scarab of Partnership" "Essence Scarab of Ascent" "Essence Scarab of Stability" "Domination Scarab of Apparitions" "Domination Scarab of Evolution" "Ritual Scarab of Selectiveness" "Ritual Scarab of Wisps" "Ritual Scarab of Abundance" "Harvest Scarab of Doubling" "Incursion Scarab of Invasion" "Incursion Scarab of Champions" "Betrayal Scarab of the Allflame" "Betrayal Scarab of Reinforcements" "Beyond Scarab of Corruption" "Beyond Scarab of Haemophilia" "Beyond Scarab of Resurgence" "Ultimatum Scarab of Bribing" "Delirium Scarab of Mania" "Delirium Scarab of Paranoia" "Delirium Scarab of Neuroses" "Delirium Scarab of Delusions" "Blight Scarab of Bounty" "Scarab of Monstrous Lineage" "Scarab of Adversaries" "Scarab of Divinity" "Scarab of Wisps" "Kalguuran Scarab of Guarded Riches" "Kalguuran Scarab of Refinement"
 	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 0 209 10
@@ -2885,7 +3051,7 @@ Show # T2
 	DisableDropSound
 
 Show # T3
-	BaseType "Breach Scarab" "Cartography Scarab of Escalation" "Titanic Scarab" "Bestiary Scarab" "Influencing Scarab of the Shaper" "Influencing Scarab of the Elder" "Sulphite Scarab" "Sulphite Scarab of Greed" "Torment Scarab" "Ambush Scarab" "Ambush Scarab of Hidden Compartments" "Ambush Scarab of Potency" "Harbinger Scarab" "Expedition Scarab" "Legion Scarab" "Abyss Scarab" "Anarchy Scarab" "Essence Scarab" "Domination Scarab" "Harvest Scarab" "Incursion Scarab" "Betrayal Scarab" "Beyond Scarab" "Ultimatum Scarab" "Delirium Scarab" "Blight Scarab" "Scarab of Hunted Traitors"
+	BaseType "Breach Scarab" "Cartography Scarab of Escalation" "Titanic Scarab" "Bestiary Scarab" "Influencing Scarab of the Shaper" "Influencing Scarab of the Elder" "Sulphite Scarab" "Sulphite Scarab of Greed" "Torment Scarab" "Ambush Scarab" "Ambush Scarab of Hidden Compartments" "Ambush Scarab of Potency" "Harbinger Scarab" "Expedition Scarab" "Legion Scarab" "Abyss Scarab" "Anarchy Scarab" "Essence Scarab" "Domination Scarab" "Harvest Scarab" "Incursion Scarab" "Betrayal Scarab" "Beyond Scarab" "Ultimatum Scarab" "Delirium Scarab" "Blight Scarab" "Scarab of Hunted Traitors" "Kalguuran Scarab"
 	Class "Map Fragments"
 	SetFontSize 45
 	SetTextColor 0 238 255
@@ -3929,6 +4095,15 @@ Show # T3 Omens
 
 #------Section 5.22 - Necropolis------#
 # Section 5.22.1 - Allflames
+Show # T2
+	BaseType "Allflame Ember of Kulemak" "Allflame Ember of Resplendence" "Allflame Ember of Propagation" "Allflame Ember of Flesh" "Allflame Ember of the Wildwood" "Allflame Ember of the Ethereal" "Allflame Ember of the Gilded" "Allflame Ember of Toads"
+	Class "Embers of the Allflame"
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
 #Show # Flaring
 #	BaseType "Flaring Allflame Ember of Scientists" "Flaring Allflame Ember of Wildwood Cultists" "Flaring Allflame Ember of Kalguurans" "Flaring Allflame Ember of Abyss" "Flaring Allflame Ember of The First Ones"
 #	Class "Embers of the Allflame"
@@ -3975,9 +4150,9 @@ Show # T3 Omens
 #	DisableDropSound
 
 #------Section 5.23 - Settlers of Kalguur------#
-# Section 5.23.1 - Runes
+# Section 5.23.1 - Runegrafts
 Show
-	BaseType "Life Rune" "Sun Rune" "Bound Rune" "War Rune" "River Rune" "Bounty Rune" "Journey Rune" "Mountain Rune" "Time Rune" "Power Rune"
+	BaseType "Runegraft of the Angler" "Runegraft of the Bound" "Runegraft of the Combatant" "Runegraft of the Fortress" "Runegraft of the Jeweller" "Runegraft of the Novamark" "Runegraft of the River" "Runegraft of the Sinistral" "Runegraft of the Soulwick" "Runegraft of the Warp" "Runegraft of the Witchmark" "Runegraft of Bellows" "Runegraft of Blasphemy" "Runegraft of Gemcraft" "Runegraft of Loyalty" "Runegraft of Quaffing" "Runegraft of Recompense" "Runegraft of Restitching" "Runegraft of Stability" "Runegraft of Time" "Runegraft of Treachery"
 	StackSize >= 1
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
@@ -3985,6 +4160,16 @@ Show
 	MinimapIcon 1 Pink Circle
 	SetFontSize 45
 	DisableDropSound
+
+#Show
+#	BaseType "Life Rune" "Sun Rune" "Bound Rune" "War Rune" "River Rune" "Bounty Rune" "Journey Rune" "Mountain Rune" "Time Rune" "Power Rune"
+#	StackSize >= 1
+#	SetTextColor 0 209 10
+#	SetBackgroundColor 0 0 0
+#	SetBorderColor 0 209 10
+#	MinimapIcon 1 Pink Circle
+#	SetFontSize 45
+#	DisableDropSound
 
 ######################################
 # Section 6 - Sockets, Links & Quality
@@ -6691,8 +6876,18 @@ Show
 	PlayAlertSound 6 75
 	DisableDropSound
 
-#------Section 13.3 - Quality Skill Gems------#
-# Section 13.3.1 - High Quality Gems
+#------Section 13.3 - Trarthus Gems------#
+Show
+	BaseType "of Trarthus"
+	Class "Gems"
+	SetTextColor 0 209 10
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 209 10
+	SetFontSize 45
+	DisableDropSound
+
+#------Section 13.4 - Quality Skill Gems------#
+# Section 13.4.1 - High Quality Gems
 Show
 	Class "Skill Gems"
 	Quality >= 14
@@ -6702,7 +6897,7 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-# Section 13.3.2 - Mid Quality Gems
+# Section 13.4.2 - Mid Quality Gems
 Show
 	Class "Skill Gems"
 	Quality >= 8
@@ -6712,7 +6907,7 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-# Section 13.3.3 - Low Quality Gems
+# Section 13.4.3 - Low Quality Gems
 Hide
 	Class "Skill Gems"
 	Quality < 8
@@ -6722,8 +6917,8 @@ Hide
 	SetFontSize 38
 	DisableDropSound
 
-#------Section 13.4 - Quality Support Gems------#
-# Section 13.4.1 - High Quality Gems
+#------Section 13.5 - Quality Support Gems------#
+# Section 13.5.1 - High Quality Gems
 Show
 	Class "Support Gems"
 	Quality >= 14
@@ -6733,7 +6928,7 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-# Section 13.4.2 - Mid Quality Gems
+# Section 13.5.2 - Mid Quality Gems
 Hide
 	Class "Support Gems"
 	Quality >= 8
@@ -6743,7 +6938,7 @@ Hide
 	SetFontSize 45
 	DisableDropSound
 
-# Section 13.4.3 - Low Quality Gems
+# Section 13.5.3 - Low Quality Gems
 Hide
 	Class "Support Gems"
 	Quality < 8
@@ -6785,7 +6980,7 @@ Show # T1 Divination Cards
 	DisableDropSound
 	
 Show # T2 Divination Cards
-	BaseType "Matryoshka" "Luminous Trove" "Imperfect Memories" "Brother's Stash" "Broken Promises" "The Samurai's Eye" "The Gulf" "Deadly Joy" "The Enforcer" "Magnum Opus" "The Artist" "The Last One Standing" "Darker Half" "A Fate Worse Than Death" "The Chosen" "The Destination" "The Fishmonger" "Eternal Bonds" "The Fortunate" "Rebirth and Renewal"
+	BaseType "Matryoshka" "Luminous Trove" "Imperfect Memories" "Brother's Stash" "Broken Promises" "The Samurai's Eye" "The Gulf" "Deadly Joy" "The Enforcer" "Magnum Opus" "The Artist" "The Last One Standing" "Darker Half" "A Fate Worse Than Death" "The Chosen" "The Destination" "The Fishmonger" "Eternal Bonds" "The Fortunate" "Rebirth and Renewal" "The Mayor" "Monochrome" "Squandered Prosperity"
 	Class "Divination Cards"
 	SetTextColor 201 8 192
 	SetBackgroundColor 0 0 0
@@ -6794,7 +6989,7 @@ Show # T2 Divination Cards
 	DisableDropSound
 	
 Show # T3 Divination Cards
-	BaseType "The Wrath" "Vinia's Token" "The Survivalist" "The Inventor" "The Gemcutter" "The Fool" "The Finishing Touch" "The Dark Mage" "Society's Remorse" "Lucky Connections" "Loyalty" "Coveted Possession" "Acclimatisation" "A Sea of Blue" "The Seeker" "The Journey" "The Union" "No Traces" "Ever-Changing" "The Cartographer" "The Heroic Shot" "The Transformation" "The Side Quest" "The Saint's Treasure" "The Innocent" "The Hoarder" "The Cacophony" "Parasitic Passengers" "Lucky Deck" "Harmony of Souls" "Ambitious Obsession" "Demigod's Wager" "Underground Forest" "The Void" "The Hunger" "Hunter's Reward" "Haunting Shadows" "Costly Curio" "Brotherhood in Exile" "Auspicious Ambitions" "Chaotic Disposition" "Council of Cats" "Peaceful Moments" "The Academic" "Burning Blood" "Baited Expectations" "The Rusted Bard" "The Eye of the Dragon" "The Dreamer" "Poisoned Faith" "Justified Ambition" "Azyran's Reward" "The Polymath" "Dementophobia" "The Wedding Gift" "Abandoned Wealth" "Rebirth and Renewal" "Lachrymal Necrosis" "Something Dark" "The Professor" "The Progeny of Lunaris" "The Hive of Knowledge" "The Mind's Eye" "The Damned" "Judging Voices" "Misery in Darkness" "A Modest Request" "The Old Man" "The Emptiness" "The Last Supper" "The World Eater" "The Strategist" "The Rabbit's Foot" "The Long Con" "The Eldritch Decay" "The Bitter Blossom" "Pride of the First Ones" "Gift of Asenath" "Bijoux" "A Dusty Memory" "Akil's Prophecy" "Altered Perception" "The Scout" "Alluring Bounty" "The Garish Power" "The One That Got Away" "The Shortcut" "The Leviathan" "The Astromancer" "Remembrance" "Nook's Crown" "Gemcutter's Mercy" "The Eye of Terror" "The Hook" "The Eternal War" "The Catch" "Silence and Frost" "Home" "Fateful Meeting" "The Greatest Intentions" "Monochrome" "The Patient" "The Enlightened"
+	BaseType "The Wrath" "Vinia's Token" "The Survivalist" "The Inventor" "The Gemcutter" "The Fool" "The Finishing Touch" "The Dark Mage" "Society's Remorse" "Lucky Connections" "Loyalty" "Coveted Possession" "Acclimatisation" "A Sea of Blue" "The Seeker" "The Journey" "The Union" "No Traces" "Ever-Changing" "The Cartographer" "The Heroic Shot" "The Transformation" "The Side Quest" "The Saint's Treasure" "The Innocent" "The Hoarder" "The Cacophony" "Parasitic Passengers" "Lucky Deck" "Harmony of Souls" "Ambitious Obsession" "Demigod's Wager" "Underground Forest" "The Void" "The Hunger" "Hunter's Reward" "Haunting Shadows" "Costly Curio" "Brotherhood in Exile" "Auspicious Ambitions" "Chaotic Disposition" "Council of Cats" "Peaceful Moments" "The Academic" "Burning Blood" "Baited Expectations" "The Rusted Bard" "The Eye of the Dragon" "The Dreamer" "Poisoned Faith" "Justified Ambition" "Azyran's Reward" "The Polymath" "Dementophobia" "The Wedding Gift" "Abandoned Wealth" "Rebirth and Renewal" "Lachrymal Necrosis" "Something Dark" "The Professor" "The Progeny of Lunaris" "The Hive of Knowledge" "The Mind's Eye" "The Damned" "Judging Voices" "Misery in Darkness" "A Modest Request" "The Old Man" "The Emptiness" "The Last Supper" "The World Eater" "The Strategist" "The Rabbit's Foot" "The Long Con" "The Eldritch Decay" "The Bitter Blossom" "Pride of the First Ones" "Gift of Asenath" "Bijoux" "A Dusty Memory" "Akil's Prophecy" "Altered Perception" "The Scout" "Alluring Bounty" "The Garish Power" "The One That Got Away" "The Shortcut" "The Leviathan" "The Astromancer" "Remembrance" "Nook's Crown" "Gemcutter's Mercy" "The Eye of Terror" "The Hook" "The Eternal War" "The Catch" "Silence and Frost" "Home" "Fateful Meeting" "The Greatest Intentions" "Monochrome" "The Patient" "The Enlightened" "The Bargain" "Underground Forest"
 	Class "Divination Cards"
 	SetTextColor 0 209 10
 	SetBackgroundColor 0 0 0
