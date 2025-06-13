@@ -934,6 +934,15 @@ Show
 	Sockets >= RG
 	AreaLevel <= 12
 	DisableDropSound
+	
+Show
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 0 238 255
+	SetFontSize 40
+	Sockets >= RR
+	AreaLevel <= 12
+	DisableDropSound
 
 Show
 	Class "Body Armours"
@@ -1519,6 +1528,24 @@ Show
 	DisableDropSound
 
 # Section 1.3.3.5 - Misc Melee Levelling
+Show # Very Early Shields
+	Class "Shields"
+	Sockets >= RG
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 12
+	DisableDropSound
+
+Show # Pine Buckler
+	BaseType "Pine Buckler"
+	Class "Shields"
+	SetBackgroundColor 0 0 0
+	SetBorderColor 201 8 192
+	SetFontSize 45
+	AreaLevel <= 12
+	DisableDropSound
+
 Show # Rustic Recipe Belts
 	BaseType "Rustic Sash"
 	Class "Belts"
